@@ -3,12 +3,14 @@
     "serie_id": "MACRO_USDA3500_NOMINAL_NSA_D",
     "titulo": "Tipo de cambio mayorista de referencia (Com. A 3500)",
     "frecuencia": "D",
-    "tipo_informacion": "Pública"
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/MACRO/MACRO_USDA3500_NOMINAL_NSA_D.json"
   },
   {
     "serie_id": "SECEXTERNO_RESERVASBRUTAS_NOMINAL_NSA_D",
     "titulo": "Reservas Internacionales del BCRA",
     "frecuencia": "D",
-    "tipo_informacion": "Pública"
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECEXTERNO/SECEXTERNO_RESERVASBRUTAS_NOMINAL_NSA_D.json"
   }
 ]
