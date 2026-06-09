@@ -7,7 +7,8 @@
     "unidades": "Pesos por dólar",
     "tipo_informacion": "Pública",
     "fuente": "BCRA",
-    "id_api_bcra": 5
+    "id_api_bcra": 5,
+    "ultima_actualizacion": "2026-06-09T12:00:00Z"
   },
   "observaciones": [
     {
@@ -35678,6 +35679,12 @@
       "fecha": "2026-06-05",
       "valor": 1442.4148,
       "realtime_start": "2026-06-08",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-06-08",
+      "valor": 1445.3978,
+      "realtime_start": "2026-06-09",
       "realtime_end": "9999-12-31"
     }
   ]
