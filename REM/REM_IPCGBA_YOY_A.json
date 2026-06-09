@@ -1,0 +1,265 @@
+{
+  "serie_id": "REM_IPCGBA_YOY_A",
+  "metadatos": {
+    "titulo": "REM: Precios minoristas (IPC nivel general-GBA; INDEC) - var. % i.a.",
+    "descripcion": "Pronósticos agregados del Relevamiento de Expectativas de Mercado (REM). Variable original: Precios minoristas (IPC nivel general-GBA; INDEC)",
+    "frecuencia": "A",
+    "unidades": "var. % i.a.",
+    "tipo_informacion": "Pública",
+    "fuente": "BCRA"
+  },
+  "observaciones": [
+    {
+      "fecha": "2016-01-01",
+      "valor": 40.3,
+      "realtime_start": "2016-06-30",
+      "realtime_end": "2016-07-28"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 42,
+      "realtime_start": "2016-07-29",
+      "realtime_end": "2016-08-30"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 41,
+      "realtime_start": "2016-08-31",
+      "realtime_end": "2016-09-29"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 39.6,
+      "realtime_start": "2016-09-30",
+      "realtime_end": "2016-10-30"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 39.4,
+      "realtime_start": "2016-10-31",
+      "realtime_end": "2016-11-29"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 40,
+      "realtime_start": "2016-11-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 19,
+      "realtime_start": "2016-06-30",
+      "realtime_end": "2016-07-28"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20,
+      "realtime_start": "2016-07-29",
+      "realtime_end": "2016-08-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 19.8,
+      "realtime_start": "2016-08-31",
+      "realtime_end": "2016-09-29"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20,
+      "realtime_start": "2016-09-30",
+      "realtime_end": "2016-10-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 19.7,
+      "realtime_start": "2016-10-31",
+      "realtime_end": "2016-11-29"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20.2,
+      "realtime_start": "2016-11-30",
+      "realtime_end": "2016-12-28"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 21,
+      "realtime_start": "2016-12-29",
+      "realtime_end": "2017-01-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20.8,
+      "realtime_start": "2017-01-31",
+      "realtime_end": "2017-02-23"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20.8,
+      "realtime_start": "2017-02-24",
+      "realtime_end": "2017-03-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 21.2,
+      "realtime_start": "2017-03-31",
+      "realtime_end": "2017-04-27"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 21,
+      "realtime_start": "2017-04-28",
+      "realtime_end": "2017-05-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 21.6,
+      "realtime_start": "2017-05-31",
+      "realtime_end": "2017-06-29"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 21.6,
+      "realtime_start": "2017-06-30",
+      "realtime_end": "2017-07-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 22.3,
+      "realtime_start": "2017-07-31",
+      "realtime_end": "2017-08-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 22.2,
+      "realtime_start": "2017-08-31",
+      "realtime_end": "2017-09-28"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 22.3,
+      "realtime_start": "2017-09-29",
+      "realtime_end": "2017-10-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 23.5,
+      "realtime_start": "2017-10-31",
+      "realtime_end": "2017-11-29"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 24,
+      "realtime_start": "2017-11-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 14.8,
+      "realtime_start": "2016-10-31",
+      "realtime_end": "2016-11-29"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 14.6,
+      "realtime_start": "2016-11-30",
+      "realtime_end": "2016-12-28"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 14.9,
+      "realtime_start": "2016-12-29",
+      "realtime_end": "2017-01-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 14.6,
+      "realtime_start": "2017-01-31",
+      "realtime_end": "2017-02-23"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 14.9,
+      "realtime_start": "2017-02-24",
+      "realtime_end": "2017-03-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 15,
+      "realtime_start": "2017-03-31",
+      "realtime_end": "2017-04-27"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 14.6,
+      "realtime_start": "2017-04-28",
+      "realtime_end": "2017-05-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 15,
+      "realtime_start": "2017-05-31",
+      "realtime_end": "2017-06-29"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 15.4,
+      "realtime_start": "2017-06-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 9.3,
+      "realtime_start": "2016-10-31",
+      "realtime_end": "2016-11-29"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 9.1,
+      "realtime_start": "2016-11-30",
+      "realtime_end": "2016-12-28"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 9.7,
+      "realtime_start": "2016-12-29",
+      "realtime_end": "2017-01-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 9.6,
+      "realtime_start": "2017-01-31",
+      "realtime_end": "2017-02-23"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 9.5,
+      "realtime_start": "2017-02-24",
+      "realtime_end": "2017-03-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 10.3,
+      "realtime_start": "2017-03-31",
+      "realtime_end": "2017-04-27"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 10,
+      "realtime_start": "2017-04-28",
+      "realtime_end": "2017-05-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 10.2,
+      "realtime_start": "2017-05-31",
+      "realtime_end": "2017-06-29"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 10,
+      "realtime_start": "2017-06-30",
+      "realtime_end": "9999-12-31"
+    }
+  ]
+}
