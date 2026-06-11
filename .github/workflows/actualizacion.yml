@@ -3,7 +3,7 @@ name: Actualizacion Diaria Consolidada
 # Ejecución de lunes a viernes a las 20:00 hs (23:00 UTC)
 on:
   schedule:
-    - cron: '0 15 * * 1-5'
+    - cron: '17 23 * * 1-5'
   
   workflow_dispatch: 
 
