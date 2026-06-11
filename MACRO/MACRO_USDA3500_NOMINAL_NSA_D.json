@@ -8,7 +8,7 @@
     "tipo_informacion": "Pública",
     "fuente": "BCRA",
     "id_api_bcra": 5,
-    "ultima_actualizacion": "2026-06-10T12:00:00Z"
+    "ultima_actualizacion": "2026-06-11T12:00:00Z"
   },
   "observaciones": [
     {
@@ -35691,6 +35691,12 @@
       "fecha": "2026-06-09",
       "valor": 1446.1668,
       "realtime_start": "2026-06-10",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-06-10",
+      "valor": 1436.585,
+      "realtime_start": "2026-06-11",
       "realtime_end": "9999-12-31"
     }
   ]
