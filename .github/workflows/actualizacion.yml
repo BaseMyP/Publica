@@ -1,0 +1,59 @@
+name: Actualizacion Diaria Consolidada
+
+# Ejecución de lunes a viernes a las 20:00 hs (23:00 UTC)
+on:
+  schedule:
+    - cron: '0 15 * * 1-5'
+  
+  workflow_dispatch: 
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar-base-datos:
+    runs-on: ubuntu-latest 
+    
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+
+      - name: Instalar dependencias con Caché
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::httr
+            any::jsonlite
+            any::dplyr
+            any::stringr
+            any::lubridate
+
+      - name: Ejecutar Extracción BCRA e INDEC
+        # Ambos scripts se ejecutan secuencialmente en la misma máquina
+        run: |
+          Rscript scripts/actualizacion_diaria.R
+          Rscript scripts/actualizacion_indec.R
+
+      - name: Configurar Git y Subir Cambios
+        # Agrupa todos los JSON modificados en un solo commit
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add .
+          
+          # Comprueba si los scripts de R generaron alguna modificación real en los archivos
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update diario consolidado: $(date +'%Y-%m-%d')"
+            git push
+            echo "✓ Cambios subidos exitosamente."
+          else
+            echo "✓ Los scripts corrieron, pero no hay datos nuevos para commitear hoy."
+          fi
