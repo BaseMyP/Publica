@@ -7,6 +7,7 @@ library(jsonlite)
 library(dplyr)
 library(stringr)
 library(httr)
+library(lubridate)
 source("scripts/funciones_base.R") # Carga tus funciones de extracción y formato
 
 # Definir el directorio de trabajo (Reemplaza con la ruta absoluta a tu carpeta del repositorio)
