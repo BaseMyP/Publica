@@ -52,23 +52,23 @@ for (i in 1:nrow(catalogo_indec)) {
 
 # 4. Sincronización con GitHub
 # Solo hacemos push si el script logró conectarse y actualizar los JSON
-if (hubo_actualizaciones) {
-  message("\nIniciando sincronización con el repositorio remoto...")
-  tryCatch({
-    system("git add .")
-    
-    # Comprobamos si Git detectó modificaciones reales antes de hacer commit
-    status_git <- system("git status --porcelain", intern = TRUE)
-    
-    if (length(status_git) > 0) {
-      mensaje_commit <- paste0("Update INDEC automatizado: ", Sys.Date())
-      system(sprintf('git commit -m "%s"', mensaje_commit))
-      system("git push")
-      message("✓ Nuevos datos detectados y subidos a GitHub con éxito.")
-    } else {
-      message("✓ API consultada, pero no hay datos nuevos publicados por el INDEC hoy.")
-    }
-  }, error = function(e) {
-    warning("Hubo un problema al intentar subir los cambios a GitHub: ", e$message)
-  })
-}
+# if (hubo_actualizaciones) {
+#   message("\nIniciando sincronización con el repositorio remoto...")
+#   tryCatch({
+#     system("git add .")
+#     
+#     # Comprobamos si Git detectó modificaciones reales antes de hacer commit
+#     status_git <- system("git status --porcelain", intern = TRUE)
+#     
+#     if (length(status_git) > 0) {
+#       mensaje_commit <- paste0("Update INDEC automatizado: ", Sys.Date())
+#       system(sprintf('git commit -m "%s"', mensaje_commit))
+#       system("git push")
+#       message("✓ Nuevos datos detectados y subidos a GitHub con éxito.")
+#     } else {
+#       message("✓ API consultada, pero no hay datos nuevos publicados por el INDEC hoy.")
+#     }
+#   }, error = function(e) {
+#     warning("Hubo un problema al intentar subir los cambios a GitHub: ", e$message)
+#   })
+# }

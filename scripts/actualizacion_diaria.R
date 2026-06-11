@@ -49,21 +49,21 @@ for (i in 1:nrow(catalogo_api_bcra)) {
   }
 }
 
-# 3. Subir los cambios a GitHub automáticamente
-message("\nIniciando sincronización con el repositorio remoto...")
-
-tryCatch({
-  # Ejecuta comandos de consola directamente desde R
-  system("git add .")
-  
-  # Crea un mensaje de commit con la fecha actual
-  mensaje_commit <- paste0("Update diario automatizado: ", Sys.Date())
-  system(sprintf('git commit -m "%s"', mensaje_commit))
-  
-  # Envía los cambios
-  system("git push")
-  
-  message("✓ Rutina completada con éxito. Base actualizada en la nube.")
-}, error = function(e) {
-  warning("Hubo un problema al intentar subir los cambios a GitHub: ", e$message)
-})
+# # 3. Subir los cambios a GitHub automáticamente
+# message("\nIniciando sincronización con el repositorio remoto...")
+# 
+# tryCatch({
+#   # Ejecuta comandos de consola directamente desde R
+#   system("git add .")
+#   
+#   # Crea un mensaje de commit con la fecha actual
+#   mensaje_commit <- paste0("Update diario automatizado: ", Sys.Date())
+#   system(sprintf('git commit -m "%s"', mensaje_commit))
+#   
+#   # Envía los cambios
+#   system("git push")
+#   
+#   message("✓ Rutina completada con éxito. Base actualizada en la nube.")
+# }, error = function(e) {
+#   warning("Hubo un problema al intentar subir los cambios a GitHub: ", e$message)
+# })
