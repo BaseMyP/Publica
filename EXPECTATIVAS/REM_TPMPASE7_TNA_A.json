@@ -1,0 +1,277 @@
+{
+  "serie_id": "REM_TPMPASE7_TNA_A",
+  "metadatos": {
+    "titulo": "REM: Tasa de política monetaria (Pase 7 días) - TNA; %",
+    "descripcion": "Pronósticos agregados del Relevamiento de Expectativas de Mercado (REM). Variable original: Tasa de política monetaria (Pase 7 días)",
+    "frecuencia": "A",
+    "unidades": "TNA; %",
+    "tipo_informacion": "Pública",
+    "fuente": "BCRA"
+  },
+  "observaciones": [
+    {
+      "fecha": "2017-01-01",
+      "valor": 19,
+      "realtime_start": "2016-10-31",
+      "realtime_end": "2016-11-29"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 18.3,
+      "realtime_start": "2016-11-30",
+      "realtime_end": "2016-12-28"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 18.8,
+      "realtime_start": "2016-12-29",
+      "realtime_end": "2017-01-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20,
+      "realtime_start": "2017-01-31",
+      "realtime_end": "2017-02-23"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20,
+      "realtime_start": "2017-02-24",
+      "realtime_end": "2017-03-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20,
+      "realtime_start": "2017-03-31",
+      "realtime_end": "2017-04-27"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 21.5,
+      "realtime_start": "2017-04-28",
+      "realtime_end": "2017-05-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 22,
+      "realtime_start": "2017-05-31",
+      "realtime_end": "2017-06-29"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 22,
+      "realtime_start": "2017-06-30",
+      "realtime_end": "2017-07-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 23.8,
+      "realtime_start": "2017-07-31",
+      "realtime_end": "2017-08-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 24.8,
+      "realtime_start": "2017-08-31",
+      "realtime_end": "2017-09-28"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 25.5,
+      "realtime_start": "2017-09-29",
+      "realtime_end": "2017-10-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 27.8,
+      "realtime_start": "2017-10-31",
+      "realtime_end": "2017-11-29"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 28.8,
+      "realtime_start": "2017-11-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 15,
+      "realtime_start": "2016-10-31",
+      "realtime_end": "2016-11-29"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 14,
+      "realtime_start": "2016-11-30",
+      "realtime_end": "2016-12-28"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 14.1,
+      "realtime_start": "2016-12-29",
+      "realtime_end": "2017-01-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 15,
+      "realtime_start": "2017-01-31",
+      "realtime_end": "2017-02-23"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 15.3,
+      "realtime_start": "2017-02-24",
+      "realtime_end": "2017-03-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 15.5,
+      "realtime_start": "2017-03-31",
+      "realtime_end": "2017-04-27"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 16,
+      "realtime_start": "2017-04-28",
+      "realtime_end": "2017-05-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 16.1,
+      "realtime_start": "2017-05-31",
+      "realtime_end": "2017-06-29"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 16.5,
+      "realtime_start": "2017-06-30",
+      "realtime_end": "2017-07-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 17.5,
+      "realtime_start": "2017-07-31",
+      "realtime_end": "2017-08-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 18.3,
+      "realtime_start": "2017-08-31",
+      "realtime_end": "2017-09-28"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 19.5,
+      "realtime_start": "2017-09-29",
+      "realtime_end": "2017-10-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 21,
+      "realtime_start": "2017-10-31",
+      "realtime_end": "2017-11-29"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 22,
+      "realtime_start": "2017-11-30",
+      "realtime_end": "2017-12-27"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 22.3,
+      "realtime_start": "2017-12-28",
+      "realtime_end": "2018-01-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 21.8,
+      "realtime_start": "2018-01-31",
+      "realtime_end": "2018-02-27"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 22,
+      "realtime_start": "2018-02-28",
+      "realtime_end": "2018-03-27"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 22.5,
+      "realtime_start": "2018-03-28",
+      "realtime_end": "2018-04-26"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 24.5,
+      "realtime_start": "2018-04-27",
+      "realtime_end": "2018-05-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 30,
+      "realtime_start": "2018-05-31",
+      "realtime_end": "2018-06-28"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 33,
+      "realtime_start": "2018-06-29",
+      "realtime_end": "2018-07-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 35,
+      "realtime_start": "2018-07-31",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 15.7,
+      "realtime_start": "2017-12-28",
+      "realtime_end": "2018-01-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 16,
+      "realtime_start": "2018-01-31",
+      "realtime_end": "2018-02-27"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 17,
+      "realtime_start": "2018-02-28",
+      "realtime_end": "2018-03-27"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 17.1,
+      "realtime_start": "2018-03-28",
+      "realtime_end": "2018-04-26"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 18.7,
+      "realtime_start": "2018-04-27",
+      "realtime_end": "2018-05-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 23.3,
+      "realtime_start": "2018-05-31",
+      "realtime_end": "2018-06-28"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 24.9,
+      "realtime_start": "2018-06-29",
+      "realtime_end": "2018-07-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 25.5,
+      "realtime_start": "2018-07-31",
+      "realtime_end": "9999-12-31"
+    }
+  ]
+}
