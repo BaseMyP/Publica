@@ -8,7 +8,7 @@
     "tipo_informacion": "Pública",
     "fuente": "INDEC",
     "id_api_indec": "148.3_INUCLEONAL_DICI_M_19",
-    "ultima_actualizacion": "2026-06-12T12:00:00Z"
+    "ultima_actualizacion": "2026-06-13T12:00:00Z"
   },
   "observaciones": [
     {
@@ -687,6 +687,12 @@
       "fecha": "2026-04-01",
       "valor": 11603.8447,
       "realtime_start": "2026-06-09",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 11824.7213,
+      "realtime_start": "2026-06-13",
       "realtime_end": "9999-12-31"
     }
   ]

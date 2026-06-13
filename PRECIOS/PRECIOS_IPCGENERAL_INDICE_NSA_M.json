@@ -8,7 +8,7 @@
     "tipo_informacion": "Pública",
     "fuente": "INDEC",
     "id_api_indec": "148.3_INIVELNAL_DICI_M_26",
-    "ultima_actualizacion": "2026-06-12T12:00:00Z"
+    "ultima_actualizacion": "2026-06-13T12:00:00Z"
   },
   "observaciones": [
     {
@@ -687,6 +687,12 @@
       "fecha": "2026-04-01",
       "valor": 11363.0904,
       "realtime_start": "2026-06-09",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 11607.3937,
+      "realtime_start": "2026-06-13",
       "realtime_end": "9999-12-31"
     }
   ]
