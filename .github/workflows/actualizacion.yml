@@ -1,10 +1,8 @@
 name: Actualizacion Diaria Consolidada
 
-# Ejecución de lunes a viernes a las 20:07 hs local (23:07 UTC)
 on:
   schedule:
     - cron: '07 23 * * 1-5'
-  
   workflow_dispatch: 
 
 permissions:
@@ -16,6 +14,7 @@ jobs:
     
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }} # <-- Inyección de la llave FRED
 
     steps:
       - name: Clonar el repositorio
@@ -37,21 +36,19 @@ jobs:
             any::lubridate
             any::readxl
 
-      - name: Ejecutar Extracción BCRA, INDEC y REM
-        # Los tres scripts se ejecutan secuencialmente en la misma máquina
+      - name: Ejecutar Extracción BCRA, INDEC, REM y FRED
         run: |
           Rscript scripts/actualizacion_diaria.R
           Rscript scripts/actualizacion_indec.R
           Rscript scripts/actualizacion_rem.R
+          Rscript scripts/actualizacion_fred.R # <-- Nueva ejecución
 
       - name: Configurar Git y Subir Cambios
-        # Agrupa todos los JSON modificados en un solo commit
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git add .
           
-          # Comprueba si los scripts de R generaron alguna modificación real en los archivos
           if ! git diff-index --quiet HEAD; then
             git commit -m "Update diario consolidado: $(date +'%Y-%m-%d')"
             git push

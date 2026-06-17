@@ -1,0 +1,32 @@
+{
+  "serie_id": "CPIAUCSL_INDICE_SA_M",
+  "metadatos": {
+    "titulo": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average",
+    "descripcion": "The Consumer Price Index for All Urban Consumers: All Items (CPIAUCSL) is a price index of a basket of goods and services paid by urban consumers...",
+    "pais": "USA",
+    "categoria": "INTERNACIONAL",
+    "frecuencia_short": "M",
+    "frecuencia_long": "mensual",
+    "frecuencia_original": "mensual",
+    "unidades": "Index 1982-1984=100",
+    "ajuste": "NSA",
+    "tipo_informacion": "Pública",
+    "fuente": "FRED",
+    "fuente_original": "Bureau of Labor Statistics",
+    "fuente_formato": "API",
+    "id_original": "CPIAUCSL",
+    "ultima_actualizacion": "2026-06-17 15:22:39",
+    "fecha_inicio": "1947-01-01",
+    "url_original": "https://fred.stlouisfed.org/series/CPIAUCSL",
+    "revisable": true,
+    "notas": {}
+  },
+  "observaciones": [
+    {
+      "fecha": "1947-01-01",
+      "valor": 21.48,
+      "realtime_start": "2026-06-17",
+      "realtime_end": "9999-12-31"
+    }
+  ]
+}

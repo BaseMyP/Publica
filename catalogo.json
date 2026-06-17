@@ -294,5 +294,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/IPCNUCLEO_INDICE_NSA_M.json",
     "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "CPIAUCSL_INDICE_SA_M",
+    "titulo": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CPIAUCSL_INDICE_SA_M.json",
+    "metodo_etl": "API_FRED"
   }
 ]

@@ -390,3 +390,93 @@ update_indec_json_serie <- function(id_indec, serie_id, tema, metadatos_fijos) {
   message("✓ Serie guardada: ", path_archivo)
   return(TRUE)
 }
+
+#' Descarga una serie desde la API de FRED
+fetch_fred_series <- function(id_fred, api_key) {
+  url <- paste0("https://api.stlouisfed.org/fred/series/observations?series_id=", id_fred, "&api_key=", api_key, "&file_type=json")
+  
+  respuesta <- GET(url)
+  
+  if (status_code(respuesta) != 200) {
+    warning("Fallo al conectar con la API de FRED para ID: ", id_fred)
+    return(NULL)
+  }
+  
+  datos_crudos <- content(respuesta, as = "parsed", type = "application/json")
+  df_fred <- as.data.frame(datos_crudos$observations, stringsAsFactors = FALSE)
+  
+  if(nrow(df_fred) == 0) return(NULL)
+  
+  # La FRED devuelve un punto "." cuando no hay dato. Los filtramos.
+  df_fred <- df_fred %>%
+    select(fecha = date, valor = value) %>%
+    filter(valor != ".") %>% 
+    mutate(
+      fecha = as.character(fecha),
+      valor = as.numeric(valor)
+    ) %>%
+    arrange(fecha)
+  
+  return(df_fred)
+}
+
+#' Actualiza o inicializa una serie de FRED aplicando la lógica ALFRED
+update_fred_json_serie <- function(id_fred, serie_id, tema, metadatos_fijos, api_key) {
+  path_dir <- file.path(tema)
+  path_archivo <- file.path(tema, paste0(serie_id, ".json"))
+  hoy <- as.character(Sys.Date())
+  
+  if (!dir.exists(path_dir)) dir.create(path_dir, recursive = TRUE, showWarnings = FALSE)
+  
+  message("Descargando datos de FRED para ", serie_id, "...")
+  nuevo_df <- fetch_fred_series(id_fred, api_key)
+  
+  if (is.null(nuevo_df)) return(FALSE)
+  
+  # --- LÓGICA DE ACTUALIZACIÓN ALFRED ---
+  if (!file.exists(path_archivo)) {
+    observaciones <- nuevo_df %>%
+      mutate(realtime_start = hoy, realtime_end = "9999-12-31")
+    
+    lista_final <- list(serie_id = serie_id, metadatos = metadatos_fijos, observaciones = observaciones)
+  } else {
+    base_actual <- fromJSON(path_archivo, simplifyVector = TRUE)
+    obs_viejas <- base_actual$observaciones
+    
+    obs_vigentes <- obs_viejas %>% filter(realtime_end == "9999-12-31")
+    obs_historicas <- obs_viejas %>% filter(realtime_end != "9999-12-31")
+    
+    actualizadas <- nuevo_df %>%
+      left_join(obs_vigentes, by = "fecha", suffix = c("_nuevo", "_viejo")) %>%
+      mutate(
+        status = case_when(
+          is.na(valor_viejo) ~ "NUEVO",
+          round(valor_nuevo, 4) != round(valor_viejo, 4) ~ "REVISADO",
+          TRUE ~ "SIN_CAMBIOS"
+        )
+      )
+    
+    obs_vigentes_que_cambiaron <- obs_vigentes %>%
+      filter(fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"]) %>%
+      mutate(realtime_end = hoy)
+    
+    obs_vigentes_sin_cambio <- obs_vigentes %>%
+      filter(!fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"])
+    
+    nuevas_inserciones <- actualizadas %>%
+      filter(status %in% c("NUEVO", "REVISADO")) %>%
+      select(fecha, valor = valor_nuevo) %>%
+      mutate(realtime_start = hoy, realtime_end = "9999-12-31")
+    
+    obs_consolidadas <- bind_rows(obs_historicas, obs_vigentes_que_cambiaron, obs_vigentes_sin_cambio, nuevas_inserciones) %>% 
+      arrange(fecha, realtime_start)
+    
+    base_actual$metadatos$ultima_actualizacion <- paste0(hoy, "T12:00:00Z")
+    base_actual$observaciones <- obs_consolidadas
+    lista_final <- base_actual
+  }
+  
+  write_json(lista_final, path_archivo, pretty = TRUE, auto_unbox = TRUE)
+  message("✓ Serie guardada: ", path_archivo)
+  return(TRUE)
+}
