@@ -23,7 +23,7 @@ meta_reservas <- list(
   fecha_inicio = as.Date("2003-01-01"),
   url_original = "https://www.bcra.gob.ar/principales-variables-datos/?serie=246",
   revisable = FALSE,
-  notas = "id_api_bcra = 1" # Cambiar en la fila 38
+  notas = 1 # Id de la API
 )
 
 
@@ -35,7 +35,7 @@ BASE_URL_MONETARIAS <- "https://api.bcra.gob.ar/estadisticas/v4.0/Monetarias/"
 
 # 3. Llamamos a la función maestra (nota que el tema ahora es "SECEXTERNO")
 exito_reservas <- update_bcra_json_serie(
-  id_variable = 1,
+  id_variable = meta_reservas$notas,
   serie_id = serie_id_reservas,
   tema = meta_reservas$categoria,
   metadatos_fijos = meta_reservas
