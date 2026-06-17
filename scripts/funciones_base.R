@@ -5,8 +5,6 @@ update_bcra_json_serie <- function(id_variable, serie_id, tema, metadatos_fijos)
   
   if (!dir.exists(path_dir)) dir.create(path_dir, recursive = TRUE, showWarnings = FALSE)
   
-  # Si el archivo no existe, bajamos desde 2002 (fecha de inicio habitual para TCR).
-  # Si existe, bajamos los últimos 6 meses para capturar datos nuevos y posibles revisiones recientes.
   if (!file.exists(path_archivo)) {
     message("Inicializando serie ", serie_id, " por primera vez...")
     df_bcra <- fetch_bcra_series(id_variable, from_date_overall = "2002-01-01", to_date_overall = Sys.Date())
@@ -21,15 +19,12 @@ update_bcra_json_serie <- function(id_variable, serie_id, tema, metadatos_fijos)
     return(FALSE)
   }
   
-  # Estandarizar nombres del df_bcra a nuestra estructura JSON
   nuevo_df <- df_bcra %>%
     select(fecha = Fecha, valor = Valor) %>%
     mutate(fecha = as.character(fecha)) %>%
     arrange(fecha)
   
-  # --- LÓGICA DE ACTUALIZACIÓN ALFRED ---
   if (!file.exists(path_archivo)) {
-    # CASO A: Creación desde cero
     observaciones <- nuevo_df %>%
       mutate(realtime_start = hoy, realtime_end = "9999-12-31")
     
@@ -39,7 +34,6 @@ update_bcra_json_serie <- function(id_variable, serie_id, tema, metadatos_fijos)
       observaciones = observaciones
     )
   } else {
-    # CASO B: Actualización (Cruzamos lo vigente con la nueva descarga)
     base_actual <- fromJSON(path_archivo, simplifyVector = TRUE)
     obs_viejas <- base_actual$observaciones
     
@@ -51,27 +45,23 @@ update_bcra_json_serie <- function(id_variable, serie_id, tema, metadatos_fijos)
       mutate(
         status = case_when(
           is.na(valor_viejo) ~ "NUEVO",
-          round(valor_nuevo, 4) != round(valor_viejo, 4) ~ "REVISADO", # Redondeo de seguridad por los decimales del BCRA
+          round(valor_nuevo, 4) != round(valor_viejo, 4) ~ "REVISADO", 
           TRUE ~ "SIN_CAMBIOS"
         )
       )
     
-    # Cerramos el ciclo de vida de los datos que el BCRA revisó/modificó
     obs_vigentes_que_cambiaron <- obs_vigentes %>%
       filter(fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"]) %>%
       mutate(realtime_end = hoy)
     
-    # Mantenemos los que no cambiaron
     obs_vigentes_sin_cambio <- obs_vigentes %>%
       filter(!fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"])
     
-    # Preparamos las novedades (Nuevos datos + Nuevas versiones de los revisados)
     nuevas_inserciones <- actualizadas %>%
       filter(status %in% c("NUEVO", "REVISADO")) %>%
       select(fecha, valor = valor_nuevo) %>%
       mutate(realtime_start = hoy, realtime_end = "9999-12-31")
     
-    # Consolidamos toda la historia
     obs_consolidadas <- bind_rows(
       obs_historicas,
       obs_vigentes_que_cambiaron,
@@ -91,28 +81,26 @@ update_bcra_json_serie <- function(id_variable, serie_id, tema, metadatos_fijos)
 
 #' Actualiza el catálogo maestro agregando la serie (o pisándola si ya existe)
 #' Actualiza el catálogo maestro agregando la serie con su Raw URL
-update_catalogo <- function(serie_id, metadatos, metodo_etl) {
+update_catalogo <- function(serie_id, metadatos, metodo_etl, tema) {
   cat_path <- "catalogo.json"
   base_url <- "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/"
   
-  # Deducir la carpeta (Tema) a partir del prefijo del serie_id
-  tema <- strsplit(serie_id, "_")[[1]][1]
+  # CORRECCIÓN: El tema ahora se pasa de forma explícita para armar la URL del nuevo árbol
   url_generada <- paste0(base_url, tema, "/", serie_id, ".json")
   
   nueva_fila <- data.frame(
     serie_id = serie_id,
     titulo = metadatos$titulo,
-    frecuencia = metadatos$frecuencia,
+    frecuencia = metadatos$frecuencia_short,
     tipo_informacion = metadatos$tipo_informacion,
     raw_url = url_generada,
-    metodo_etl = metodo_etl
+    metodo_etl = metodo_etl,
+    stringsAsFactors = FALSE
   )
   
   if (file.exists(cat_path)) {
     cat_actual <- fromJSON(cat_path)
-    cat_actual <- cat_actual[cat_actual$serie_id != serie_id, ] # Remover duplicado si existe
-    
-    # Usamos bind_rows en lugar de rbind para evitar errores si las columnas difieren
+    cat_actual <- cat_actual[cat_actual$serie_id != serie_id, ] 
     cat_final <- dplyr::bind_rows(cat_actual, nueva_fila) 
   } else {
     cat_final <- nueva_fila
@@ -313,11 +301,10 @@ fetch_bcra_series <- function(id_variable, from_date_overall = NULL, to_date_ove
 fetch_indec_series <- function(id_indec) {
   url_base <- "https://apis.datos.gob.ar/series/api/series"
   
-  # Hacemos la consulta GET
   respuesta <- GET(url_base, query = list(
     ids = id_indec,
     format = "json",
-    limit = 5000 # Máximo permitido, asegura traer toda la historia
+    limit = 5000 
   ))
   
   if (status_code(respuesta) != 200) {
@@ -325,18 +312,14 @@ fetch_indec_series <- function(id_indec) {
     return(NULL)
   }
   
-  # Parseamos el JSON
   texto_json <- content(respuesta, as = "text", encoding = "UTF-8")
   datos_crudos <- fromJSON(texto_json)
   
-  # Extraemos la matriz de datos y la convertimos en dataframe
   df_indec <- as.data.frame(datos_crudos$data, stringsAsFactors = FALSE)
-  
   if(nrow(df_indec) == 0) return(NULL)
   
   names(df_indec) <- c("fecha", "valor")
   
-  # Aseguramos los tipos de datos correctos
   df_indec <- df_indec %>%
     mutate(
       fecha = as.character(fecha),
@@ -361,15 +344,12 @@ update_indec_json_serie <- function(id_indec, serie_id, tema, metadatos_fijos) {
   
   if (is.null(nuevo_df)) return(FALSE)
   
-  # --- LÓGICA DE ACTUALIZACIÓN ALFRED ---
   if (!file.exists(path_archivo)) {
-    # CASO A: Creación
     observaciones <- nuevo_df %>%
       mutate(realtime_start = hoy, realtime_end = "9999-12-31")
     
     lista_final <- list(serie_id = serie_id, metadatos = metadatos_fijos, observaciones = observaciones)
   } else {
-    # CASO B: Actualización de serie existente
     base_actual <- fromJSON(path_archivo, simplifyVector = TRUE)
     obs_viejas <- base_actual$observaciones
     

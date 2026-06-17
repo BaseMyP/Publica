@@ -28,15 +28,21 @@ hubo_actualizaciones <- FALSE
 # 3. Bucle de actualización
 for (i in 1:nrow(catalogo_indec)) {
   serie_id <- catalogo_indec$serie_id[i]
-  tema <- strsplit(serie_id, "_")[[1]][1]
+  raw_url <- catalogo_indec$raw_url[i]
+  
+  # CORRECCIÓN 1: Extraer el tema dinámicamente desde la URL del catálogo
+  tema <- basename(dirname(raw_url))
+  
   path_archivo <- file.path(tema, paste0(serie_id, ".json"))
   
   if (file.exists(path_archivo)) {
     base_actual <- fromJSON(path_archivo)
-    id_indec <- base_actual$metadatos$id_api_indec
+    
+    # CORRECCIÓN 2: Extraer el ID de la API del INDEC desde el campo 'notas'
+    id_indec <- base_actual$metadatos$notas
     metadatos_fijos <- base_actual$metadatos
     
-    message(sprintf("\n[%s/%s] Consultando API INDEC para: %s", i, nrow(catalogo_indec), serie_id))
+    message(sprintf("\n[%s/%s] Consultando API INDEC para: %s (Carpeta: %s)", i, nrow(catalogo_indec), serie_id, tema))
     
     # La función update_indec_json_serie se encarga de todo
     exito <- update_indec_json_serie(
@@ -47,6 +53,8 @@ for (i in 1:nrow(catalogo_indec)) {
     )
     
     if (exito) hubo_actualizaciones <- TRUE
+  } else {
+    warning(sprintf("El archivo local no existe en la ruta: %s. Revisa si la carpeta o el nombre cambiaron.", path_archivo))
   }
 }
 

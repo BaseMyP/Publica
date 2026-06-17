@@ -2,16 +2,13 @@
 # SCRIPT DE ACTUALIZACIÓN AUTOMÁTICA
 # ==============================================================================
 
-# 1. Cargar el entorno y las librerías
 library(jsonlite)
 library(dplyr)
 library(stringr)
 library(httr)
 library(lubridate)
-source("scripts/funciones_base.R") # Carga tus funciones de extracción y formato
+source("scripts/funciones_base.R") 
 
-# Definir el directorio de trabajo (Reemplaza con la ruta absoluta a tu carpeta del repositorio)
-# setwd("C:/Ruta/A/Tu/Repositorio/BaseMyP") 
 BASE_URL_MONETARIAS <- "https://api.bcra.gob.ar/estadisticas/v4.0/Monetarias/"
 
 message("Iniciando actualización diaria: ", Sys.time())
@@ -31,7 +28,12 @@ if (nrow(catalogo_api_bcra) == 0) {
 
 for (i in 1:nrow(catalogo_api_bcra)) {
   serie_id <- catalogo_api_bcra$serie_id[i]
-  tema <- strsplit(serie_id, "_")[[1]][1]
+  raw_url <- catalogo_api_bcra$raw_url[i]
+  
+  # CORRECCIÓN: Extrae dinámicamente el nombre de la carpeta (tema) desde la URL del catálogo
+  # Ejemplo: "https://.../EXPECTATIVAS/IPCGBA_MOM_M.json" -> "EXPECTATIVAS"
+  tema <- basename(dirname(raw_url))
+  
   path_archivo <- file.path(tema, paste0(serie_id, ".json"))
   
   if (file.exists(path_archivo)) {
@@ -39,7 +41,7 @@ for (i in 1:nrow(catalogo_api_bcra)) {
     id_bcra <- base_actual$metadatos$id_api_bcra
     metadatos_fijos <- base_actual$metadatos
     
-    message(sprintf("\n[%s/%s] Procesando: %s", i, nrow(catalogo_api_bcra), serie_id))
+    message(sprintf("\n[%s/%s] Procesando: %s (Carpeta: %s)", i, nrow(catalogo_api_bcra), serie_id, tema))
     
     update_bcra_json_serie(
       id_variable = id_bcra,
@@ -47,6 +49,8 @@ for (i in 1:nrow(catalogo_api_bcra)) {
       tema = tema,
       metadatos_fijos = metadatos_fijos
     )
+  } else {
+    warning(sprintf("El archivo local no existe en la ruta: %s. Revisa si la carpeta o el nombre cambiaron.", path_archivo))
   }
 }
 
@@ -54,16 +58,10 @@ for (i in 1:nrow(catalogo_api_bcra)) {
 # message("\nIniciando sincronización con el repositorio remoto...")
 # 
 # tryCatch({
-#   # Ejecuta comandos de consola directamente desde R
 #   system("git add .")
-#   
-#   # Crea un mensaje de commit con la fecha actual
 #   mensaje_commit <- paste0("Update diario automatizado: ", Sys.Date())
 #   system(sprintf('git commit -m "%s"', mensaje_commit))
-#   
-#   # Envía los cambios
 #   system("git push")
-#   
 #   message("✓ Rutina completada con éxito. Base actualizada en la nube.")
 # }, error = function(e) {
 #   warning("Hubo un problema al intentar subir los cambios a GitHub: ", e$message)

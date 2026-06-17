@@ -1,0 +1,36 @@
+{
+  "serie_id": "TPMLELIQ_TNA_A",
+  "metadatos": {
+    "titulo": "REM: Tasa de política monetaria (LELIQ) - TNA; %",
+    "descripcion": "Pronósticos agregados del Relevamiento de Expectativas de Mercado (REM). Variable original: Tasa de política monetaria (LELIQ)",
+    "pais": "Argentina",
+    "categoria": "INTERNACIONAL",
+    "frecuencia_short": "A",
+    "frecuencia_original": "anual",
+    "unidades": "TNA; %",
+    "ajuste": "NSA",
+    "tipo_informacion": "Pública",
+    "fuente": "BCRA",
+    "fuente_original": "BCRA",
+    "fuente_formato": "EXCEL",
+    "ultima_actualizacion": ["2018-08-31", "2018-08-31"],
+    "fecha_inicio": "2018-08-31",
+    "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/historico-relevamiento-expectativas-mercado.xlsx",
+    "revisable": true,
+    "notas": null
+  },
+  "observaciones": [
+    {
+      "fecha": "2018-01-01",
+      "valor": 60,
+      "realtime_start": "2018-08-31",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 32,
+      "realtime_start": "2018-08-31",
+      "realtime_end": "9999-12-31"
+    }
+  ]
+}

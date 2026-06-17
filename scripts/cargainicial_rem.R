@@ -2,6 +2,7 @@ library(readxl)
 library(stringr)
 library(lubridate)
 library(dplyr)
+library(jsonlite)
 
 rem <- read_excel("historico-relevamiento-expectativas-mercado.xlsx",
                   sheet = "Base de Datos Completa",skip = 1) %>% 
@@ -75,7 +76,8 @@ rem_limpio <- rem %>%
     )
   ) %>%
   # Construimos el nombre final de la serie
-  mutate(serie_id = paste("REM", var_code, ref_code, frecuencia, sep = "_")) %>%
+  #mutate(serie_id = paste("EXPECTATIVAS", var_code, ref_code, frecuencia, sep = "_")) %>%
+  mutate(serie_id = paste(var_code, ref_code, frecuencia, sep = "_")) %>%
   
   # Filtramos posibles NAs residuales antes de armar el Vintage
   filter(!is.na(fecha_target) & !is.na(serie_id)) %>%
@@ -95,7 +97,7 @@ head(rem_limpio)
 
 
 # 1. Crear el directorio contenedor
-dir.create("REM", showWarnings = FALSE)
+#dir.create("REM", showWarnings = FALSE)
 
 # 2. Identificar todas las series únicas generadas
 series_unicas <- unique(rem_limpio$serie_id)
@@ -121,11 +123,22 @@ for (id in series_unicas) {
   metadatos <- list(
     titulo = paste("REM:", var_original, "-", ref_original),
     descripcion = paste("Pronósticos agregados del Relevamiento de Expectativas de Mercado (REM). Variable original:", var_original),
-    frecuencia = freq_letra,
+    pais = "Argentina",
+    categoria = "INTERNACIONAL",
+    frecuencia_short = freq_letra,
+    frecuencia_original = ifelse(freq_letra=="M","mensual",ifelse(freq_letra=="A","anual",stop())),
     unidades = ref_original,
+    ajuste = "NSA",
     tipo_informacion = "Pública",
-    fuente = "BCRA"
+    fuente = "BCRA",
+    fuente_original = "BCRA",
+    fuente_formato = "EXCEL",
     # No incluimos id_api_bcra porque el REM se actualiza distinto a las series diarias
+    ultima_actualizacion = datos_serie %>% slice_max(realtime_start) %>% pull(realtime_start),
+    fecha_inicio = (datos_serie %>% slice_min(realtime_start) %>% pull(realtime_start))[1],
+    url_original = "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/historico-relevamiento-expectativas-mercado.xlsx",
+    revisable = TRUE,
+    notas = NA
   )
   
   # D. Estructurar el bloque de observaciones (formato ALFRED)
@@ -151,16 +164,18 @@ for (id in series_unicas) {
     observaciones = observaciones
   )
   
-  path_archivo <- file.path("REM", paste0(id, ".json"))
+  path_archivo <- file.path("EXPECTATIVAS", paste0(id, ".json"))
   write_json(lista_final, path_archivo, pretty = TRUE, auto_unbox = TRUE)
   
   # F. Preparar la fila para el catálogo maestro
   nuevos_registros_catalogo[[id]] <- data.frame(
     serie_id = id,
     titulo = metadatos$titulo,
-    frecuencia = metadatos$frecuencia,
+    frecuencia = metadatos$frecuencia_short,
     tipo_informacion = metadatos$tipo_informacion,
-    raw_url = paste0(base_url, "REM/", id, ".json")
+    raw_url = paste0(base_url, "EXPECTATIVAS/", id, ".json"), # <--- CAMBIO: Nueva carpeta
+    metodo_etl = "EXCEL_REM",                                 # <--- CAMBIO: Agregamos el método ETL
+    stringsAsFactors = FALSE
   )
 }
 
@@ -182,4 +197,4 @@ if (file.exists(cat_path)) {
 
 write_json(cat_final, cat_path, pretty = TRUE)
 
-message(sprintf("¡Éxito! Se exportaron %s archivos JSON en la carpeta REM/ y el Catálogo Maestro fue actualizado.", length(series_unicas)))
+message(sprintf("¡Éxito! Se exportaron %s archivos JSON en la carpeta EXPECTATIVAS/ y el Catálogo Maestro fue actualizado.", length(series_unicas)))

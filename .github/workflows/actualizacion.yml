@@ -1,9 +1,9 @@
 name: Actualizacion Diaria Consolidada
 
-# Ejecución de lunes a viernes a las 20:00 hs (23:00 UTC)
+# Ejecución de lunes a viernes a las 20:07 hs local (23:07 UTC)
 on:
   schedule:
-    - cron: '17 23 * * 1-5'
+    - cron: '07 23 * * 1-5'
   
   workflow_dispatch: 
 
@@ -35,12 +35,14 @@ jobs:
             any::dplyr
             any::stringr
             any::lubridate
+            any::readxl
 
-      - name: Ejecutar Extracción BCRA e INDEC
-        # Ambos scripts se ejecutan secuencialmente en la misma máquina
+      - name: Ejecutar Extracción BCRA, INDEC y REM
+        # Los tres scripts se ejecutan secuencialmente en la misma máquina
         run: |
           Rscript scripts/actualizacion_diaria.R
           Rscript scripts/actualizacion_indec.R
+          Rscript scripts/actualizacion_rem.R
 
       - name: Configurar Git y Subir Cambios
         # Agrupa todos los JSON modificados en un solo commit

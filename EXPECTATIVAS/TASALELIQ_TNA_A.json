@@ -1,0 +1,216 @@
+{
+  "serie_id": "TASALELIQ_TNA_A",
+  "metadatos": {
+    "titulo": "REM: Tasa de interés (LELIQ) - TNA; %",
+    "descripcion": "Pronósticos agregados del Relevamiento de Expectativas de Mercado (REM). Variable original: Tasa de interés (LELIQ)",
+    "pais": "Argentina",
+    "categoria": "INTERNACIONAL",
+    "frecuencia_short": "A",
+    "frecuencia_original": "anual",
+    "unidades": "TNA; %",
+    "ajuste": "NSA",
+    "tipo_informacion": "Pública",
+    "fuente": "BCRA",
+    "fuente_original": "BCRA",
+    "fuente_formato": "EXCEL",
+    "ultima_actualizacion": ["2019-12-30", "2019-12-30"],
+    "fecha_inicio": "2018-09-28",
+    "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/historico-relevamiento-expectativas-mercado.xlsx",
+    "revisable": true,
+    "notas": null
+  },
+  "observaciones": [
+    {
+      "fecha": "2018-01-01",
+      "valor": 60,
+      "realtime_start": "2018-09-28",
+      "realtime_end": "2018-10-30"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 65,
+      "realtime_start": "2018-10-31",
+      "realtime_end": "2018-11-28"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 60,
+      "realtime_start": "2018-11-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 35,
+      "realtime_start": "2018-09-28",
+      "realtime_end": "2018-10-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 35,
+      "realtime_start": "2018-10-31",
+      "realtime_end": "2018-11-28"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 35,
+      "realtime_start": "2018-11-29",
+      "realtime_end": "2018-12-27"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 38,
+      "realtime_start": "2018-12-28",
+      "realtime_end": "2019-01-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 37,
+      "realtime_start": "2019-01-31",
+      "realtime_end": "2019-02-27"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 37,
+      "realtime_start": "2019-02-28",
+      "realtime_end": "2019-03-28"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 45,
+      "realtime_start": "2019-03-29",
+      "realtime_end": "2019-04-29"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 50,
+      "realtime_start": "2019-04-30",
+      "realtime_end": "2019-05-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 55,
+      "realtime_start": "2019-05-31",
+      "realtime_end": "2019-06-27"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 55,
+      "realtime_start": "2019-06-28",
+      "realtime_end": "2019-07-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 53,
+      "realtime_start": "2019-07-31",
+      "realtime_end": "2019-08-29"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 73.2,
+      "realtime_start": "2019-08-30",
+      "realtime_end": "2019-09-29"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 73,
+      "realtime_start": "2019-09-30",
+      "realtime_end": "2019-10-30"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 60,
+      "realtime_start": "2019-10-31",
+      "realtime_end": "2019-11-28"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 59,
+      "realtime_start": "2019-11-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 24.5,
+      "realtime_start": "2018-12-28",
+      "realtime_end": "2019-01-30"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 25,
+      "realtime_start": "2019-01-31",
+      "realtime_end": "2019-02-27"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 25,
+      "realtime_start": "2019-02-28",
+      "realtime_end": "2019-03-28"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 29,
+      "realtime_start": "2019-03-29",
+      "realtime_end": "2019-04-29"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 34.6,
+      "realtime_start": "2019-04-30",
+      "realtime_end": "2019-05-30"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 35,
+      "realtime_start": "2019-05-31",
+      "realtime_end": "2019-06-27"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 35,
+      "realtime_start": "2019-06-28",
+      "realtime_end": "2019-07-30"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 35,
+      "realtime_start": "2019-07-31",
+      "realtime_end": "2019-08-29"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 42,
+      "realtime_start": "2019-08-30",
+      "realtime_end": "2019-09-29"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 42.5,
+      "realtime_start": "2019-09-30",
+      "realtime_end": "2019-10-30"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 40,
+      "realtime_start": "2019-10-31",
+      "realtime_end": "2019-11-28"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 40,
+      "realtime_start": "2019-11-29",
+      "realtime_end": "2019-12-29"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 37,
+      "realtime_start": "2019-12-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-01-01",
+      "valor": 28,
+      "realtime_start": "2019-12-30",
+      "realtime_end": "9999-12-31"
+    }
+  ]
+}

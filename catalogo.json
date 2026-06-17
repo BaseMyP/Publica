@@ -1,298 +1,298 @@
 [
   {
-    "serie_id": "MACRO_USDA3500_NOMINAL_NSA_D",
-    "titulo": "Tipo de cambio mayorista de referencia (Com. A 3500)",
+    "serie_id": "A3500_NOMINAL_NSA_D",
+    "titulo": "Reservas internacionales",
     "frecuencia": "D",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/MACRO/MACRO_USDA3500_NOMINAL_NSA_D.json",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/A3500_NOMINAL_NSA_D.json",
     "metodo_etl": "API_BCRA"
   },
   {
-    "serie_id": "SECEXTERNO_RESERVASBRUTAS_NOMINAL_NSA_D",
-    "titulo": "Reservas Internacionales del BCRA",
+    "serie_id": "RESERVASBRUTAS_NOMINAL_NSA_D",
+    "titulo": "Reservas internacionales",
     "frecuencia": "D",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECEXTERNO/SECEXTERNO_RESERVASBRUTAS_NOMINAL_NSA_D.json",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RESERVASBRUTAS_NOMINAL_NSA_D.json",
     "metodo_etl": "API_BCRA"
   },
   {
-    "serie_id": "REM_IPCGBA_MOM_M",
+    "serie_id": "IPCGBA_MOM_M",
     "titulo": "REM: Precios minoristas (IPC nivel general-GBA; INDEC) - var. % mensual",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCGBA_MOM_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCGBA_MOM_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCGBA_YOY_M",
+    "serie_id": "IPCGBA_YOY_M",
     "titulo": "REM: Precios minoristas (IPC nivel general-GBA; INDEC) - var. % i.a.",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCGBA_YOY_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCGBA_YOY_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCGBA_YOY_A",
+    "serie_id": "IPCGBA_YOY_A",
     "titulo": "REM: Precios minoristas (IPC nivel general-GBA; INDEC) - var. % i.a.",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCGBA_YOY_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCGBA_YOY_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCGENERAL_MOM_M",
+    "serie_id": "IPCGENERAL_MOM_M",
     "titulo": "REM: Precios minoristas (IPC nivel general; INDEC) - var. % mensual",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCGENERAL_MOM_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCGENERAL_MOM_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCGENERAL_YOY_M",
+    "serie_id": "IPCGENERAL_YOY_M",
     "titulo": "REM: Precios minoristas (IPC nivel general; INDEC) - var. % i.a.",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCGENERAL_YOY_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCGENERAL_YOY_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCGENERAL_YOY_A",
+    "serie_id": "IPCGENERAL_YOY_A",
     "titulo": "REM: Precios minoristas (IPC nivel general; INDEC) - var. % i.a.",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCGENERAL_YOY_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCGENERAL_YOY_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_TPMLEBAC_TNA_M",
+    "serie_id": "TPMLEBAC_TNA_M",
     "titulo": "REM: Tasa de política monetaria (Lebac) - TNA; %",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_TPMLEBAC_TNA_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TPMLEBAC_TNA_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_TPMLEBAC_TNA_A",
+    "serie_id": "TPMLEBAC_TNA_A",
     "titulo": "REM: Tasa de política monetaria (Lebac) - TNA; %",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_TPMLEBAC_TNA_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TPMLEBAC_TNA_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_USDA3500_LEVEL_M",
+    "serie_id": "USDA3500_LEVEL_M",
     "titulo": "REM: Tipo de cambio nominal - $/USD",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_USDA3500_LEVEL_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/USDA3500_LEVEL_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_USDA3500_LEVEL_A",
+    "serie_id": "USDA3500_LEVEL_A",
     "titulo": "REM: Tipo de cambio nominal - $/USD",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_USDA3500_LEVEL_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/USDA3500_LEVEL_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_SUPPRIMARIO_BILARS_A",
+    "serie_id": "SUPPRIMARIO_BILARS_A",
     "titulo": "REM: Resultado primario del SPNF - miles de millones $",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_SUPPRIMARIO_BILARS_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/SUPPRIMARIO_BILARS_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_PIBPCTE_YOYAVG_A",
+    "serie_id": "PIBPCTE_YOYAVG_A",
     "titulo": "REM: PIB a precios constantes - var. % prom. anual",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_PIBPCTE_YOYAVG_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/PIBPCTE_YOYAVG_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCNUCLEOGBA_MOM_M",
+    "serie_id": "IPCNUCLEOGBA_MOM_M",
     "titulo": "REM: Precios minoristas (IPC núcleo-GBA; INDEC) - var. % mensual",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCNUCLEOGBA_MOM_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCNUCLEOGBA_MOM_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCNUCLEOGBA_YOY_M",
+    "serie_id": "IPCNUCLEOGBA_YOY_M",
     "titulo": "REM: Precios minoristas (IPC núcleo-GBA; INDEC) - var. % i.a.",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCNUCLEOGBA_YOY_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCNUCLEOGBA_YOY_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCNUCLEOGBA_YOY_A",
+    "serie_id": "IPCNUCLEOGBA_YOY_A",
     "titulo": "REM: Precios minoristas (IPC núcleo-GBA; INDEC) - var. % i.a.",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCNUCLEOGBA_YOY_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCNUCLEOGBA_YOY_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_TPMPASE7_TNA_M",
+    "serie_id": "TPMPASE7_TNA_M",
     "titulo": "REM: Tasa de política monetaria (Pase 7 días) - TNA; %",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_TPMPASE7_TNA_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TPMPASE7_TNA_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_TPMPASE7_TNA_A",
+    "serie_id": "TPMPASE7_TNA_A",
     "titulo": "REM: Tasa de política monetaria (Pase 7 días) - TNA; %",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_TPMPASE7_TNA_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TPMPASE7_TNA_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCNUCLEO_MOM_M",
+    "serie_id": "IPCNUCLEO_MOM_M",
     "titulo": "REM: Precios minoristas (IPC núcleo; INDEC) - var. % mensual",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCNUCLEO_MOM_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCNUCLEO_MOM_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCNUCLEO_YOY_M",
+    "serie_id": "IPCNUCLEO_YOY_M",
     "titulo": "REM: Precios minoristas (IPC núcleo; INDEC) - var. % i.a.",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCNUCLEO_YOY_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCNUCLEO_YOY_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IPCNUCLEO_YOY_A",
+    "serie_id": "IPCNUCLEO_YOY_A",
     "titulo": "REM: Precios minoristas (IPC núcleo; INDEC) - var. % i.a.",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IPCNUCLEO_YOY_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IPCNUCLEO_YOY_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_TPMLELIQ_TNA_M",
+    "serie_id": "TPMLELIQ_TNA_M",
     "titulo": "REM: Tasa de política monetaria (LELIQ) - TNA; %",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_TPMLELIQ_TNA_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TPMLELIQ_TNA_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_TPMLELIQ_TNA_A",
+    "serie_id": "TPMLELIQ_TNA_A",
     "titulo": "REM: Tasa de política monetaria (LELIQ) - TNA; %",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_TPMLELIQ_TNA_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TPMLELIQ_TNA_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_TASALELIQ_TNA_M",
+    "serie_id": "TASALELIQ_TNA_M",
     "titulo": "REM: Tasa de interés (LELIQ) - TNA; %",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_TASALELIQ_TNA_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TASALELIQ_TNA_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_TASALELIQ_TNA_A",
+    "serie_id": "TASALELIQ_TNA_A",
     "titulo": "REM: Tasa de interés (LELIQ) - TNA; %",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_TASALELIQ_TNA_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TASALELIQ_TNA_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_BADLAR_TNA_M",
+    "serie_id": "BADLAR_TNA_M",
     "titulo": "REM: Tasa de interés (BADLAR) - TNA; %",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_BADLAR_TNA_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/BADLAR_TNA_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_BADLAR_TNA_A",
+    "serie_id": "BADLAR_TNA_A",
     "titulo": "REM: Tasa de interés (BADLAR) - TNA; %",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_BADLAR_TNA_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/BADLAR_TNA_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_EXPO_MILUSD_M",
+    "serie_id": "EXPO_MILUSD_M",
     "titulo": "REM: Exportaciones - millones de USD",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_EXPO_MILUSD_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/EXPO_MILUSD_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_EXPO_MILUSD_A",
+    "serie_id": "EXPO_MILUSD_A",
     "titulo": "REM: Exportaciones - millones de USD",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_EXPO_MILUSD_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/EXPO_MILUSD_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IMPO_MILUSD_M",
+    "serie_id": "IMPO_MILUSD_M",
     "titulo": "REM: Importaciones - millones de USD",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IMPO_MILUSD_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IMPO_MILUSD_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_IMPO_MILUSD_A",
+    "serie_id": "IMPO_MILUSD_A",
     "titulo": "REM: Importaciones - millones de USD",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_IMPO_MILUSD_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/IMPO_MILUSD_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_DESOCUPACION_RATE_A",
+    "serie_id": "DESOCUPACION_RATE_A",
     "titulo": "REM: Desocupación abierta - % de la PEA",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_DESOCUPACION_RATE_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/DESOCUPACION_RATE_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_TASATAMAR_TNA_M",
+    "serie_id": "TASATAMAR_TNA_M",
     "titulo": "REM: Tasa de interés (TAMAR) - TNA; %",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_TASATAMAR_TNA_M.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TASATAMAR_TNA_M.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "REM_TASATAMAR_TNA_A",
+    "serie_id": "TASATAMAR_TNA_A",
     "titulo": "REM: Tasa de interés (TAMAR) - TNA; %",
     "frecuencia": "A",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/REM/REM_TASATAMAR_TNA_A.json",
-    "metodo_etl": "REM"
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TASATAMAR_TNA_A.json",
+    "metodo_etl": "EXCEL_REM"
   },
   {
-    "serie_id": "PRECIOS_IPCNUCLEO_INDICE_NSA_M",
-    "titulo": "IPC Nacional - Núcleo",
-    "frecuencia": "M",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/PRECIOS_IPCNUCLEO_INDICE_NSA_M.json",
-    "metodo_etl": "API_INDEC"
-  },
-  {
-    "serie_id": "PRECIOS_IPCGENERAL_INDICE_NSA_M",
+    "serie_id": "IPCGENERAL_INDICE_NSA_M",
     "titulo": "IPC Nacional - Nivel General",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/PRECIOS_IPCGENERAL_INDICE_NSA_M.json",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/IPCGENERAL_INDICE_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "IPCNUCLEO_INDICE_NSA_M",
+    "titulo": "IPC Nacional - Núcleo",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/IPCNUCLEO_INDICE_NSA_M.json",
     "metodo_etl": "API_INDEC"
   }
 ]

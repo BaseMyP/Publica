@@ -1,0 +1,84 @@
+{
+  "serie_id": "TPMLEBAC_TNA_A",
+  "metadatos": {
+    "titulo": "REM: Tasa de política monetaria (Lebac) - TNA; %",
+    "descripcion": "Pronósticos agregados del Relevamiento de Expectativas de Mercado (REM). Variable original: Tasa de política monetaria (Lebac)",
+    "pais": "Argentina",
+    "categoria": "INTERNACIONAL",
+    "frecuencia_short": "A",
+    "frecuencia_original": "anual",
+    "unidades": "TNA; %",
+    "ajuste": "NSA",
+    "tipo_informacion": "Pública",
+    "fuente": "BCRA",
+    "fuente_original": "BCRA",
+    "fuente_formato": "EXCEL",
+    "ultima_actualizacion": "2016-11-30",
+    "fecha_inicio": "2016-06-30",
+    "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/historico-relevamiento-expectativas-mercado.xlsx",
+    "revisable": true,
+    "notas": null
+  },
+  "observaciones": [
+    {
+      "fecha": "2016-01-01",
+      "valor": 25.4,
+      "realtime_start": "2016-06-30",
+      "realtime_end": "2016-07-28"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 25.5,
+      "realtime_start": "2016-07-29",
+      "realtime_end": "2016-08-30"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 25,
+      "realtime_start": "2016-08-31",
+      "realtime_end": "2016-09-29"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 24.8,
+      "realtime_start": "2016-09-30",
+      "realtime_end": "2016-10-30"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 25.1,
+      "realtime_start": "2016-10-31",
+      "realtime_end": "2016-11-29"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 24,
+      "realtime_start": "2016-11-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 19,
+      "realtime_start": "2016-06-30",
+      "realtime_end": "2016-07-28"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20,
+      "realtime_start": "2016-07-29",
+      "realtime_end": "2016-08-30"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20,
+      "realtime_start": "2016-08-31",
+      "realtime_end": "2016-09-29"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 20,
+      "realtime_start": "2016-09-30",
+      "realtime_end": "9999-12-31"
+    }
+  ]
+}
