@@ -15,6 +15,7 @@ Este repositorio centraliza, estandariza y preserva el historial de revisión de
 4. [Control de Revisiones (ALFRED)](#-4-control-de-revisiones-metodología-alfred)
 5. [Proceso de Actualización (ETL)](#-5-proceso-de-actualización-etl)
 6. [Guía para Administradores](#-6-guía-para-administradores-cómo-agregar-una-nueva-variable)
+7. [Ejemplos de Uso e Instrucciones](#-7-ejemplos-de-uso-e-instrucciones)
 
 ---
 
@@ -104,3 +105,15 @@ Para incorporar una nueva serie a la base, el administrador debe seguir estos pa
 3. **Ejecutar el Script de Carga Inicial:** Utilizar el script correspondiente a la fuente (ej: `agregarvar_fred.R` o `agregarvar_apibcra.R`). Este script debe invocar a la función `update_catalogo()`.
 4. **Verificar Parámetros Clave:** Asegurarse de que al actualizar el catálogo se pasen explícitamente los parámetros `metodo_etl` (ej: `API_FRED`) y `tema` (ej: `INTERNACIONAL`). 
 5. **Commit y Push:** Subir los cambios a GitHub. La rutina de actualización diaria (`actualizacion.yml`) tomará automáticamente la nueva serie al leer el `catalogo.json` actualizado.
+
+## 💡 7. Ejemplos de Uso e Instrucciones
+
+Para facilitar el consumo y análisis de las series económicas, hemos preparado una carpeta dedicada con tutoriales y recursos prácticos. 
+
+En la carpeta [📁 Ejemplos e Instrucciones](./Ejemplos%20e%20Instrucciones) encontrarás guías paso a paso y scripts de muestra para conectar tu entorno de trabajo directamente a esta base de datos utilizando:
+
+* 🖥️ **R**
+* 🐍 **Python**
+* 📊 **Excel**
+
+¡Te invitamos a explorarla para comenzar a integrar los datos en tus propios proyectos y tableros!

@@ -8,13 +8,13 @@ cat_path = "catalogo.json"
 catalogo = pd.read_json(base_url + cat_path)
 
 # Descarga serie del tipo de cambio
-serie = "MACRO/MACRO_USDA3500_NOMINAL_NSA_D.json"
+serie = "TC_y_TASAS/A3500_NOMINAL_NSA_D.json"
 tcA3500 = requests.get(base_url + serie).json()
 tcA3500_metadatos = tcA3500.get("metadatos")
 tcA3500_serie = pd.DataFrame(tcA3500.get("observaciones"))
 
 # Expectativa de inflación anual para 2026 (REM) - serie histórica
-serie = "REM/REM_IPCGENERAL_YOY_A.json"
+serie = "EXPECTATIVAS/IPCGENERAL_YOY_A.json"
 rem_ipc_2026 = requests.get(base_url + serie).json()
 rem_ipc_2026_metadatos = rem_ipc_2026.get("metadatos")
 rem_ipc_obs = pd.DataFrame(rem_ipc_2026.get("observaciones"))
