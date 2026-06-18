@@ -38,8 +38,8 @@ for (i in 1:nrow(catalogo_indec)) {
   if (file.exists(path_archivo)) {
     base_actual <- fromJSON(path_archivo)
     
-    # CORRECCIÓN 2: Extraer el ID de la API del INDEC desde el campo 'notas'
-    id_indec <- base_actual$metadatos$notas
+    # CORRECCIÓN 2: Extraer el ID de la API del INDEC desde el campo 'id_original'
+    id_indec <- base_actual$metadatos$id_original
     metadatos_fijos <- base_actual$metadatos
     
     message(sprintf("\n[%s/%s] Consultando API INDEC para: %s (Carpeta: %s)", i, nrow(catalogo_indec), serie_id, tema))

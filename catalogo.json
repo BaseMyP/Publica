@@ -1,21 +1,5 @@
 [
   {
-    "serie_id": "A3500_NOMINAL_NSA_D",
-    "titulo": "Reservas internacionales",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/A3500_NOMINAL_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "RESERVASBRUTAS_NOMINAL_NSA_D",
-    "titulo": "Reservas internacionales",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RESERVASBRUTAS_NOMINAL_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
     "serie_id": "IPCGBA_MOM_M",
     "titulo": "REM: Precios minoristas (IPC nivel general-GBA; INDEC) - var. % mensual",
     "frecuencia": "M",
@@ -280,6 +264,30 @@
     "metodo_etl": "EXCEL_REM"
   },
   {
+    "serie_id": "CPIAUCSL_INDICE_SA_M",
+    "titulo": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CPIAUCSL_INDICE_SA_M.json",
+    "metodo_etl": "API_FRED"
+  },
+  {
+    "serie_id": "RESERVASBRUTAS_NOMINAL_NSA_D",
+    "titulo": "Reservas internacionales",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RESERVASBRUTAS_NOMINAL_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "A3500_NOMINAL_NSA_D",
+    "titulo": "Tipo de cambio mayorista de referencia (Com. A 3500)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/A3500_NOMINAL_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
     "serie_id": "IPCGENERAL_INDICE_NSA_M",
     "titulo": "IPC Nacional - Nivel General",
     "frecuencia": "M",
@@ -294,13 +302,5 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/IPCNUCLEO_INDICE_NSA_M.json",
     "metodo_etl": "API_INDEC"
-  },
-  {
-    "serie_id": "CPIAUCSL_INDICE_SA_M",
-    "titulo": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average",
-    "frecuencia": "M",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CPIAUCSL_INDICE_SA_M.json",
-    "metodo_etl": "API_FRED"
   }
 ]

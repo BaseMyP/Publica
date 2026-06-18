@@ -14,11 +14,12 @@ meta_ipc_general_corregido <- list(
   fuente = "API_Argentina",
   fuente_original = "INDEC",
   fuente_formato = "API_Argentina",
+  id_original = "148.3_INIVELNAL_DICI_M_26",
   ultima_actualizacion = Sys.Date(),
   fecha_inicio = as.Date("2003-01-01"),
   url_original = "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
   revisable = FALSE,
-  notas = "148.3_INIVELNAL_DICI_M_26" 
+  notas = NA
 )
 
 serie_id_general <- "IPCGENERAL_INDICE_NSA_M"
@@ -37,11 +38,12 @@ meta_ipc_nucleo <- list(
   fuente = "API_Argentina",
   fuente_original = "INDEC",
   fuente_formato = "API_Argentina",
+  id_original = "148.3_INUCLEONAL_DICI_M_19",
   ultima_actualizacion = Sys.Date(),
   fecha_inicio = as.Date("2003-01-01"),
   url_original = "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
   revisable = FALSE,
-  notas = "148.3_INUCLEONAL_DICI_M_19" 
+  notas = NA 
 )
 
 serie_id_nucleo <- "IPCNUCLEO_INDICE_NSA_M"
@@ -62,7 +64,7 @@ tema_fijo <- "PRECIOS"
 for (item in lista_series) {
   
   exito <- update_indec_json_serie(
-    id_indec = item$meta$notas,
+    id_indec = item$meta$id_original,
     serie_id = item$id,
     tema = tema_fijo,
     metadatos_fijos = item$meta

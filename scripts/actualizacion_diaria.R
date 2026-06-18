@@ -38,7 +38,7 @@ for (i in 1:nrow(catalogo_api_bcra)) {
   
   if (file.exists(path_archivo)) {
     base_actual <- fromJSON(path_archivo)
-    id_bcra <- base_actual$metadatos$notas
+    id_bcra <- base_actual$metadatos$id_original
     metadatos_fijos <- base_actual$metadatos
     
     message(sprintf("\n[%s/%s] Procesando: %s (Carpeta: %s)", i, nrow(catalogo_api_bcra), serie_id, tema))
