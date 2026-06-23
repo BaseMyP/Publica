@@ -2,27 +2,27 @@ source("scripts/funciones_base.R")
 
 # 1. Definimos los metadatos 
 meta_ipc_general_corregido <- list(
-  titulo = "EMAE Sin Estacionalidad. Índice Base 2004.Valores mensuales",
-  descripcion = "Estimador Mensual de Actividad Económica (EMAE). Base 2004. Desestacionalizado",
+  titulo = "IPC Servicios",
+  descripcion = "IPC Servicios. Indice Dic-16=100",
   pais = "Argentina",
-  categoria = "ACTIVIDAD",
+  categoria = "PRECIOS",
   frecuencia_short = "M",
   frecuencia_original = "mensual",
   unidades = "Índice", 
-  ajuste = "SA",
+  ajuste = "NSA",
   tipo_informacion = "Pública",
   fuente = "API_Argentina",
   fuente_original = "INDEC",
   fuente_formato = "API_INDEC",
-  id_original = "143.3_NO_PR_2004_A_31",
+  id_original = "147.3_ISERVICNAL_DICI_T_22",
   ultima_actualizacion = Sys.Date(),
-  fecha_inicio = as.Date("2004-01-01"),
-  url_original = "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=143.3_NO_PR_2004_A_31",
-  revisable = TRUE,
+  fecha_inicio = as.Date("2016-12-01"),
+  url_original = "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
+  revisable = FALSE,
   notas = NA
 )
 
-serie_id_general <- "EMAE_INDICE_SA_M"
+serie_id_general <- "IPCSERVICIOS_INDICE_NSA_M"
 
 # 3. Consolidamos en una lista para procesar en bucle
 # (Se corrigió la llamada a 'meta_ipc_general_corregido')

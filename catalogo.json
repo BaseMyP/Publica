@@ -297,7 +297,7 @@
   },
   {
     "serie_id": "CPIAUCSL_INDICE_SA_M",
-    "titulo": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average",
+    "titulo": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average. SA",
     "frecuencia": "M",
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CPIAUCSL_INDICE_SA_M.json",
@@ -318,5 +318,37 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/EMAE_INDICE_SA_M.json",
     "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "IPCREGULADOS_INDICE_NSA_M",
+    "titulo": "IPC Regulados",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/IPCREGULADOS_INDICE_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "IPCBIENES_INDICE_NSA_M",
+    "titulo": "IPC Bienes",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/IPCBIENES_INDICE_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "IPCSERVICIOS_INDICE_NSA_M",
+    "titulo": "IPC Servicios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/IPCSERVICIOS_INDICE_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "CPIAUCNS_INDICE_NSA_M",
+    "titulo": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CPIAUCNS_INDICE_NSA_M.json",
+    "metodo_etl": "API_FRED"
   }
 ]

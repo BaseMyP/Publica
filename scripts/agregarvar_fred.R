@@ -5,7 +5,7 @@ library(dplyr)
 source("scripts/funciones_base.R")
 
 # Reemplaza con tu llave de la FRED para correrlo localmente
-FRED_API_KEY <- "" 
+FRED_API_KEY <- "802e3fa15d76a8467002eb1a7baea0cf" 
 
 # 1. Definimos los metadatos
 meta_cpi_us <- list(
@@ -22,15 +22,15 @@ meta_cpi_us <- list(
   fuente = "FRED",
   fuente_original = "Bureau of Labor Statistics",
   fuente_formato = "API",
-  id_original = "CPIAUCSL", # <-- Usamos este campo como ID
+  id_original = "CPIAUCNS", # <-- Usamos este campo como ID
   ultima_actualizacion = format(Sys.time(), "%Y-%m-%d %H:%M:%S"),
   fecha_inicio = "1947-01-01",
-  url_original = "https://fred.stlouisfed.org/series/CPIAUCSL",
+  url_original = "https://fred.stlouisfed.org/series/CPIAUCNS",
   revisable = TRUE,
   notas = NULL
 )
 
-serie_id_cpi <- "CPIAUCSL_INDICE_SA_M"
+serie_id_cpi <- "CPIAUCNS_INDICE_NSA_M"
 tema_fijo <- "INTERNACIONAL"
 
 message("Iniciando carga inicial desde FRED...")
