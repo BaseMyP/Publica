@@ -5,7 +5,7 @@ library(dplyr)
 source("scripts/funciones_base.R")
 
 # Reemplaza con tu llave de la FRED para correrlo localmente
-FRED_API_KEY <- "802e3fa15d76a8467002eb1a7baea0cf" 
+FRED_API_KEY <- "" 
 
 # 1. Definimos los metadatos
 meta_cpi_us <- list(
