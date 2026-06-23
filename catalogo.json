@@ -302,5 +302,21 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CPIAUCSL_INDICE_SA_M.json",
     "metodo_etl": "API_FRED"
+  },
+  {
+    "serie_id": "EMAE_INDICE_NSA_M",
+    "titulo": "EMAE. Índice Base 2004.Valores mensuales",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/EMAE_INDICE_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "EMAE_INDICE_SA_M",
+    "titulo": "EMAE Sin Estacionalidad. Índice Base 2004.Valores mensuales",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/EMAE_INDICE_SA_M.json",
+    "metodo_etl": "API_INDEC"
   }
 ]
