@@ -392,6 +392,7 @@ update_indec_json_serie <- function(id_indec, serie_id, tema, metadatos_fijos) {
 }
 
 #' Descarga una serie desde la API de FRED
+#' Descarga una serie desde la API de FRED
 fetch_fred_series <- function(id_fred, api_key) {
   url <- paste0("https://api.stlouisfed.org/fred/series/observations?series_id=", id_fred, "&api_key=", api_key, "&file_type=json")
   
@@ -402,7 +403,10 @@ fetch_fred_series <- function(id_fred, api_key) {
     return(NULL)
   }
   
-  datos_crudos <- content(respuesta, as = "parsed", type = "application/json")
+  # CORRECCIÓN: Parsear el texto usando jsonlite para evitar el aplanamiento de columnas
+  texto_json <- content(respuesta, "text", encoding = "UTF-8")
+  datos_crudos <- fromJSON(texto_json, flatten = TRUE)
+  
   df_fred <- as.data.frame(datos_crudos$observations, stringsAsFactors = FALSE)
   
   if(nrow(df_fred) == 0) return(NULL)
