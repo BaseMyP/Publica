@@ -7,29 +7,29 @@ source("scripts/funciones_base.R")
        
 # 1. Definimos los metadatos fijos para la nueva variable
 meta_reservas <- list(
-  titulo = "Tipo de cambio mayorista de referencia (Com. A 3500)",
-  descripcion = "Tipo de cambio mayorista de referencia (Com. A 3500)",
+  titulo = "Depósitos en USD del Sector Privado. Expresados en USD",
+  descripcion = "Depósitos en USD del Sector Privado. Expresados en USD",
   pais = "Argentina",
-  categoria = "TC_y_TASAS",
+  categoria = "DEPOSITOS",
   frecuencia_short = "D",
   frecuencia_original = "diaria",
-  unidades = "Pesos por USD", 
+  unidades = "Millones de USD", 
   ajuste = "NSA",
   tipo_informacion = "Pública",
   fuente = "BCRA",
   fuente_original = "BCRA",
   fuente_formato = "API_BCRA",
-  id_original = 5,
+  id_original = 108,
   ultima_actualizacion = Sys.Date(),
-  fecha_inicio = as.Date("2002-03-04"),
-  url_original = "https://www.bcra.gob.ar/principales-variables-datos/?serie=272",
+  fecha_inicio = as.Date("2002-12-31"),
+  url_original = "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
   revisable = FALSE,
-  notas = NA # Id de la API
+  notas = NA 
 )
 
 
 # 2. Definimos el nombre oficial de la serie
-serie_id_reservas <- "A3500_NOMINAL_NSA_D"
+serie_id_reservas <- "DEPUSDPRIV_NOMINALUSD_NSA_D"
  
 BASE_URL_MONETARIAS <- "https://api.bcra.gob.ar/estadisticas/v4.0/Monetarias/"
 

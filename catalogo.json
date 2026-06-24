@@ -382,5 +382,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IPMPPETROLEO_INDICE_NSA_M.json",
     "metodo_etl": "EXCEL_IPMP"
+  },
+  {
+    "serie_id": "DEPUSDPRIV_NOMINALUSD_NSA_D",
+    "titulo": "Depósitos en USD del Sector Privado. Expresados en USD",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/DEPOSITOS/DEPUSDPRIV_NOMINALUSD_NSA_D.json",
+    "metodo_etl": "API_BCRA"
   }
 ]
