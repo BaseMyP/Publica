@@ -350,5 +350,37 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CPIAUCNS_INDICE_NSA_M.json",
     "metodo_etl": "API_FRED"
+  },
+  {
+    "serie_id": "IPMP_INDICE_NSA_M",
+    "titulo": "IPMP - Nivel General",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IPMP_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_IPMP"
+  },
+  {
+    "serie_id": "IPMPAGRO_INDICE_NSA_M",
+    "titulo": "IPMP - Productos Agropecuarios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IPMPAGRO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_IPMP"
+  },
+  {
+    "serie_id": "IPMPMETALES_INDICE_NSA_M",
+    "titulo": "IPMP - Metales",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IPMPMETALES_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_IPMP"
+  },
+  {
+    "serie_id": "IPMPPETROLEO_INDICE_NSA_M",
+    "titulo": "IPMP - Petróleo Crudo",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IPMPPETROLEO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_IPMP"
   }
 ]
