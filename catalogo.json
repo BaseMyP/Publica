@@ -390,5 +390,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/DEPOSITOS/DEPUSDPRIV_NOMINALUSD_NSA_D.json",
     "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "FUTURO_USD_NSA_M",
+    "titulo": "Curva de Dólar Futuro (Matba Rofex)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/FUTURO_USD_NSA_M.json",
+    "metodo_etl": "API_ROFEX"
   }
 ]
