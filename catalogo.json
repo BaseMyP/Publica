@@ -398,5 +398,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/FUTURO_USD_NSA_M.json",
     "metodo_etl": "API_ROFEX"
+  },
+  {
+    "serie_id": "CCL_NOMINAL_NSA_D",
+    "titulo": "Tipo de Cambio Contado con Liquidación (Promedio)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/CCL_NOMINAL_NSA_D.json",
+    "metodo_etl": "API_AMBITO"
   }
 ]
