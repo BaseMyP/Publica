@@ -41,7 +41,8 @@ jobs:
           Rscript scripts/actualizacion_diaria.R
           Rscript scripts/actualizacion_indec.R
           Rscript scripts/actualizacion_rem.R
-          Rscript scripts/actualizacion_fred.R # <-- Nueva ejecución
+          Rscript scripts/actualizacion_fred.R 
+          Rscript scripts/actualizacion_ccl.R
 
       - name: Configurar Git y Subir Cambios
         run: |
