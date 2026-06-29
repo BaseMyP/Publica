@@ -31,14 +31,19 @@ jobs:
         with:
           packages: |
             any::httr
+            any::httr2
             any::jsonlite
             any::dplyr
+            any::tidyr
             any::readxl
             any::lubridate
+            any::stringr
+            any::zoo
 
       - name: Ejecutar Extracción IPMP
         run: |
           Rscript scripts/actualizacion_ipmp.R
+          Rscript scripts/actualizacion_expo_impo_indec.R
 
       - name: Configurar Git y Subir Cambios
         run: |
