@@ -1,0 +1,1638 @@
+{
+  "serie_id": "EXPO_CE_VALOR_INDICE_NSA_M",
+  "metadatos": {
+    "titulo": "Exportaciones - Índice de valor - Combustibles y energía",
+    "descripcion": "Indices de exportaciones incluidas en la publicación Precios y cantidades del comercio exterior de INDEC",
+    "pais": "Argentina",
+    "categoria": "SECTOR_EXTERNO",
+    "frecuencia_original": "Mensual",
+    "frecuencia_short": "M",
+    "unidades": "Índice base 2004=100",
+    "ajuste": "NSA",
+    "tipo_informacion": "Pública",
+    "fuente": "INDEC",
+    "fuente_original": "INDEC",
+    "fuente_formato": "Excel",
+    "ultima_actualizacion": "2026-06-29T12:00:00Z",
+    "fecha_inicio": "2004-01-01",
+    "url_original": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_mensual_indices_expo.xls",
+    "revisable": true,
+    "notas": ""
+  },
+  "observaciones": [
+    {
+      "fecha": "2004-01-01",
+      "valor": 85.7442,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-02-01",
+      "valor": 79.7519,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-03-01",
+      "valor": 99.6705,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-04-01",
+      "valor": 88.9718,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-05-01",
+      "valor": 96.9587,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-06-01",
+      "valor": 92.4824,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-07-01",
+      "valor": 97.9375,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-08-01",
+      "valor": 99.5521,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-09-01",
+      "valor": 126.7126,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-10-01",
+      "valor": 119.0346,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-11-01",
+      "valor": 104.518,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2004-12-01",
+      "valor": 108.6656,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-01-01",
+      "valor": 105.1787,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-02-01",
+      "valor": 84.6319,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-03-01",
+      "valor": 99.0004,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-04-01",
+      "valor": 111.453,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-05-01",
+      "valor": 106.2675,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-06-01",
+      "valor": 116.363,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-07-01",
+      "valor": 113.5061,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-08-01",
+      "valor": 136.5282,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-09-01",
+      "valor": 138.3851,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-10-01",
+      "valor": 126.9942,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-11-01",
+      "valor": 119.8098,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2005-12-01",
+      "valor": 130.012,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-01-01",
+      "valor": 126.0574,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-02-01",
+      "valor": 114.0423,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-03-01",
+      "valor": 116.1996,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-04-01",
+      "valor": 137.8238,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-05-01",
+      "valor": 116.4332,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-06-01",
+      "valor": 139.024,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-07-01",
+      "valor": 127.6248,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-08-01",
+      "valor": 125.464,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-09-01",
+      "valor": 124.2398,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-10-01",
+      "valor": 139.1254,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-11-01",
+      "valor": 120.8234,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2006-12-01",
+      "valor": 129.976,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-01-01",
+      "valor": 108.1823,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-02-01",
+      "valor": 108.2288,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-03-01",
+      "valor": 118.4622,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-04-01",
+      "valor": 115.4019,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-05-01",
+      "valor": 118.9791,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-06-01",
+      "valor": 96.2383,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-07-01",
+      "valor": 88.6659,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-08-01",
+      "valor": 97.6238,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-09-01",
+      "valor": 90.4475,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-10-01",
+      "valor": 137.0567,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-11-01",
+      "valor": 141.8337,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2007-12-01",
+      "valor": 127.9525,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-01-01",
+      "valor": 127.911,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-02-01",
+      "valor": 154.2148,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-03-01",
+      "valor": 144.2203,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-04-01",
+      "valor": 159.6742,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-05-01",
+      "valor": 106.5541,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-06-01",
+      "valor": 98.7088,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-07-01",
+      "valor": 135.5235,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-08-01",
+      "valor": 173.263,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-09-01",
+      "valor": 129.6949,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-10-01",
+      "valor": 122.6032,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-11-01",
+      "valor": 83.9945,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2008-12-01",
+      "valor": 87.221,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-01-01",
+      "valor": 83.0165,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-02-01",
+      "valor": 97.5524,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-03-01",
+      "valor": 95.259,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-04-01",
+      "valor": 136.1358,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-05-01",
+      "valor": 115.8422,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-06-01",
+      "valor": 116.4947,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-07-01",
+      "valor": 96.4908,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-08-01",
+      "valor": 69.2507,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-09-01",
+      "valor": 88.8347,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-10-01",
+      "valor": 134.2059,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-11-01",
+      "valor": 110.4789,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2009-12-01",
+      "valor": 109.9398,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-01-01",
+      "valor": 116.0477,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-02-01",
+      "valor": 110.4933,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-03-01",
+      "valor": 122.3566,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-04-01",
+      "valor": 105.8331,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-05-01",
+      "valor": 106.6629,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-06-01",
+      "valor": 81.2454,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-07-01",
+      "valor": 83.9028,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-08-01",
+      "valor": 78.9788,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-09-01",
+      "valor": 106.0439,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-10-01",
+      "valor": 104.4542,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-11-01",
+      "valor": 150.1562,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2010-12-01",
+      "valor": 100.6366,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-01-01",
+      "valor": 92.0161,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-02-01",
+      "valor": 117.2512,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-03-01",
+      "valor": 127.7656,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-04-01",
+      "valor": 102.5299,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-05-01",
+      "valor": 76.1924,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-06-01",
+      "valor": 79.5769,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-07-01",
+      "valor": 99.3793,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-08-01",
+      "valor": 110.4911,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-09-01",
+      "valor": 108.2228,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-10-01",
+      "valor": 121.8362,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-11-01",
+      "valor": 119.4932,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2011-12-01",
+      "valor": 142.4435,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-01-01",
+      "valor": 125.4713,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-02-01",
+      "valor": 117.394,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-03-01",
+      "valor": 106.7086,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-04-01",
+      "valor": 142.0056,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-05-01",
+      "valor": 110.396,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-06-01",
+      "valor": 92.1334,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-07-01",
+      "valor": 90.7369,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-08-01",
+      "valor": 109.0968,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-09-01",
+      "valor": 115.1145,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-10-01",
+      "valor": 119.5266,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-11-01",
+      "valor": 110.5503,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2012-12-01",
+      "valor": 115.5957,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-01-01",
+      "valor": 103.9007,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-02-01",
+      "valor": 65.5238,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-03-01",
+      "valor": 100.164,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-04-01",
+      "valor": 62.2522,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-05-01",
+      "valor": 169.8214,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-06-01",
+      "valor": 91.4713,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-07-01",
+      "valor": 75.1435,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-08-01",
+      "valor": 75.6632,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-09-01",
+      "valor": 85.6506,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-10-01",
+      "valor": 91.7744,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-11-01",
+      "valor": 84.1759,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2013-12-01",
+      "valor": 74.1972,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-01-01",
+      "valor": 101.5764,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-02-01",
+      "valor": 101.4485,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-03-01",
+      "valor": 116.3145,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-04-01",
+      "valor": 75.3655,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-05-01",
+      "valor": 83.2888,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-06-01",
+      "valor": 103.9346,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-07-01",
+      "valor": 51.9898,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-08-01",
+      "valor": 64.6475,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-09-01",
+      "valor": 75.0301,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-10-01",
+      "valor": 78.178,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-11-01",
+      "valor": 57.5012,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2014-12-01",
+      "valor": 50.2951,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-01-01",
+      "valor": 41.6145,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-02-01",
+      "valor": 50.1861,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-03-01",
+      "valor": 45.5733,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-04-01",
+      "valor": 29.1881,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-05-01",
+      "valor": 45.7464,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-06-01",
+      "valor": 40.533,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-07-01",
+      "valor": 26.4236,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-08-01",
+      "valor": 20.3575,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-09-01",
+      "valor": 24.2625,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-10-01",
+      "valor": 45.454,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-11-01",
+      "valor": 31.6626,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2015-12-01",
+      "valor": 34.9693,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-01-01",
+      "valor": 30.4245,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-02-01",
+      "valor": 25.9716,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-03-01",
+      "valor": 26.6354,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-04-01",
+      "valor": 35.5696,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-05-01",
+      "valor": 28.7388,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-06-01",
+      "valor": 32.4981,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-07-01",
+      "valor": 21.3003,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-08-01",
+      "valor": 22.199,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-09-01",
+      "valor": 35.0951,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-10-01",
+      "valor": 43.8611,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-11-01",
+      "valor": 44.2458,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2016-12-01",
+      "valor": 51.0728,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-01-01",
+      "valor": 45.5488,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-02-01",
+      "valor": 37.7015,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-03-01",
+      "valor": 36.714,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-04-01",
+      "valor": 28.701,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-05-01",
+      "valor": 32.9583,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-06-01",
+      "valor": 20.2506,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-07-01",
+      "valor": 22.9906,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-08-01",
+      "valor": 37.9093,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-09-01",
+      "valor": 37.7315,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-10-01",
+      "valor": 57.8778,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-11-01",
+      "valor": 62.6171,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2017-12-01",
+      "valor": 60.1775,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-01-01",
+      "valor": 80.9118,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-02-01",
+      "valor": 71.2866,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-03-01",
+      "valor": 70.1324,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-04-01",
+      "valor": 59.7606,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-05-01",
+      "valor": 54.2884,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-06-01",
+      "valor": 45.077,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-07-01",
+      "valor": 70.9096,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-08-01",
+      "valor": 41.2361,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-09-01",
+      "valor": 87.4159,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-10-01",
+      "valor": 80.041,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-11-01",
+      "valor": 97.8119,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2018-12-01",
+      "valor": 56.7627,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-01-01",
+      "valor": 64.7047,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-02-01",
+      "valor": 76.6291,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-03-01",
+      "valor": 78.2122,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-04-01",
+      "valor": 71.6852,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-05-01",
+      "valor": 73.8705,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-06-01",
+      "valor": 63.2264,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-07-01",
+      "valor": 71.8336,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-08-01",
+      "valor": 56.0002,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-09-01",
+      "valor": 69.137,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-10-01",
+      "valor": 81.5841,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-11-01",
+      "valor": 69.627,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-12-01",
+      "valor": 72.6569,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-01-01",
+      "valor": 68.9806,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-02-01",
+      "valor": 76.7077,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-03-01",
+      "valor": 55.8224,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-04-01",
+      "valor": 52.2268,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-05-01",
+      "valor": 47.0347,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-06-01",
+      "valor": 47.9187,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-07-01",
+      "valor": 59.83,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-08-01",
+      "valor": 40.7673,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-09-01",
+      "valor": 46.5167,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-10-01",
+      "valor": 42.6324,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-11-01",
+      "valor": 80.4834,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-12-01",
+      "valor": 73.6892,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-01-01",
+      "valor": 73.1553,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-02-01",
+      "valor": 58.9262,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-03-01",
+      "valor": 55.7801,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-04-01",
+      "valor": 42.4207,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-05-01",
+      "valor": 70.8814,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-06-01",
+      "valor": 73.2101,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-07-01",
+      "valor": 74.5828,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-08-01",
+      "valor": 119.2137,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-09-01",
+      "valor": 113.1576,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-10-01",
+      "valor": 114.5874,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-11-01",
+      "valor": 108.1976,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2021-12-01",
+      "valor": 101.5767,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-01-01",
+      "valor": 108.3697,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-02-01",
+      "valor": 146.7437,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-03-01",
+      "valor": 142.7415,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-04-01",
+      "valor": 144.4725,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-05-01",
+      "valor": 112.1534,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-06-01",
+      "valor": 154.5299,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-07-01",
+      "valor": 96.4689,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-08-01",
+      "valor": 145.9883,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-09-01",
+      "valor": 153.5259,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-10-01",
+      "valor": 167.9054,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-11-01",
+      "valor": 145.8192,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2022-12-01",
+      "valor": 148.7699,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-01-01",
+      "valor": 122.2174,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-02-01",
+      "valor": 144.1473,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-03-01",
+      "valor": 136.6757,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-04-01",
+      "valor": 119.8904,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-05-01",
+      "valor": 115.4413,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-06-01",
+      "valor": 94.8963,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-07-01",
+      "valor": 118.7432,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-08-01",
+      "valor": 139.0325,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-09-01",
+      "valor": 115.3857,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-10-01",
+      "valor": 152.8545,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-11-01",
+      "valor": 136.8765,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2023-12-01",
+      "valor": 142.929,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-01-01",
+      "valor": 139.4444,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-02-01",
+      "valor": 147.1867,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-03-01",
+      "valor": 169.0658,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-04-01",
+      "valor": 183.5241,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-05-01",
+      "valor": 177.4262,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-06-01",
+      "valor": 118.6079,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-07-01",
+      "valor": 164.0328,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-08-01",
+      "valor": 145.8828,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-09-01",
+      "valor": 150.1372,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-10-01",
+      "valor": 157.0668,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-11-01",
+      "valor": 128.0582,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2024-12-01",
+      "valor": 206.0661,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-01-01",
+      "valor": 176.559,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-02-01",
+      "valor": 169.2248,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-03-01",
+      "valor": 194.6007,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-04-01",
+      "valor": 162.247,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-05-01",
+      "valor": 126.8314,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-06-01",
+      "valor": 208.233,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-07-01",
+      "valor": 147.8041,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-08-01",
+      "valor": 205.3826,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-09-01",
+      "valor": 182.8434,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-10-01",
+      "valor": 173.554,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-11-01",
+      "valor": 197.8085,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-12-01",
+      "valor": 207.2077,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 180.9263,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-02-01",
+      "valor": 130.1588,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-03-01",
+      "valor": 239.685,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 301.6673,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 338.7094,
+      "realtime_start": "2026-06-29",
+      "realtime_end": "9999-12-31"
+    }
+  ]
+}

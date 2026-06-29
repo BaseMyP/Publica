@@ -406,5 +406,269 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/CCL_NOMINAL_NSA_D.json",
     "metodo_etl": "API_AMBITO"
+  },
+  {
+    "serie_id": "EXPO_NG_VALOR_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de valor - Nivel general",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_NG_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_NG_PRECIO_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de precios - Nivel general",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_NG_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_NG_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de cantidad - Nivel general",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_NG_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_PP_VALOR_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de valor - Productos primarios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_PP_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_PP_PRECIO_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de precios - Productos primarios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_PP_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_PP_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de cantidad - Productos primarios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_PP_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_MOA_VALOR_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de valor - MOA",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_MOA_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_MOA_PRECIO_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de precios - MOA",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_MOA_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_MOA_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de cantidad - MOA",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_MOA_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_MOI_VALOR_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de valor - MOI",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_MOI_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_MOI_PRECIO_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de precios - MOI",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_MOI_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_MOI_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de cantidad - MOI",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_MOI_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_CE_VALOR_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de valor - Combustibles y energía",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_CE_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_CE_PRECIO_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de precios - Combustibles y energía",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_CE_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "EXPO_CE_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Exportaciones - Índice de cantidad - Combustibles y energía",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/EXPO_CE_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_NG_VALOR_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de valor - Nivel general",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_NG_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_NG_PRECIO_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de precios - Nivel general",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_NG_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_NG_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de cantidad - Nivel general",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_NG_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_BK_VALOR_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de valor - Bienes de capital",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_BK_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_BK_PRECIO_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de precios - Bienes de capital",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_BK_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_BK_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de cantidad - Bienes de capital",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_BK_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_BI_VALOR_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de valor - Bienes intermedios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_BI_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_BI_PRECIO_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de precios - Bienes intermedios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_BI_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_BI_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de cantidad - Bienes intermedios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_BI_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_CL_VALOR_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de valor - Combustibles y lubricantes",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_CL_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_CL_PRECIO_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de precios - Combustibles y lubricantes",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_CL_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_CL_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de cantidad - Combustibles y lubricantes",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_CL_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_PA_VALOR_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de valor - Piezas y accesorios para bienes de capital",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_PA_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_PA_PRECIO_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de precios - Piezas y accesorios para bienes de capital",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_PA_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_PA_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de cantidad - Piezas y accesorios para bienes de capital",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_PA_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_BC_VALOR_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de valor - Bienes de consumo",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_BC_VALOR_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_BC_PRECIO_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de precios - Bienes de consumo",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_BC_PRECIO_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "IMPO_BC_CANTIDAD_INDICE_NSA_M",
+    "titulo": "Importaciones - Índice de cantidad - Bienes de consumo",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_BC_CANTIDAD_INDICE_NSA_M.json",
+    "metodo_etl": "EXCEL_WEB_INDEC"
   }
 ]
