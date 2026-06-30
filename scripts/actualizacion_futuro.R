@@ -106,7 +106,7 @@ for (i in 1:nrow(catalogo_rofex)) {
     
     nuevas_inserciones <- actualizadas %>%
       filter(status %in% c("NUEVO", "REVISADO")) %>%
-      select(fecha, valor = valor_nuevo, realtime_start) %>%
+      select(fecha, valor = valor_nuevo, realtime_start = realtime_start_nuevo) %>%
       mutate(realtime_end = "9999-12-31")
     
     obs_consolidadas <- bind_rows(obs_historicas, obs_vigentes_que_cambiaron, obs_vigentes_sin_cambio, nuevas_inserciones) %>% 
