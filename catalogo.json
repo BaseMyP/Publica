@@ -670,5 +670,37 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/IMPO_BC_CANTIDAD_INDICE_NSA_M.json",
     "metodo_etl": "EXCEL_WEB_INDEC"
+  },
+  {
+    "serie_id": "TASAFEDFUNDS5AÑOS_PORCENTAJE_NSA_M",
+    "titulo": "Market Yield on U.S. Treasury Securities at 5-Year Constant Maturity",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/TASAFEDFUNDS5AÑOS_PORCENTAJE_NSA_M.json",
+    "metodo_etl": "API_FRED"
+  },
+  {
+    "serie_id": "PIBUSA_REAL_SA_Q",
+    "titulo": "USA Real Gross Domestic Product",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/PIBUSA_REAL_SA_Q.json",
+    "metodo_etl": "API_FRED"
+  },
+  {
+    "serie_id": "PIBEURO_REAL_SA_Q",
+    "titulo": "PIB Real Zona Euro",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/PIBEURO_REAL_SA_Q.json",
+    "metodo_etl": "API_FRED"
+  },
+  {
+    "serie_id": "PIBBRASIL_REAL_SA_Q",
+    "titulo": "PIB Real Brasil",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/PIBBRASIL_REAL_SA_Q.json",
+    "metodo_etl": "API_FRED"
   }
 ]
