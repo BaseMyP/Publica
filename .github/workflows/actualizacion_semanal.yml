@@ -44,6 +44,7 @@ jobs:
         run: |
           Rscript scripts/actualizacion_ipmp.R
           Rscript scripts/actualizacion_expo_impo_indec.R
+          Rscript scripts/actualizacion_pashis.R
 
       - name: Configurar Git y Subir Cambios
         run: |
