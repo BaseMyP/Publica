@@ -52,9 +52,14 @@ for (serie_id in names(series_pashis)) {
     select(fecha = 1, valor = all_of(config$col_index)) %>%
     filter(!str_detect(fecha,"\\.13$")) %>% 
     mutate(
-      fecha = as.Date(paste0(str_sub(fecha,1,4),"-",str_sub(fecha,6,7),"-01")), # read_excel suele detectar las fechas numéricas de Excel automáticamente
+      # 1. Forzamos a que siempre tenga 2 decimales (ej: 1990.1 se vuelve "1990.10")
+      fecha_texto = sprintf("%.2f", as.numeric(fecha)), 
+      # 2. Ahora tu código original funcionará perfectamente
+      fecha = as.Date(paste0(str_sub(fecha_texto, 1, 4), "-", str_sub(fecha_texto, 6, 7), "-01")),
       valor = as.numeric(valor)
     ) %>%
+    # Eliminamos la columna auxiliar
+    select(-fecha_texto) %>% 
     filter(!is.na(fecha) & !is.na(valor)) %>%
     filter(valor>0) %>% 
     arrange(fecha) %>%
