@@ -790,5 +790,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/CTACTE_en_BCRA_NOMINAL_NSA_D.json",
     "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_NOMINAL_NSA_D",
+    "titulo": "Saldo de base monetaria (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_NOMINAL_NSA_D.json",
+    "metodo_etl": "API_BCRA"
   }
 ]
