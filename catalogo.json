@@ -758,5 +758,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TASA_PF3059_PRIV_NSA_M.json",
     "metodo_etl": "EXCEL_PASHIS"
+  },
+  {
+    "serie_id": "CIRC_PUBLICO_NOMINAL_NSA_D",
+    "titulo": "Saldo de billetes y monedas en poder del público (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/CIRC_PUBLICO_NOMINAL_NSA_D.json",
+    "metodo_etl": "API_BCRA"
   }
 ]
