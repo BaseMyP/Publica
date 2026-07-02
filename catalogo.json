@@ -766,5 +766,29 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/CIRC_PUBLICO_NOMINAL_NSA_D.json",
     "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "CIRC_ENTIDADES_NOMINAL_NSA_D",
+    "titulo": "Saldo de billetes y monedas en entidades financieras (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/CIRC_ENTIDADES_NOMINAL_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "CHEQUES_CANCELATORIOS_NOMINAL_NSA_D",
+    "titulo": "Saldo de cheques cancelatorios (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/CHEQUES_CANCELATORIOS_NOMINAL_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "CTACTE_en_BCRA_NOMINAL_NSA_D",
+    "titulo": "Saldo de cuentas corrientes en pesos en el BCRA (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/CTACTE_en_BCRA_NOMINAL_NSA_D.json",
+    "metodo_etl": "API_BCRA"
   }
 ]
