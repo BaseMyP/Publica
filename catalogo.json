@@ -750,5 +750,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_IMPORTACIONES_SA_T.json",
     "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "TASA_PF3059_PRIV_NSA_M",
+    "titulo": "Tasa de Interés Plazos Fijos a 30-59 días en bancos privados",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TASA_PF3059_PRIV_NSA_M.json",
+    "metodo_etl": "EXCEL_PASHIS"
   }
 ]
