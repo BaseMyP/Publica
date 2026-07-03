@@ -798,5 +798,213 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TASA_PF3059_PRIV_NSA_M.json",
     "metodo_etl": "EXCEL_PASHIS"
+  },
+  {
+    "serie_id": "CN_PIB_CONSTANTES_Q",
+    "titulo": "Producto Interno Bruto - Millones de pesos a precios de 2004",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_PIB_CONSTANTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_IMPORTACIONES_CONSTANTES_Q",
+    "titulo": "Importaciones FOB (bienes y servicios reales) - Millones de pesos a precios de 2004",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_IMPORTACIONES_CONSTANTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_OFERTA_GLOBAL_CONSTANTES_Q",
+    "titulo": "Oferta Global - Millones de pesos a precios de 2004",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_OFERTA_GLOBAL_CONSTANTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_DEMANDA_GLOBAL_CONSTANTES_Q",
+    "titulo": "Demanda Global - Millones de pesos a precios de 2004",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_DEMANDA_GLOBAL_CONSTANTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_CONSUMO_PRIVADO_CONSTANTES_Q",
+    "titulo": "Consumo privado (5) - Millones de pesos a precios de 2004",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_CONSUMO_PRIVADO_CONSTANTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_CONSUMO_PUBLICO_CONSTANTES_Q",
+    "titulo": "Consumo público (5) - Millones de pesos a precios de 2004",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_CONSUMO_PUBLICO_CONSTANTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_EXPORTACIONES_CONSTANTES_Q",
+    "titulo": "Exportaciones FOB (bienes y servicios reales) - Millones de pesos a precios de 2004",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_EXPORTACIONES_CONSTANTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_FBCF_CONSTANTES_Q",
+    "titulo": "Formación bruta de capital fijo - Millones de pesos a precios de 2004",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_FBCF_CONSTANTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_VARIACION_EXISTENCIAS_CONSTANTES_Q",
+    "titulo": "Variación de existencias (3) - Millones de pesos a precios de 2004",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_VARIACION_EXISTENCIAS_CONSTANTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_PIB_CORRIENTES_Q",
+    "titulo": "Producto Interno Bruto - Millones de pesos corrientes",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_PIB_CORRIENTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_IMPORTACIONES_CORRIENTES_Q",
+    "titulo": "Importaciones FOB (bienes y servicios reales) - Millones de pesos corrientes",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_IMPORTACIONES_CORRIENTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_OFERTA_GLOBAL_CORRIENTES_Q",
+    "titulo": "Oferta Global - Millones de pesos corrientes",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_OFERTA_GLOBAL_CORRIENTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_DEMANDA_GLOBAL_CORRIENTES_Q",
+    "titulo": "Demanda Global - Millones de pesos corrientes",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_DEMANDA_GLOBAL_CORRIENTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_CONSUMO_PRIVADO_CORRIENTES_Q",
+    "titulo": "Consumo privado (5) - Millones de pesos corrientes",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_CONSUMO_PRIVADO_CORRIENTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_CONSUMO_PUBLICO_CORRIENTES_Q",
+    "titulo": "Consumo público (5) - Millones de pesos corrientes",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_CONSUMO_PUBLICO_CORRIENTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_EXPORTACIONES_CORRIENTES_Q",
+    "titulo": "Exportaciones FOB (bienes y servicios reales) - Millones de pesos corrientes",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_EXPORTACIONES_CORRIENTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_FBCF_CORRIENTES_Q",
+    "titulo": "Formación bruta de capital fijo - Millones de pesos corrientes",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_FBCF_CORRIENTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_VARIACION_EXISTENCIAS_CORRIENTES_Q",
+    "titulo": "Variación de existencias (3) - Millones de pesos corrientes",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_VARIACION_EXISTENCIAS_CORRIENTES_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_PIB_PRECIOS_IMPLICITOS_Q",
+    "titulo": "Producto Interno Bruto - Índice de precios implícitos (Base 2004 = 100)",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_PIB_PRECIOS_IMPLICITOS_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_IMPORTACIONES_PRECIOS_IMPLICITOS_Q",
+    "titulo": "Importaciones FOB (bienes y servicios reales) - Índice de precios implícitos (Base 2004 = 100)",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_IMPORTACIONES_PRECIOS_IMPLICITOS_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_OFERTA_GLOBAL_PRECIOS_IMPLICITOS_Q",
+    "titulo": "Oferta Global - Índice de precios implícitos (Base 2004 = 100)",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_OFERTA_GLOBAL_PRECIOS_IMPLICITOS_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_DEMANDA_GLOBAL_PRECIOS_IMPLICITOS_Q",
+    "titulo": "Demanda Global - Índice de precios implícitos (Base 2004 = 100)",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_DEMANDA_GLOBAL_PRECIOS_IMPLICITOS_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_CONSUMO_PRIVADO_PRECIOS_IMPLICITOS_Q",
+    "titulo": "Consumo privado (5) - Índice de precios implícitos (Base 2004 = 100)",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_CONSUMO_PRIVADO_PRECIOS_IMPLICITOS_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_CONSUMO_PUBLICO_PRECIOS_IMPLICITOS_Q",
+    "titulo": "Consumo público (5) - Índice de precios implícitos (Base 2004 = 100)",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_CONSUMO_PUBLICO_PRECIOS_IMPLICITOS_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_EXPORTACIONES_PRECIOS_IMPLICITOS_Q",
+    "titulo": "Exportaciones FOB (bienes y servicios reales) - Índice de precios implícitos (Base 2004 = 100)",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_EXPORTACIONES_PRECIOS_IMPLICITOS_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CN_FBCF_PRECIOS_IMPLICITOS_Q",
+    "titulo": "Formación bruta de capital fijo - Índice de precios implícitos (Base 2004 = 100)",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_FBCF_PRECIOS_IMPLICITOS_Q.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
   }
 ]
