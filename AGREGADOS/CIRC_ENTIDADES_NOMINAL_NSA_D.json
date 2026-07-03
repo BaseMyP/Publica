@@ -14,11 +14,11 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 68,
-    "ultima_actualizacion": "2026-07-02",
+    "ultima_actualizacion": "2026-07-03T12:00:00Z",
     "fecha_inicio": "2003-01-02",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
-    "notas": null
+    "notas": {}
   },
   "observaciones": [
     {
@@ -34447,6 +34447,12 @@
       "fecha": "2026-05-29",
       "valor": 1904252,
       "realtime_start": "2026-07-02",
+      "realtime_end": "2026-07-03"
+    },
+    {
+      "fecha": "2026-05-29",
+      "valor": 1904358,
+      "realtime_start": "2026-07-03",
       "realtime_end": "9999-12-31"
     },
     {
@@ -34531,12 +34537,24 @@
       "fecha": "2026-06-19",
       "valor": 2151954,
       "realtime_start": "2026-07-02",
+      "realtime_end": "2026-07-03"
+    },
+    {
+      "fecha": "2026-06-19",
+      "valor": 2140682,
+      "realtime_start": "2026-07-03",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-06-22",
       "valor": 2070328,
       "realtime_start": "2026-07-02",
+      "realtime_end": "2026-07-03"
+    },
+    {
+      "fecha": "2026-06-22",
+      "valor": 2060109,
+      "realtime_start": "2026-07-03",
       "realtime_end": "9999-12-31"
     },
     {
@@ -34549,6 +34567,12 @@
       "fecha": "2026-06-24",
       "valor": 2027135,
       "realtime_start": "2026-07-02",
+      "realtime_end": "2026-07-03"
+    },
+    {
+      "fecha": "2026-06-24",
+      "valor": 2029947,
+      "realtime_start": "2026-07-03",
       "realtime_end": "9999-12-31"
     },
     {
@@ -34561,6 +34585,18 @@
       "fecha": "2026-06-26",
       "valor": 2110643,
       "realtime_start": "2026-07-02",
+      "realtime_end": "2026-07-03"
+    },
+    {
+      "fecha": "2026-06-26",
+      "valor": 2110649,
+      "realtime_start": "2026-07-03",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-06-29",
+      "valor": 2065691,
+      "realtime_start": "2026-07-03",
       "realtime_end": "9999-12-31"
     }
   ]

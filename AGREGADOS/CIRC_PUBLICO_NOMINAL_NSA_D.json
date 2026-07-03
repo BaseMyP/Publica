@@ -14,11 +14,11 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 67,
-    "ultima_actualizacion": "2026-07-02",
+    "ultima_actualizacion": "2026-07-03T12:00:00Z",
     "fecha_inicio": "2003-01-02",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
-    "notas": null
+    "notas": {}
   },
   "observaciones": [
     {
@@ -34447,6 +34447,12 @@
       "fecha": "2026-05-29",
       "valor": 23815048,
       "realtime_start": "2026-07-02",
+      "realtime_end": "2026-07-03"
+    },
+    {
+      "fecha": "2026-05-29",
+      "valor": 23814942,
+      "realtime_start": "2026-07-03",
       "realtime_end": "9999-12-31"
     },
     {
@@ -34531,12 +34537,24 @@
       "fecha": "2026-06-19",
       "valor": 24773617,
       "realtime_start": "2026-07-02",
+      "realtime_end": "2026-07-03"
+    },
+    {
+      "fecha": "2026-06-19",
+      "valor": 24784889,
+      "realtime_start": "2026-07-03",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-06-22",
       "valor": 24904457,
       "realtime_start": "2026-07-02",
+      "realtime_end": "2026-07-03"
+    },
+    {
+      "fecha": "2026-06-22",
+      "valor": 24914676,
+      "realtime_start": "2026-07-03",
       "realtime_end": "9999-12-31"
     },
     {
@@ -34549,6 +34567,12 @@
       "fecha": "2026-06-24",
       "valor": 25097246,
       "realtime_start": "2026-07-02",
+      "realtime_end": "2026-07-03"
+    },
+    {
+      "fecha": "2026-06-24",
+      "valor": 25094434,
+      "realtime_start": "2026-07-03",
       "realtime_end": "9999-12-31"
     },
     {
@@ -34561,6 +34585,18 @@
       "fecha": "2026-06-26",
       "valor": 25430169,
       "realtime_start": "2026-07-02",
+      "realtime_end": "2026-07-03"
+    },
+    {
+      "fecha": "2026-06-26",
+      "valor": 25430163,
+      "realtime_start": "2026-07-03",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-06-29",
+      "valor": 25698215,
+      "realtime_start": "2026-07-03",
       "realtime_end": "9999-12-31"
     }
   ]
