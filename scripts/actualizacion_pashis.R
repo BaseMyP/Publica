@@ -68,8 +68,10 @@ for (i in 1:nrow(catalogo_pashis)) {
     
     # Separar historia y vigencia
     obs_viejas <- base_actual$observaciones
-    obs_vigentes <- obs_viejas %>% filter(realtime_end == "9999-12-31")
-    obs_historicas <- obs_viejas %>% filter(realtime_end != "9999-12-31")
+    obs_vigentes <- obs_viejas %>% filter(realtime_end == "9999-12-31") %>% 
+      mutate(fecha=as.Date(fecha))
+    obs_historicas <- obs_viejas %>% filter(realtime_end != "9999-12-31") %>% 
+      mutate(fecha=as.Date(fecha))
     
     # Cruzar datos
     actualizadas <- nuevo_df %>%
