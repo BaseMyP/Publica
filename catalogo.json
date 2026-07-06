@@ -1006,5 +1006,69 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_FBCF_PRECIOS_IMPLICITOS_Q.json",
     "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "TC_y_TASAS_ITCRM_NSA_D",
+    "titulo": "Índice de Tipo de Cambio Real Multilateral (ITCRM)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TC_y_TASAS_ITCRM_NSA_D.json",
+    "metodo_etl": "EXCEL_ITCR"
+  },
+  {
+    "serie_id": "TC_y_TASAS_ITCRM_NSA_M",
+    "titulo": "Índice de Tipo de Cambio Real Multilateral (ITCRM) - Promedio Mensual",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TC_y_TASAS_ITCRM_NSA_M.json",
+    "metodo_etl": "EXCEL_ITCR"
+  },
+  {
+    "serie_id": "TC_y_TASAS_ITCRB_USA_NSA_D",
+    "titulo": "Índice de Tipo de Cambio Real Bilateral (ITCRB) con Estados Unidos",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TC_y_TASAS_ITCRB_USA_NSA_D.json",
+    "metodo_etl": "EXCEL_ITCR"
+  },
+  {
+    "serie_id": "TC_y_TASAS_ITCRB_USA_NSA_M",
+    "titulo": "Índice de Tipo de Cambio Real Bilateral (ITCRB) con Estados Unidos - Promedio Mensual",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TC_y_TASAS_ITCRB_USA_NSA_M.json",
+    "metodo_etl": "EXCEL_ITCR"
+  },
+  {
+    "serie_id": "TC_y_TASAS_ITCNM_NSA_D",
+    "titulo": "Índice de Tipo de Cambio Nominal Multilateral (ITCNM)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TC_y_TASAS_ITCNM_NSA_D.json",
+    "metodo_etl": "EXCEL_ITCR"
+  },
+  {
+    "serie_id": "TC_y_TASAS_ITCNM_NSA_M",
+    "titulo": "Índice de Tipo de Cambio Nominal Multilateral (ITCNM) - Promedio Mensual",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TC_y_TASAS_ITCNM_NSA_M.json",
+    "metodo_etl": "EXCEL_ITCR"
+  },
+  {
+    "serie_id": "TC_y_TASAS_ITCNB_USA_NSA_D",
+    "titulo": "Índice de Tipo de Cambio Nominal Bilateral (ITCNB) con Estados Unidos",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TC_y_TASAS_ITCNB_USA_NSA_D.json",
+    "metodo_etl": "EXCEL_ITCR"
+  },
+  {
+    "serie_id": "TC_y_TASAS_ITCNB_USA_NSA_M",
+    "titulo": "Índice de Tipo de Cambio Nominal Bilateral (ITCNB) con Estados Unidos - Promedio Mensual",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TC_y_TASAS_ITCNB_USA_NSA_M.json",
+    "metodo_etl": "EXCEL_ITCR"
   }
 ]
