@@ -7,6 +7,7 @@ library(readxl)
 library(dplyr)
 library(jsonlite)
 library(lubridate)
+library(stringr)
 source("scripts/funciones_base.R")
 
 message("Iniciando actualización semanal de pashis.xls: ", Sys.time())
