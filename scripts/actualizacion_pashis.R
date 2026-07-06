@@ -51,7 +51,7 @@ for (i in 1:nrow(catalogo_pashis)) {
     
     # Extraemos la fecha (col 1) y la columna objetivo
     nuevo_df <- df_raw %>%
-      select(fecha = 1, valor = all_of(config$col_index)) %>%
+      select(fecha = 1, valor = all_of(col_index)) %>%
       filter(!str_detect(fecha,"\\.13$")) %>% 
       mutate(
         # 1. Forzamos a que siempre tenga 2 decimales (ej: 1990.1 se vuelve "1990.10")
