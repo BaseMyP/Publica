@@ -1008,6 +1008,14 @@
     "metodo_etl": "EXCEL_CARPETA_INPUTS"
   },
   {
+    "serie_id": "BOPREALyOTROS_NOMINALUSD_NSA_D",
+    "titulo": "Saldo de LEBAC en dólares, LEDIV y BOPREAL  (en millones de USD)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/BOPREALyOTROS_NOMINALUSD_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
     "serie_id": "TC_y_TASAS_ITCRM_NSA_D",
     "titulo": "Índice de Tipo de Cambio Real Multilateral (ITCRM)",
     "frecuencia": "D",
@@ -1070,13 +1078,5 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TC_y_TASAS_ITCNB_USA_NSA_M.json",
     "metodo_etl": "EXCEL_ITCR"
-  },
-  {
-    "serie_id": "BOPREALyOTROS_NOMINALUSD_NSA_D",
-    "titulo": "Saldo de LEBAC en dólares, LEDIV y BOPREAL  (en millones de USD)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/BOPREALyOTROS_NOMINALUSD_NSA_D.json",
-    "metodo_etl": "API_BCRA"
   }
 ]
