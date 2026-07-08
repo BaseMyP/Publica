@@ -59,7 +59,9 @@ for (serie_id in names(config_itcr)) {
   nuevo_df$fecha <- suppressWarnings(as.Date(as.numeric(nuevo_df$fecha_cruda), origin = "1899-12-30"))
   idx_na <- is.na(nuevo_df$fecha)
   if(any(idx_na)) nuevo_df$fecha[idx_na] <- as.Date(nuevo_df$fecha_cruda[idx_na])
-  nuevo_df$fecha <- floor_date(nuevo_df$fecha,"months")
+  if(substr(serie_id, nchar(serie_id), nchar(serie_id))=="M") {
+    nuevo_df$fecha <- floor_date(nuevo_df$fecha,"months")
+  }
   
   df_serie <- nuevo_df %>%
     filter(!is.na(fecha)) %>%
