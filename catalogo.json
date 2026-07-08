@@ -1086,5 +1086,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/PASIVOS_OOIIyOTROS_NSA_M.json",
     "metodo_etl": "EXCEL_BALBCRHIS"
+  },
+  {
+    "serie_id": "DEUDA_MULTyBIL_USD_NSA_M",
+    "titulo": "Deuda Pública en USD con OOII, Club de París y Bilaterales",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/DEUDA_PUBLICA/DEUDA_MULTyBIL_USD_NSA_M.json",
+    "metodo_etl": "EXCEL_BOLMENFINANZAS"
   }
 ]
