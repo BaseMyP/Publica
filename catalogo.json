@@ -1078,5 +1078,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/TC_y_TASAS_ITCNB_USA_NSA_M.json",
     "metodo_etl": "EXCEL_ITCR"
+  },
+  {
+    "serie_id": "PASIVOS_OOIIyOTROS_NSA_M",
+    "titulo": "Obligaciones con OOII y Otros (Swaps)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/PASIVOS_OOIIyOTROS_NSA_M.json",
+    "metodo_etl": "EXCEL_BALBCRHIS"
   }
 ]
