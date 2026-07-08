@@ -46,6 +46,7 @@ jobs:
           Rscript scripts/actualizacion_expo_impo_indec.R
           Rscript scripts/actualizacion_pashis.R
           Rscript scripts/actualizacion_itcrm.R
+          Rscript scripts/actualizacion_balbcrhis.R
 
       - name: Configurar Git y Subir Cambios
         run: |
