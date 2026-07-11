@@ -1,4 +1,4 @@
-name: Actualizacion Semanal (IPMP)
+name: Actualizacion Semanal Publica
 
 # Ejecución todos los sábados a las 08:00 hs ARG (11:00 UTC)
 on:
@@ -39,6 +39,7 @@ jobs:
             any::lubridate
             any::stringr
             any::zoo
+            any::rvest
 
       - name: Ejecutar Extracción IPMP
         run: |
