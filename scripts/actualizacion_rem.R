@@ -12,7 +12,7 @@ source("scripts/funciones_base.R")
 message("Iniciando revisión de actualización del REM: ", Sys.time())
 
 # 1. Definir rutas
-ruta_input <- "inputs/rem_nuevo.xlsx"
+ruta_input <- "inputs/historico-relevamiento-expectativas-mercado.xlsx"
 ruta_historico <- "inputs/historicos/"
 
 if (!dir.exists(ruta_historico)) dir.create(ruta_historico, recursive = TRUE)
@@ -133,20 +133,20 @@ for (id in series_a_actualizar) {
   }
 }
 
-# 7. Sincronización con GitHub
-message("\nIniciando sincronización con el repositorio remoto...")
-tryCatch({
-  system("git add .")
-  mensaje_commit <- paste0("Update mensual REM publicado el: ", Sys.Date())
-  system(sprintf('git commit -m "%s"', mensaje_commit))
-  system("git push")
-  message("✓ Rutina del REM completada con éxito. Base actualizada en la nube.")
-  
-  # Archivar archivo
-  nuevo_nombre <- paste0(ruta_historico, "rem_procesado_", format(Sys.Date(), "%Y%m%d"), ".xlsx")
-  file.rename(from = ruta_input, to = nuevo_nombre)
-  message("✓ Archivo crudo movido al historial.")
-  
-}, error = function(e) {
-  warning("Hubo un problema al intentar subir los cambios a GitHub: ", e$message)
-})
+# # 7. Sincronización con GitHub
+# message("\nIniciando sincronización con el repositorio remoto...")
+# tryCatch({
+#   system("git add .")
+#   mensaje_commit <- paste0("Update mensual REM publicado el: ", Sys.Date())
+#   system(sprintf('git commit -m "%s"', mensaje_commit))
+#   system("git push")
+#   message("✓ Rutina del REM completada con éxito. Base actualizada en la nube.")
+#   
+#   # Archivar archivo
+#   nuevo_nombre <- paste0(ruta_historico, "rem_procesado_", format(Sys.Date(), "%Y%m%d"), ".xlsx")
+#   file.rename(from = ruta_input, to = nuevo_nombre)
+#   message("✓ Archivo crudo movido al historial.")
+#   
+# }, error = function(e) {
+#   warning("Hubo un problema al intentar subir los cambios a GitHub: ", e$message)
+# })
