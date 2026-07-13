@@ -150,3 +150,5 @@ for (id in series_a_actualizar) {
 # }, error = function(e) {
 #   warning("Hubo un problema al intentar subir los cambios a GitHub: ", e$message)
 # })
+
+file.remove(ruta_input)
