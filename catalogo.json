@@ -1093,8 +1093,22 @@
     "frecuencia": "M",
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/DEUDA_PUBLICA/DEUDA_MULTyBIL_USD_NSA_M.json",
-    "metodo_etl": "EXCEL_BOLMENFINANZAS",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/BOPREALyOTROS_NOMINALUSD_NSA_D.json",
-    "metodo_etl": "API_BCRA"
+    "metodo_etl": "EXCEL_BOLMENFINANZAS"
+  },
+  {
+    "serie_id": "SALARIOS_PRIV_NOMINAL_NSA_M",
+    "titulo": "Remuneración promedio por todo concepto de los trabajadores registrados del sector privado en pesos - Serie Original",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/LABORAL/SALARIOS_PRIV_NOMINAL_NSA_M.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "SALARIOS_PRIV_NOMINAL_SA_M",
+    "titulo": "Remuneración promedio normal y permanente de los trabajadores registrados del sector privado en pesos - Serie Desestacionalizada",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/LABORAL/SALARIOS_PRIV_NOMINAL_SA_M.json",
+    "metodo_etl": "EXCEL_CARPETA_INPUTS"
   }
 ]
