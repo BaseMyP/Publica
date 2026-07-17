@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 71,
-    "ultima_actualizacion": "2026-07-16T12:00:00Z",
+    "ultima_actualizacion": "2026-07-17T12:00:00Z",
     "fecha_inicio": "2003-01-02",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
@@ -34609,6 +34609,12 @@
       "fecha": "2026-07-08",
       "valor": 45827619,
       "realtime_start": "2026-07-16",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-13",
+      "valor": 46817025,
+      "realtime_start": "2026-07-17",
       "realtime_end": "9999-12-31"
     }
   ]
