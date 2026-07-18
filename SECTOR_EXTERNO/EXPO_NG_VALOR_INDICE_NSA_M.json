@@ -13,7 +13,7 @@
     "fuente": "INDEC",
     "fuente_original": "INDEC",
     "fuente_formato": "Excel",
-    "ultima_actualizacion": "2026-07-17T12:00:00Z",
+    "ultima_actualizacion": "2026-07-18T12:00:00Z",
     "fecha_inicio": "2004-01-01",
     "url_original": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_mensual_indices_expo.xls",
     "revisable": true,
@@ -1350,6 +1350,12 @@
       "fecha": "2022-02-01",
       "valor": 226.2067,
       "realtime_start": "2026-07-17",
+      "realtime_end": "2026-07-18"
+    },
+    {
+      "fecha": "2022-02-01",
+      "valor": 226.2067,
+      "realtime_start": "2026-07-18",
       "realtime_end": "9999-12-31"
     },
     {
