@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 67,
-    "ultima_actualizacion": "2026-07-21T12:00:00Z",
+    "ultima_actualizacion": "2026-07-22T12:00:00Z",
     "fecha_inicio": "2003-01-02",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
@@ -34807,6 +34807,12 @@
       "fecha": "2026-07-06",
       "valor": 26209460,
       "realtime_start": "2026-07-17",
+      "realtime_end": "2026-07-22"
+    },
+    {
+      "fecha": "2026-07-06",
+      "valor": 26234422,
+      "realtime_start": "2026-07-22",
       "realtime_end": "9999-12-31"
     },
     {
@@ -34843,6 +34849,12 @@
       "fecha": "2026-07-08",
       "valor": 26398241,
       "realtime_start": "2026-07-21",
+      "realtime_end": "2026-07-22"
+    },
+    {
+      "fecha": "2026-07-08",
+      "valor": 26398242,
+      "realtime_start": "2026-07-22",
       "realtime_end": "9999-12-31"
     },
     {
@@ -34855,18 +34867,42 @@
       "fecha": "2026-07-13",
       "valor": 26480195,
       "realtime_start": "2026-07-18",
+      "realtime_end": "2026-07-22"
+    },
+    {
+      "fecha": "2026-07-13",
+      "valor": 26471556,
+      "realtime_start": "2026-07-22",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-07-14",
       "valor": 26360224,
       "realtime_start": "2026-07-18",
+      "realtime_end": "2026-07-22"
+    },
+    {
+      "fecha": "2026-07-14",
+      "valor": 26360225,
+      "realtime_start": "2026-07-22",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-07-15",
       "valor": 26326548,
       "realtime_start": "2026-07-21",
+      "realtime_end": "2026-07-22"
+    },
+    {
+      "fecha": "2026-07-15",
+      "valor": 26326550,
+      "realtime_start": "2026-07-22",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-16",
+      "valor": 26352196,
+      "realtime_start": "2026-07-22",
       "realtime_end": "9999-12-31"
     }
   ]
