@@ -14,7 +14,7 @@
     "fuente_original": "INDEC",
     "fuente_formato": "API_Argentina",
     "id_original": "143.3_NO_PR_2004_A_21",
-    "ultima_actualizacion": "2026-07-23T12:00:00Z",
+    "ultima_actualizacion": "2026-07-24T12:00:00Z",
     "fecha_inicio": "2004-01-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=143.3_NO_PR_2004_A_21",
     "revisable": true,
@@ -1831,6 +1831,12 @@
       "fecha": "2026-01-01",
       "valor": 149.4737,
       "realtime_start": "2026-06-30",
+      "realtime_end": "2026-07-24"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 149.4298,
+      "realtime_start": "2026-07-24",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1843,6 +1849,12 @@
       "fecha": "2026-02-01",
       "valor": 139.2819,
       "realtime_start": "2026-06-30",
+      "realtime_end": "2026-07-24"
+    },
+    {
+      "fecha": "2026-02-01",
+      "valor": 139.3116,
+      "realtime_start": "2026-07-24",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1855,12 +1867,30 @@
       "fecha": "2026-03-01",
       "valor": 159.9627,
       "realtime_start": "2026-06-30",
+      "realtime_end": "2026-07-24"
+    },
+    {
+      "fecha": "2026-03-01",
+      "valor": 159.9769,
+      "realtime_start": "2026-07-24",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-04-01",
       "valor": 161.5389,
       "realtime_start": "2026-06-30",
+      "realtime_end": "2026-07-24"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 161.6072,
+      "realtime_start": "2026-07-24",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 165.4714,
+      "realtime_start": "2026-07-24",
       "realtime_end": "9999-12-31"
     }
   ]
