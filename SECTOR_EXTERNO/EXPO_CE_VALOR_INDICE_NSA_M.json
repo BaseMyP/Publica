@@ -13,7 +13,7 @@
     "fuente": "INDEC",
     "fuente_original": "INDEC",
     "fuente_formato": "Excel",
-    "ultima_actualizacion": "2026-07-18T12:00:00Z",
+    "ultima_actualizacion": "2026-07-25T12:00:00Z",
     "fecha_inicio": "2004-01-01",
     "url_original": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_mensual_indices_expo.xls",
     "revisable": true,
@@ -1632,6 +1632,12 @@
       "fecha": "2025-12-01",
       "valor": 207.2077,
       "realtime_start": "2026-07-18",
+      "realtime_end": "2026-07-25"
+    },
+    {
+      "fecha": "2025-12-01",
+      "valor": 207.2077,
+      "realtime_start": "2026-07-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1650,18 +1656,42 @@
       "fecha": "2026-03-01",
       "valor": 239.685,
       "realtime_start": "2026-06-29",
+      "realtime_end": "2026-07-25"
+    },
+    {
+      "fecha": "2026-03-01",
+      "valor": 245.6538,
+      "realtime_start": "2026-07-25",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-04-01",
       "valor": 301.6673,
       "realtime_start": "2026-06-29",
+      "realtime_end": "2026-07-25"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 304.7194,
+      "realtime_start": "2026-07-25",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-05-01",
       "valor": 338.7094,
       "realtime_start": "2026-06-29",
+      "realtime_end": "2026-07-25"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 344.6886,
+      "realtime_start": "2026-07-25",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-06-01",
+      "valor": 272.9602,
+      "realtime_start": "2026-07-25",
       "realtime_end": "9999-12-31"
     }
   ]
