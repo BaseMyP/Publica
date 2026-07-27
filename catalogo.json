@@ -1110,5 +1110,21 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/LABORAL/SALARIOS_PRIV_NOMINAL_SA_M.json",
     "metodo_etl": "EXCEL_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "MERVAL_FINMES_NSA_M",
+    "titulo": "Índice S&P MERVAL - Cierre Fin de Mes",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FINANZAS/MERVAL_FINMES_NSA_M.json",
+    "metodo_etl": "CSV_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "MERVAL_PROMEDIO_NSA_M",
+    "titulo": "Índice S&P MERVAL - Promedio Mensual",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FINANZAS/MERVAL_PROMEDIO_NSA_M.json",
+    "metodo_etl": "CSV_CARPETA_INPUTS"
   }
 ]

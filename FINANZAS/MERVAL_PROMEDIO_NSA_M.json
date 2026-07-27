@@ -1,0 +1,103 @@
+{
+  "metadatos": {
+    "titulo": "Índice S&P MERVAL - Promedio Mensual",
+    "descripcion": "Índice S&P MERVAL promedio de las cotizaciones de cierre diarias del mes.",
+    "pais": "ARG",
+    "categoria": "FINANZAS",
+    "frecuencia_short": "M",
+    "frecuencia_long": "mensual",
+    "frecuencia_original": "diaria",
+    "unidades": "Puntos",
+    "ajuste": "NSA",
+    "tipo_informacion": "Pública",
+    "fuente": "CSV publicado por RAVA",
+    "fuente_original": "Bolsas y Mercados Argentinos (BYMA)",
+    "fuente_formato": "CSV",
+    "id_original": "MERVAL",
+    "ultima_actualizacion": "2026-07-27 12:04:38",
+    "fecha_inicio": "2025-07-01",
+    "url_original": "https://www.rava.com/perfil/MERVAL",
+    "revisable": false,
+    "notas": "Promedio simple mensual de los valores diarios de cierre."
+  },
+  "observaciones": [
+    {
+      "fecha": "2025-07-01",
+      "valor": 2255442.5,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-08-01",
+      "valor": 2184489.0476,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-09-01",
+      "valor": 1817467.7273,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-10-01",
+      "valor": 2097772.6087,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-11-01",
+      "valor": 2946615.5,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2025-12-01",
+      "valor": 3068372.8571,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 3072808.1818,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-02-01",
+      "valor": 2881680,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-03-01",
+      "valor": 2712000.9091,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 2931875.9091,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 2852922.8571,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-06-01",
+      "valor": 3216567.7273,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 3243254.4444,
+      "realtime_start": "2026-07-27",
+      "realtime_end": "9999-12-31"
+    }
+  ]
+}
