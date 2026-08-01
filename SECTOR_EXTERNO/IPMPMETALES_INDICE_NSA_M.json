@@ -16,7 +16,7 @@
     "titulo": "IPMP - Metales",
     "descripcion": "Índice de Precios de las Materias Primas. Metales.",
     "id_original": "IPMPMETALES",
-    "ultima_actualizacion": "2026-07-25T12:00:00Z"
+    "ultima_actualizacion": "2026-08-01T12:00:00Z"
   },
   "observaciones": [
     {
@@ -2135,6 +2135,18 @@
       "fecha": "2026-05-31",
       "valor": 826.7635,
       "realtime_start": "2026-06-24",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-06-30",
+      "valor": 770.2758,
+      "realtime_start": "2026-08-01",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-31",
+      "valor": 732.6313,
+      "realtime_start": "2026-08-01",
       "realtime_end": "9999-12-31"
     }
   ]

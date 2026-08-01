@@ -16,7 +16,7 @@
     "titulo": "IPMP - Petróleo Crudo",
     "descripcion": "Índice de Precios de las Materias Primas. Petróleo Crudo.",
     "id_original": "IPMPPETROLEO",
-    "ultima_actualizacion": "2026-07-25T12:00:00Z"
+    "ultima_actualizacion": "2026-08-01T12:00:00Z"
   },
   "observaciones": [
     {
@@ -2135,6 +2135,18 @@
       "fecha": "2026-05-31",
       "valor": 562.8639,
       "realtime_start": "2026-06-24",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-06-30",
+      "valor": 445.5685,
+      "realtime_start": "2026-08-01",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-31",
+      "valor": 428.4378,
+      "realtime_start": "2026-08-01",
       "realtime_end": "9999-12-31"
     }
   ]
