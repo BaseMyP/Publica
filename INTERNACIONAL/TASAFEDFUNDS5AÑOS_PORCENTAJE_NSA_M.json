@@ -15,7 +15,7 @@
     "fuente_original": "Board of Governors of the Federal Reserve System (US)",
     "fuente_formato": "API",
     "id_original": "GS5",
-    "ultima_actualizacion": "2026-08-01T12:00:00Z",
+    "ultima_actualizacion": "2026-08-04T12:00:00Z",
     "fecha_inicio": "1953-04-01",
     "url_original": "https://fred.stlouisfed.org/series/GS5",
     "revisable": true,
@@ -5294,6 +5294,12 @@
       "fecha": "2026-06-01",
       "valor": 4.21,
       "realtime_start": "2026-07-02",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 4.33,
+      "realtime_start": "2026-08-04",
       "realtime_end": "9999-12-31"
     }
   ]
