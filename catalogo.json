@@ -1150,5 +1150,77 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/BADLAR_BancosPRIVADOS_TNA_NSA_D.json",
     "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "EURO_PESOSporEURO_NSA_D",
+    "titulo": "Tipo de Cambio Pesos/Euro",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/EURO_PESOSporEURO_NSA_D.json",
+    "metodo_etl": "API_BCRA_Cambiarias"
+  },
+  {
+    "serie_id": "DOLAR_AUSTRALIA_PESOSporAUD_NSA_D",
+    "titulo": "Tipo de Cambio Pesos/DOLAR AUSTRALIA",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/DOLAR_AUSTRALIA_PESOSporAUD_NSA_D.json",
+    "metodo_etl": "API_BCRA_Cambiarias"
+  },
+  {
+    "serie_id": "YENS_PESOSporYENS_NSA_D",
+    "titulo": "Tipo de Cambio Pesos/YENS",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/YENS_PESOSporYENS_NSA_D.json",
+    "metodo_etl": "API_BCRA_Cambiarias"
+  },
+  {
+    "serie_id": "LIBRA_ESTERLINA_PESOSporGBP_NSA_D",
+    "titulo": "Tipo de Cambio Pesos/LIBRA ESTERLINA",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/LIBRA_ESTERLINA_PESOSporGBP_NSA_D.json",
+    "metodo_etl": "API_BCRA_Cambiarias"
+  },
+  {
+    "serie_id": "CORONAS_SUECAS_PESOSporSEK_NSA_D",
+    "titulo": "Tipo de Cambio Pesos/CORONAS SUECAS",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/CORONAS_SUECAS_PESOSporSEK_NSA_D.json",
+    "metodo_etl": "API_BCRA_Cambiarias"
+  },
+  {
+    "serie_id": "DOLAR_CANADIENSE_PESOSporCAD_NSA_D",
+    "titulo": "Tipo de Cambio Pesos/DOLAR CANADIENSE",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/DOLAR_CANADIENSE_PESOSporCAD_NSA_D.json",
+    "metodo_etl": "API_BCRA_Cambiarias"
+  },
+  {
+    "serie_id": "CORONAS_DANESAS_PESOSporDKK_NSA_D",
+    "titulo": "Tipo de Cambio Pesos/CORONAS DANESAS",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/CORONAS_DANESAS_PESOSporDKK_NSA_D.json",
+    "metodo_etl": "API_BCRA_Cambiarias"
+  },
+  {
+    "serie_id": "FRANCO_SUIZO_PESOSporCHF_NSA_D",
+    "titulo": "Tipo de Cambio Pesos/FRANCO SUIZO",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/FRANCO_SUIZO_PESOSporCHF_NSA_D.json",
+    "metodo_etl": "API_BCRA_Cambiarias"
+  },
+  {
+    "serie_id": "DEG_PESOSporDEG_NSA_D",
+    "titulo": "Tipo de Cambio Pesos/DEG",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/DEG_PESOSporDEG_NSA_D.json",
+    "metodo_etl": "API_BCRA_Cambiarias"
   }
 ]
