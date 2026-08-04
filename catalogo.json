@@ -1134,5 +1134,21 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/CER_INDICE_NSA_D.json",
     "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "TAMAR_BancosPRIVADOS_TNA_NSA_D",
+    "titulo": "TAMAR de bancos privados,TNA",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/TAMAR_BancosPRIVADOS_TNA_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BADLAR_BancosPRIVADOS_TNA_NSA_D",
+    "titulo": "BADLAR de bancos privados,TNA",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/BADLAR_BancosPRIVADOS_TNA_NSA_D.json",
+    "metodo_etl": "API_BCRA"
   }
 ]
