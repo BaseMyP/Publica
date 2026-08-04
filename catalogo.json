@@ -1126,5 +1126,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FINANZAS/MERVAL_PROMEDIO_NSA_M.json",
     "metodo_etl": "CSV_CARPETA_INPUTS"
+  },
+  {
+    "serie_id": "CER_INDICE_NSA_D",
+    "titulo": "CER - Coeficiente de estabilización de referencia",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRECIOS/CER_INDICE_NSA_D.json",
+    "metodo_etl": "API_BCRA"
   }
 ]
