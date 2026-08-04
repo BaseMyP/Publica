@@ -1222,5 +1222,21 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_Tasas/DEG_PESOSporDEG_NSA_D.json",
     "metodo_etl": "API_BCRA_Cambiarias"
+  },
+  {
+    "serie_id": "DepGobPesosBCRA_NSA_M",
+    "titulo": "Depósitos del Gobierno en Pesos depositados en el BCRA",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/DepGobPesosBCRA_NSA_M.json",
+    "metodo_etl": "EXCEL_diar_bas"
+  },
+  {
+    "serie_id": "DepGobUsdBCRA_NSA_M",
+    "titulo": "Depósitos del Gobierno en USD depositados en el BCRA, valuados en pesos",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/DepGobUsdBCRA_NSA_M.json",
+    "metodo_etl": "EXCEL_diar_bas"
   }
 ]
