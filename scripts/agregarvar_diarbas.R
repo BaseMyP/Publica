@@ -25,13 +25,13 @@ tryCatch({
 # 2. Configurar las series a extraer
 # Aquí puedes agregar más variables en el futuro simplemente copiando el bloque
 series_diar_bas <- list(
-  DepGobPesosBCRA_NSA_M = list( # <-- Cambia este ID por el nombre definitivo que quieras darle
+  DepGobPesosBCRA_NSA_D = list( # <-- Cambia este ID por el nombre definitivo que quieras darle
     col_index = 32,               # Columna F es la 6ta columna
     titulo = "Depósitos del Gobierno en Pesos depositados en el BCRA",
     descripcion = "Depósitos del Gobierno en Pesos depositados en el BCRA. Cuentas 2020 y 2021",
     unidades = "Millones de Pesos"           # Ajustar unidad si corresponde
   ),
-  DepGobUsdBCRA_NSA_M = list( # <-- Cambia este ID por el nombre definitivo que quieras darle
+  DepGobUsdBCRA_NSA_D = list( # <-- Cambia este ID por el nombre definitivo que quieras darle
     col_index = 33,               # Columna F es la 6ta columna
     titulo = "Depósitos del Gobierno en USD depositados en el BCRA, valuados en pesos",
     descripcion = "Depósitos del Gobierno en USD depositados en el BCRA, valuados en pesos",
