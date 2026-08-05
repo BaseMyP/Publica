@@ -72,6 +72,12 @@ for (i in 1:nrow(catalogo_ccl)) {
   if (file.exists(path_archivo)) {
     base_actual <- fromJSON(path_archivo)
     obs_viejas <- base_actual$observaciones
+    obs_viejas <- obs_viejas %>% filter(realtime_end=="9999-12-31") %>% distinct() %>% 
+      group_by(fecha) %>% 
+      summarise(valor=mean(valor), 
+                realtime_start=max(realtime_start),
+                realtime_end="9999-12-31") %>% 
+      ungroup()
     
     obs_vigentes <- obs_viejas %>% filter(realtime_end == "9999-12-31")
     obs_historicas <- obs_viejas %>% filter(realtime_end != "9999-12-31")
