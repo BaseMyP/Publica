@@ -16,7 +16,7 @@
     "titulo": "IPMP - Productos Agropecuarios",
     "descripcion": "Índice de Precios de las Materias Primas. Productos Agropecuarios.",
     "id_original": "IPMPAGRO",
-    "ultima_actualizacion": "2026-08-01T12:00:00Z"
+    "ultima_actualizacion": "2026-08-08T12:00:00Z"
   },
   "observaciones": [
     {
@@ -2147,6 +2147,12 @@
       "fecha": "2026-07-31",
       "valor": 239.9707,
       "realtime_start": "2026-08-01",
+      "realtime_end": "2026-08-08"
+    },
+    {
+      "fecha": "2026-07-31",
+      "valor": 239.8935,
+      "realtime_start": "2026-08-08",
       "realtime_end": "9999-12-31"
     }
   ]
