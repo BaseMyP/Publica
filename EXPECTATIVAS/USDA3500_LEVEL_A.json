@@ -13,7 +13,7 @@
     "fuente": "BCRA",
     "fuente_original": "BCRA",
     "fuente_formato": "EXCEL",
-    "ultima_actualizacion": "2026-07-13T12:00:00Z",
+    "ultima_actualizacion": "2026-08-10T12:00:00Z",
     "fecha_inicio": "2016-06-30",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/historico-relevamiento-expectativas-mercado.xlsx",
     "revisable": true,
@@ -1440,6 +1440,12 @@
       "fecha": "2026-01-01",
       "valor": 1672.5,
       "realtime_start": "2026-06-30",
+      "realtime_end": "2026-07-30"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 1651.7928,
+      "realtime_start": "2026-07-31",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1482,6 +1488,12 @@
       "fecha": "2027-01-01",
       "valor": 2018.2525,
       "realtime_start": "2026-06-30",
+      "realtime_end": "2026-07-30"
+    },
+    {
+      "fecha": "2027-01-01",
+      "valor": 2018.25,
+      "realtime_start": "2026-07-31",
       "realtime_end": "9999-12-31"
     }
   ]
