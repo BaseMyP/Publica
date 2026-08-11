@@ -4,7 +4,7 @@ library(lubridate)
 library(dplyr)
 library(jsonlite)
 
-rem <- read_excel("historico-relevamiento-expectativas-mercado.xlsx",
+rem <- read_excel("inputs/historico-relevamiento-expectativas-mercado.xlsx",
                   sheet = "Base de Datos Completa",skip = 1) %>% 
   mutate(Referencia = str_remove_all(Referencia,"; [a-z]{3}-[0-9]{2}$")) %>% 
   mutate(Referencia = str_remove_all(Referencia,"; Trim\\. [A-Z]{1,2}-[0-9]{2}$")) %>% 
@@ -150,7 +150,7 @@ for (id in series_unicas) {
       realtime_end
     ) %>%
     mutate(
-      fecha = as.character(fecha),
+      fecha = as.character(floor_date(fecha,"months")),
       realtime_start = as.character(realtime_start),
       realtime_end = as.character(realtime_end)
     ) %>%
