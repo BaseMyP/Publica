@@ -74,13 +74,16 @@ rem_limpio <- rem %>%
       
       TRUE ~ NA_character_
     )
-  ) %>%
+  ) %>% 
   # Construimos el nombre final de la serie
   #mutate(serie_id = paste("EXPECTATIVAS", var_code, ref_code, frecuencia, sep = "_")) %>%
   mutate(serie_id = paste(var_code, ref_code, frecuencia, sep = "_")) %>%
   
   # Filtramos posibles NAs residuales antes de armar el Vintage
   filter(!is.na(fecha_target) & !is.na(serie_id)) %>%
+  mutate(fecha_target=as.Date(ifelse(frecuencia=="A",
+                             ceiling_date(fecha_target,"year")-days(1),fecha_target))) %>% 
+  mutate(fecha_target=floor_date(fecha_target,"months")) %>% 
   
   # Lógica de ALFRED:
   group_by(serie_id, fecha_target) %>%
@@ -150,12 +153,13 @@ for (id in series_unicas) {
       realtime_end
     ) %>%
     mutate(
-      fecha = as.character(floor_date(fecha,"months")),
+      fecha = as.character(fecha),
       realtime_start = as.character(realtime_start),
       realtime_end = as.character(realtime_end)
     ) %>%
     # Orden estricto: cronológico por fecha a pronosticar, y luego por fecha de publicación
-    arrange(fecha, realtime_start) 
+    arrange(fecha, realtime_start) %>% 
+    distinct()
   
   # E. Empaquetar y exportar la serie
   lista_final <- list(
