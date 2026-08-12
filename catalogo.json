@@ -1254,5 +1254,125 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/IVA_NSA_M.json",
     "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GANANCIAS_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos tributarios. Ganancias",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GANANCIAS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "APORTES_SEGSOCIAL_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos tributarios. Aportes y contribuciones a la seguriad social",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/APORTES_SEGSOCIAL_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "DEByCRED_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos tributarios. Débitos y créditos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/DEByCRED_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "BBPP_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos tributarios. Bienes personales",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/BBPP_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "IMPINTERNOS_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos tributarios. Impuestos internos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/IMPINTERNOS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "COMBUSTIBLES_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos tributarios. Combustibles",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/COMBUSTIBLES_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "DEX_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos tributarios. Derechos de exportación",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/DEX_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "DIMP_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos tributarios. Derechos de importación",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/DIMP_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "RESTO_INGTRIB_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos tributarios. Resto de ingresos tributarios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/RESTO_INGTRIB_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "RENTAS_FGS_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Rentas de la propiedad Netas. FGS cobradas al sector privado y público financiero",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/RENTAS_FGS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "RENTAS_RESTO_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Rentas de la propiedad Netas. Resto rentas de la propiedad",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/RENTAS_RESTO_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "INGR_NOTRIBU_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Otros Ingresos corrientes. Ingresos no tributarios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/INGR_NOTRIBU_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "INGR_TRANSFCORR_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Otros Ingresos corrientes. Transferencias corrientes",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/INGR_TRANSFCORR_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "INGR_RESTOCORR_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Otros Ingresos corrientes. Resto de Ingresos corrientes",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/INGR_RESTOCORR_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "INGR_CAPITAL_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos de capital",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/INGR_CAPITAL_NSA_M.json",
+    "metodo_etl": "API_INDEC"
   }
 ]
