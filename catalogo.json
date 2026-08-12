@@ -1246,5 +1246,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/SUPERAVIT_PRIMARIO_NSA_M.json",
     "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "IVA_NSA_M",
+    "titulo": "IMIG. Ingresos totales. Ingresos tributarios. IVA neto de reintegros",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/IVA_NSA_M.json",
+    "metodo_etl": "API_INDEC"
   }
 ]
