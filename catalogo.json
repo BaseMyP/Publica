@@ -1374,5 +1374,269 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/INGR_CAPITAL_NSA_M.json",
     "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "JUBILACIONES_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Prestaciones sociales. Jubilaciones y pensiones contributivas",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/JUBILACIONES_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "ASIGNACIONES_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Prestaciones sociales. Asignaciones (Familiares y Universales para Protección Social)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/ASIGNACIONES_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "PENSIONESnoCONTR_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Prestaciones sociales. Pensiones no contributivas",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/PENSIONESnoCONTR_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "INSSJP_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Prestaciones sociales. Prestaciones del INSSJP",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/INSSJP_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "OTROS_PROGRAMAS_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Prestaciones sociales. Otros programas (Progresar, Argentina Trabaja, otros)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/OTROS_PROGRAMAS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "SUBS_ENERGIA_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Subsidios económicos. Energía",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/SUBS_ENERGIA_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "SUBS_TRANSPORTE_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Subsidios económicos. Transporte",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/SUBS_TRANSPORTE_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "SUBS_OTROS_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Subsidios económicos. Otras funciones",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/SUBS_OTROS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "SALARIOS_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Gastos de funcionamiento. Salarios",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/SALARIOS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GASTOSFUNC_OTROS_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Gastos de funcionamiento. Otros gastos de funcionamiento",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GASTOSFUNC_OTROS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "TRANSPROV_EDUCACION_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Transferencias corrientes a provincias. Educación",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/TRANSPROV_EDUCACION_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "TRANSPROV_SEGSOCIAL_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Transferencias corrientes a provincias. Seguridad Social",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/TRANSPROV_SEGSOCIAL_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "TRANSPROV_DESSOCIAL_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Transferencias corrientes a provincias. Desarrollo Social",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/TRANSPROV_DESSOCIAL_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "TRANSPROV_SALUD_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Transferencias corrientes a provincias. Salud",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/TRANSPROV_SALUD_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "TRANSPROV_OTRAS_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Transferencias corrientes a provincias. Otras transferencias",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/TRANSPROV_OTRAS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "TRANS_UNIVERSIDADES_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Otros gastos corrientes. Transferencias a universidades",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/TRANS_UNIVERSIDADES_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "DEF_EMPPUB_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Otros gastos corrientes. Déficit Operativo de Empresas Públicas",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/DEF_EMPPUB_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GASTOCORR_OTROS_NSA_M",
+    "titulo": "IMIG. Gastos primarios. Gastos corrientes primarios. Otros gastos corrientes. Resto",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GASTOCORR_OTROS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_ENERGIA_NAC_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Energía. Nación",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_ENERGIA_NAC_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_ENERGIA_PROV_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Energía. Transferencias a provincias",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_ENERGIA_PROV_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_TRANSPORTE_NAC_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Transporte. Nación",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_TRANSPORTE_NAC_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_TRANSPORTE_PROV_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Transporte. Transferencias a provincias",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_TRANSPORTE_PROV_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_EDUCACION_NAC_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Educación. Nación",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_EDUCACION_NAC_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_EDUCACION_PROV_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Educación. Transferencias a provincias",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_EDUCACION_PROV_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_VIVIENDA_NAC_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Vivienda. Nación",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_VIVIENDA_NAC_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_VIVIENDA_PROV_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Vivienda. Transferencias a provincias",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_VIVIENDA_PROV_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_AGUA_NAC_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Agua potable y alcantarillado. Nación",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_AGUA_NAC_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_AGUA_PROV_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Agua potable y alcantarillado. Transferencias a provincias",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_AGUA_PROV_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_OTROS_NAC_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Otros. Nación",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_OTROS_NAC_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_OTROS_PROV_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Otros. Transferencias a provincias",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_OTROS_PROV_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "GK_FFS_NSA_M",
+    "titulo": "IMIG. Gastos de capital. Fondo Federal Solidario",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/GK_FFS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "INTERESES_NETOS_NSA_M",
+    "titulo": "IMIG. Intereses Netos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/INTERESES_NETOS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "SUPERAVIT_FINANCIERO_NSA_M",
+    "titulo": "IMIG. Resultado financiero",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/SUPERAVIT_FINANCIERO_NSA_M.json",
+    "metodo_etl": "API_INDEC"
   }
 ]
