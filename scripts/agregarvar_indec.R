@@ -1,28 +1,31 @@
+library(httr)
+library(jsonlite)
+library(dplyr)
 source("scripts/funciones_base.R")
 
 # 1. Definimos los metadatos 
 meta_ipc_general_corregido <- list(
-  titulo = "IPC Servicios",
-  descripcion = "IPC Servicios. Indice Dic-16=100",
+  titulo = "IMIG. Resultado primario",
+  descripcion = "IMIG. Resultado primario",
   pais = "Argentina",
-  categoria = "PRECIOS",
+  categoria = "FISCAL",
   frecuencia_short = "M",
   frecuencia_original = "mensual",
-  unidades = "Índice", 
+  unidades = "Millones de pesos", 
   ajuste = "NSA",
   tipo_informacion = "Pública",
   fuente = "API_Argentina",
   fuente_original = "INDEC",
   fuente_formato = "API_INDEC",
-  id_original = "147.3_ISERVICNAL_DICI_T_22",
+  id_original = "452.3_RESULTADO_RIO_0_M_18_54",
   ultima_actualizacion = Sys.Date(),
-  fecha_inicio = as.Date("2016-12-01"),
-  url_original = "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
+  fecha_inicio = as.Date("2016-01-01"),
+  url_original = "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=452.3_RESULTADO_RIO_0_M_18_54",
   revisable = FALSE,
   notas = NA
 )
 
-serie_id_general <- "IPCSERVICIOS_INDICE_NSA_M"
+serie_id_general <- "SUPERAVIT_PRIMARIO_NSA_M"
 
 # 3. Consolidamos en una lista para procesar en bucle
 # (Se corrigió la llamada a 'meta_ipc_general_corregido')

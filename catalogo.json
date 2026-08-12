@@ -1238,5 +1238,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/DepGobUsdBCRA_NSA_D.json",
     "metodo_etl": "EXCEL_diar_bas"
+  },
+  {
+    "serie_id": "SUPERAVIT_PRIMARIO_NSA_M",
+    "titulo": "IMIG. Resultado primario",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/SUPERAVIT_PRIMARIO_NSA_M.json",
+    "metodo_etl": "API_INDEC"
   }
 ]
