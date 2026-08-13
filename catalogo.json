@@ -1638,5 +1638,45 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/SUPERAVIT_FINANCIERO_NSA_M.json",
     "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "RECAUDACION_IVA_NSA_M",
+    "titulo": "Iva de los Recursos tributarios totales y por tributo. Mensual (Base 2001)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/RECAUDACION_IVA_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "RECAUDACION_IVADGI_NSA_M",
+    "titulo": "Iva dgi de los Recursos tributarios totales y por tributo. Mensual (Base 2001)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/RECAUDACION_IVADGI_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "RECAUDACION_GANANCIAS_NSA_M",
+    "titulo": "Ganancias de los Recursos tributarios totales y por tributo. Mensual (Base 2001)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/RECAUDACION_GANANCIAS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "RECAUDACION_GANANCIASDGI_NSA_M",
+    "titulo": "Ganancias dgi de los Recursos tributarios totales y por tributo. Mensual (Base 2001)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/RECAUDACION_GANANCIASDGI_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "RECAUDACION_GANANCIASDGA_NSA_M",
+    "titulo": "Ganancias dga de los Recursos tributarios totales y por tributo. Mensual (Base 2001)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/RECAUDACION_GANANCIASDGA_NSA_M.json",
+    "metodo_etl": "API_INDEC"
   }
 ]
