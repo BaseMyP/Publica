@@ -14,7 +14,7 @@
     "fuente_original": "INDEC",
     "fuente_formato": "API_Argentina",
     "id_original": "148.3_INIVELNAL_DICI_M_26",
-    "ultima_actualizacion": "2026-08-13T12:00:00Z",
+    "ultima_actualizacion": "2026-08-14T12:00:00Z",
     "fecha_inicio": "2016-12-01",
     "url_original": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
     "revisable": false,
@@ -709,6 +709,12 @@
       "fecha": "2026-06-01",
       "valor": 11826.4103,
       "realtime_start": "2026-07-15",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 12076.3937,
+      "realtime_start": "2026-08-14",
       "realtime_end": "9999-12-31"
     }
   ]

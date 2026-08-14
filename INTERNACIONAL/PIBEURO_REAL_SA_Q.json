@@ -15,7 +15,7 @@
     "fuente_original": "Eurostat",
     "fuente_formato": "API",
     "id_original": "CLVMEURSCAB1GQEA19",
-    "ultima_actualizacion": "2026-08-13T12:00:00Z",
+    "ultima_actualizacion": "2026-08-14T12:00:00Z",
     "fecha_inicio": "1995-01-01",
     "url_original": "https://fred.stlouisfed.org/series/CLVMEURSCAB1GQEA19",
     "revisable": true,
@@ -1526,6 +1526,12 @@
       "fecha": "2026-04-01",
       "valor": 2896609.2,
       "realtime_start": "2026-07-31",
+      "realtime_end": "2026-08-14"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 2896651.9,
+      "realtime_start": "2026-08-14",
       "realtime_end": "9999-12-31"
     }
   ]
