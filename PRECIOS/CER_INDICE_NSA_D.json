@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 30,
-    "ultima_actualizacion": "2026-08-14T12:00:00Z",
+    "ultima_actualizacion": "2026-08-17T12:00:00Z",
     "fecha_inicio": "2002-02-02",
     "url_original": "https://www.bcra.gob.ar/principales-variables-datos/?serie=3540",
     "revisable": false,
@@ -53779,6 +53779,24 @@
       "fecha": "2026-08-14",
       "valor": 822.3954,
       "realtime_start": "2026-08-14",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-15",
+      "valor": 822.8948,
+      "realtime_start": "2026-08-17",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-16",
+      "valor": 823.4467,
+      "realtime_start": "2026-08-17",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-17",
+      "valor": 823.9989,
+      "realtime_start": "2026-08-17",
       "realtime_end": "9999-12-31"
     }
   ]
