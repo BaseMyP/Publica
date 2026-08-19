@@ -2094,5 +2094,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MEMORANDUM_NSA_M.json",
     "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "RIESGO_PAIS_NSA_D",
+    "titulo": "Riesgo País de Argentina (EMBI+)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RIESGO_PAIS_NSA_D.json",
+    "metodo_etl": "SCRAPING_RAVA"
   }
 ]
