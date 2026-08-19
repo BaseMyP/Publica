@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 68,
-    "ultima_actualizacion": "2026-08-18T12:00:00Z",
+    "ultima_actualizacion": "2026-08-19T12:00:00Z",
     "fecha_inicio": "2003-01-02",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
@@ -34873,6 +34873,12 @@
       "fecha": "2026-06-30",
       "valor": 2107785,
       "realtime_start": "2026-08-11",
+      "realtime_end": "2026-08-19"
+    },
+    {
+      "fecha": "2026-06-30",
+      "valor": 2107438,
+      "realtime_start": "2026-08-19",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35563,6 +35569,12 @@
       "fecha": "2026-08-05",
       "valor": 2292829,
       "realtime_start": "2026-08-13",
+      "realtime_end": "2026-08-19"
+    },
+    {
+      "fecha": "2026-08-05",
+      "valor": 2289894,
+      "realtime_start": "2026-08-19",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35581,6 +35593,12 @@
       "fecha": "2026-08-06",
       "valor": 2317279,
       "realtime_start": "2026-08-14",
+      "realtime_end": "2026-08-19"
+    },
+    {
+      "fecha": "2026-08-06",
+      "valor": 2319471,
+      "realtime_start": "2026-08-19",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35605,6 +35623,12 @@
       "fecha": "2026-08-10",
       "valor": 2203104,
       "realtime_start": "2026-08-14",
+      "realtime_end": "2026-08-19"
+    },
+    {
+      "fecha": "2026-08-10",
+      "valor": 2207509,
+      "realtime_start": "2026-08-19",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35617,12 +35641,24 @@
       "fecha": "2026-08-11",
       "valor": 2232142,
       "realtime_start": "2026-08-18",
+      "realtime_end": "2026-08-19"
+    },
+    {
+      "fecha": "2026-08-11",
+      "valor": 2232138,
+      "realtime_start": "2026-08-19",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-08-12",
       "valor": 2240887,
       "realtime_start": "2026-08-18",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-13",
+      "valor": 2265099,
+      "realtime_start": "2026-08-19",
       "realtime_end": "9999-12-31"
     }
   ]
