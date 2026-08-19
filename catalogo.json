@@ -1678,5 +1678,421 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FISCAL/RECAUDACION_GANANCIASDGA_NSA_M.json",
     "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "MULC_CC_TOTAL_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_BIENES_TOTAL_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Bienes. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_BIENES_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_BIENES_EXPO_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Bienes. Cobros de Exportaciones",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_BIENES_EXPO_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_BIENES_IMPO_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Bienes. Pagos de Importaciones",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_BIENES_IMPO_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_SERVICIOS_TOTAL_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Servicios. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_SERVICIOS_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_SERVICIOS_INGRESOS_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Servicios. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_SERVICIOS_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_SERVICIOS_EGRESOS_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Servicios. Engresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_SERVICIOS_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_TOTAL_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_INTERESES_TOTAL_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Intereses. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_INTERESES_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_INTERESES_INGRESOS_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Intereses. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_INTERESES_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_INTERESES_EGRESOS_TOTAL_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Intereses. Egresos. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_INTERESES_EGRESOS_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_INTERESES_EGRESOS_FMI_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Intereses. Egresos. FMI",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_INTERESES_EGRESOS_FMI_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_INTERESES_EGRESOS_OOII_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Intereses. Egresos. OOII",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_INTERESES_EGRESOS_OOII_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_INTERESES_EGRESOS_OTROS_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Intereses. Egresos. Otros",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_INTERESES_EGRESOS_OTROS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_INTERESES_EGRESOS_OTROS_GOB_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Intereses. Egresos. Otros Gobierno Nacional",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_INTERESES_EGRESOS_OTROS_GOB_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_UTILDIV_TOTAL_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Utilidades y Dividendos. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_UTILDIV_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_UTILDIV_INGRESOS_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Utilidades y Dividendos. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_UTILDIV_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGPRIM_UTILDIV_EGRESOS_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Primario. Utilidades y Dividendos. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGPRIM_UTILDIV_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGSEC_TOTAL_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Secundario. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGSEC_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGSEC_INGRESOS_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Secundario. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGSEC_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CC_INGSEC_EGRESOS_NSA_M",
+    "titulo": "Cuenta Corriente Cambiaria. Ingreso Secundario. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CC_INGSEC_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CK_NSA_M",
+    "titulo": "Cuenta de Capital Cambiaria. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CK_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_TOTAL_NSA_M",
+    "titulo": "Cuenta Financiera. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_IED_TOTAL_NSA_M",
+    "titulo": "Cuenta Financiera. Inversión directa de no residentes. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_IED_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_IED_INGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Inversión directa de no residentes. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_IED_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_IED_EGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Inversión directa de no residentes. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_IED_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_PORT_TOTAL_NSA_M",
+    "titulo": "Cuenta Financiera. Inversión de portafolio de no residentes. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_PORT_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_PORT_INGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Inversión de portafolio de no residentes. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_PORT_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_PORT_EGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Inversión de portafolio de no residentes. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_PORT_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_PRESTFIN_TOTAL_NSA_M",
+    "titulo": "Cuenta Financiera. Préstamos financieros, títulos de deuda y líneas de crédito. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_PRESTFIN_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_PRESTFIN_INGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Préstamos financieros, títulos de deuda y líneas de crédito. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_PRESTFIN_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_PRESTFIN_EGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Préstamos financieros, títulos de deuda y líneas de crédito. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_PRESTFIN_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_OPFMI_TOTAL_NSA_M",
+    "titulo": "Cuenta Financiera. Operaciones con el FMI. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_OPFMI_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_OPFMI_INGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Operaciones con el FMI. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_OPFMI_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_OPFMI_EGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Operaciones con el FMI. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_OPFMI_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_OOII_TOTAL_NSA_M",
+    "titulo": "Cuenta Financiera. Préstamos de otros Org. Int. y otros bilaterales. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_OOII_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_OOII_INGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Préstamos de otros Org. Int. y otros bilaterales. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_OOII_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_OOII_EGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Préstamos de otros Org. Int. y otros bilaterales. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_OOII_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_FAE_TOTAL_NSA_M",
+    "titulo": "Cuenta Financiera. Compra-venta de billetes y divisas sin fines específicos del sector privado no financiero. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_FAE_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_FAE_INGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Compra-venta de billetes y divisas sin fines específicos del sector privado no financiero. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_FAE_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_FAE_EGRESOS_NSA_M",
+    "titulo": "Cuenta Financiera. Compra-venta de billetes y divisas sin fines específicos del sector privado no financiero. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_FAE_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_CANJEEXT_NSA_M",
+    "titulo": "Cuenta Financiera. Operaciones de canje por transferencias con el exterior",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_CANJEEXT_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_PGCBANCOS_NSA_M",
+    "titulo": "Cuenta Financiera. Formación de activos externos del sector financiero (PGC)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_PGCBANCOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_FAESP_NSA_M",
+    "titulo": "Cuenta Financiera. Formación de activos externos del sector público",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_FAESP_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_TITULOS_NSA_M",
+    "titulo": "Cuenta Financiera. Compra-venta de títulos valores",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_TITULOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_OTRASSPN_NSA_M",
+    "titulo": "Cuenta Financiera. Otras operaciones del sector público nacional (neto)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_OTRASSPN_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_CF_OTROS_NSA_M",
+    "titulo": "Cuenta Financiera. Otros movimientos netos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_CF_OTROS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_NOINFORMADO_NSA_M",
+    "titulo": "Concepto no informado por el cliente (neto)",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_NOINFORMADO_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_VarRESERVAS_TRANSACCIONES_NSA_M",
+    "titulo": "Variación de Reservas Internacionales por transacciones",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_VarRESERVAS_TRANSACCIONES_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_VarRESERVAS_CONTABLE_NSA_M",
+    "titulo": "Variación contable de Reservas Internacionales del BCRA",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_VarRESERVAS_CONTABLE_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_AJUSTE_NSA_M",
+    "titulo": "Ajuste por tipo de pase y valuación",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_AJUSTE_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MEMORANDUM_NSA_M",
+    "titulo": "Item de Memorandum: Pago del saldo en moneda extranjera por uso de tarjetas en el exterior",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MEMORANDUM_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
   }
 ]
