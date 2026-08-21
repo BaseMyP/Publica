@@ -2102,5 +2102,21 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RIESGO_PAIS_NSA_D.json",
     "metodo_etl": "SCRAPING_RAVA"
+  },
+  {
+    "serie_id": "CAUCIONARS_1D_NSA_D",
+    "titulo": "Tasa de Caución en pesos a 1 día",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/CAUCIONARS_1D_NSA_D.json",
+    "metodo_etl": "SCRAPING_RAVA"
+  },
+  {
+    "serie_id": "CAUCIONARS_7D_NSA_D",
+    "titulo": "Tasa de Caución en pesos a 7 días",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/CAUCIONARS_7D_NSA_D.json",
+    "metodo_etl": "SCRAPING_RAVA"
   }
 ]
