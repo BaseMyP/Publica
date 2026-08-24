@@ -36,7 +36,11 @@ url_excel <- pagina %>%
   html_attr("href")
 # Filtrar aquellos que contienen la estructura de archivos del sitio
 url_excel <- url_excel[which(grepl("\\.xlsx$",url_excel))][1]
-url_excel <- str_extract(url_excel,"http.*")
+url_excel <- if(is.na(str_extract(url_excel,"http.*"))) {
+  paste0("https://www.argentina.gob.ar",url_excel)
+} else {
+  str_extract(url_excel,"http.*")
+}
 archivo_tmp <- tempfile(fileext = ".xlsx")
 
 tryCatch({
