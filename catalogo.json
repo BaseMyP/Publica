@@ -2118,5 +2118,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/CAUCIONARS_7D_NSA_D.json",
     "metodo_etl": "SCRAPING_RAVA"
+  },
+  {
+    "serie_id": "enUSD_SECTORPRIV_NSA_D",
+    "titulo": "Saldo total de préstamos otorgados al sector privado en dólares (en millones de USD)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/enUSD_SECTORPRIV_NSA_D.json",
+    "metodo_etl": "API_BCRA"
   }
 ]
