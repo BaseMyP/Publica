@@ -2126,5 +2126,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/enUSD_SECTORPRIV_NSA_D.json",
     "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "CAUCION_MAE_TASAPP_NSA_D",
+    "titulo": "Tasa de Caución Bursátil (Promedio Ponderado MAE)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/CAUCION_MAE_TASAPP_NSA_D.json",
+    "metodo_etl": "API_MAE"
   }
 ]
