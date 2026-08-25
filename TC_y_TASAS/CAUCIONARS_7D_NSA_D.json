@@ -14,7 +14,7 @@
     "fuente_original": "BYMA",
     "fuente_formato": "Scraping HTML",
     "id_original": "CAUCION 7D",
-    "ultima_actualizacion": "2026-08-21T12:00:00Z",
+    "ultima_actualizacion": "2026-08-25T12:00:00Z",
     "revisable": true,
     "notas": {}
   },
@@ -383,6 +383,24 @@
       "fecha": "2026-08-20",
       "valor": 20,
       "realtime_start": "2026-08-21",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-21",
+      "valor": 20.9,
+      "realtime_start": "2026-08-25",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-24",
+      "valor": 22.5,
+      "realtime_start": "2026-08-25",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-25",
+      "valor": 23.7,
+      "realtime_start": "2026-08-25",
       "realtime_end": "9999-12-31"
     }
   ]
