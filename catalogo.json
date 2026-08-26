@@ -2254,5 +2254,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/CAUCION_MAE_TASAPP_NSA_D.json",
     "metodo_etl": "API_MAE"
+  },
+  {
+    "serie_id": "FUTUROS_USD_IA_NSA_D",
+    "titulo": "Interés Abierto Total de Futuros de Dólar",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/FUTUROS_USD_IA_NSA_D.json",
+    "metodo_etl": "API_MAE_FUTUROS"
   }
 ]
