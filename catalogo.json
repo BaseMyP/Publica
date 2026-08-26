@@ -2222,5 +2222,37 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_FinLocal_EGRESOS_NSA_M.json",
     "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "REPO_MAE_TASAPP_NSA_D",
+    "titulo": "Tasa REPO (Promedio Ponderado MAE)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/REPO_MAE_TASAPP_NSA_D.json",
+    "metodo_etl": "API_MAE"
+  },
+  {
+    "serie_id": "REPX_MAE_TASAPP_NSA_D",
+    "titulo": "Tasa REPX (Promedio Ponderado MAE)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/REPX_MAE_TASAPP_NSA_D.json",
+    "metodo_etl": "API_MAE"
+  },
+  {
+    "serie_id": "SIMU_MAE_TASAPP_NSA_D",
+    "titulo": "Tasa Simultáneas SIMU (Promedio Ponderado MAE)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/SIMU_MAE_TASAPP_NSA_D.json",
+    "metodo_etl": "API_MAE"
+  },
+  {
+    "serie_id": "REPI_MAE_TASAPP_NSA_D",
+    "titulo": "Tasa REPI (Promedio Ponderado MAE)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/REPI_MAE_TASAPP_NSA_D.json",
+    "metodo_etl": "API_MAE"
   }
 ]

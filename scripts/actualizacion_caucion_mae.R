@@ -1,5 +1,5 @@
 # ==============================================================================
-# SCRIPT DE ACTUALIZACIÓN DIARIA: CAUCIÓN PROMEDIO (MAE)
+# SCRIPT DE ACTUALIZACIÓN DIARIA: REPOs y CAUCIÓN (MAE)
 # ==============================================================================
 
 library(httr)
@@ -8,53 +8,76 @@ library(dplyr)
 library(lubridate)
 source("scripts/funciones_base.R")
 
-message("Iniciando actualización de caución MAE: ", Sys.time())
+message("Iniciando actualización diaria MAE (Cauciones y REPOs): ", Sys.time())
 
 # 1. Validar Catálogo
 catalogo_completo <- fromJSON("catalogo.json")
-catalogo_caucion <- catalogo_completo %>% filter(serie_id == "CAUCION_MAE_TASAPP_NSA_D")
+catalogo_mae <- catalogo_completo %>% filter(metodo_etl == "API_MAE")
 
-if (nrow(catalogo_caucion) == 0) quit(save = "no")
+if (nrow(catalogo_mae) == 0) quit(save = "no")
 
-# 2. Descargar últimos 30 días
+# 2. Fechas de consulta
 fecha_desde <- as.character(Sys.Date() - 30)
 fecha_hasta <- as.character(Sys.Date())
-
 query_json <- paste0('{"fechaDesde":"', fecha_desde, '","fechaHasta":"', fecha_hasta, '"}')
-url_mae <- paste0("https://api.marketdata.mae.com.ar/api/mercado/titulo/historicocauciones?oTitulo=", URLencode(query_json, reserved = TRUE))
+query_encoded <- URLencode(query_json, reserved = TRUE)
 
-respuesta <- GET(url_mae, user_agent("Mozilla/5.0"))
-if (status_code(respuesta) != 200) quit(save = "no")
+# Definimos los endpoints
+url_caucion <- paste0("https://api.marketdata.mae.com.ar/api/mercado/titulo/historicocauciones?oTitulo=", query_encoded)
+url_repo <- paste0("https://api.marketdata.mae.com.ar/api/mercado/titulo/historicorepo?oTitulo=", query_encoded)
 
-df_raw <- fromJSON(content(respuesta, as = "text", encoding = "UTF-8"))
-if (length(df_raw) == 0 || nrow(df_raw) == 0) quit(save = "no")
+# 3. Función auxiliar de descarga y limpieza
+descargar_y_limpiar_mae <- function(url) {
+  resp <- GET(url, user_agent("Mozilla/5.0"))
+  if (status_code(resp) != 200) return(NULL)
+  
+  df_raw <- fromJSON(content(resp, as = "text", encoding = "UTF-8"))
+  if (length(df_raw) == 0 || nrow(df_raw) == 0) return(NULL)
+  
+  df_detalles <- bind_rows(df_raw$details) %>% 
+    filter(moneda == "$") %>%
+    mutate(
+      fecha = as.character(as.Date(fecha)),
+      plazo = as.numeric(plazo),
+      valor = as.numeric(tasaPP)
+    )
+  return(df_detalles)
+}
 
-# 3. Parsear JSON y limpiar
-df_raw <- fromJSON(content(respuesta, as = "text", encoding = "UTF-8"))
-
-# Desanidamos la lista de dataframes de la columna 'details' y los unimos
-df_detalles <- bind_rows(df_raw$details)
-
-nuevo_df <- df_detalles %>%
-  filter(moneda == "$") %>% # Filtramos para quedarnos solo con la tasa en Pesos
-  mutate(
-    fecha = as.character(as.Date(fecha)), # Limpiamos la hora (de "2026-04-09T00:00:00" a "2026-04-09")
-    plazo = as.numeric(plazo),
-    valor = as.numeric(tasaPP) # Seleccionamos la Tasa Promedio Ponderada
-  ) %>%
-  filter(!is.na(fecha) & !is.na(valor)) %>%
-  group_by(fecha) %>%
-  slice_min(order_by = plazo, n = 1, with_ties = FALSE) %>% # Elegimos el plazo más corto operado ese día
-  ungroup() %>%
-  select(fecha, valor) %>%
-  arrange(fecha)
-
+df_caucion <- descargar_y_limpiar_mae(url_caucion)
+df_repo <- descargar_y_limpiar_mae(url_repo)
 hoy <- as.character(Sys.Date())
 
-# 4. Lógica ALFRED
-path_archivo <- file.path("TC_y_TASAS", "CAUCION_MAE_TASAPP_NSA_D.json")
-
-if (file.exists(path_archivo)) {
+# 4. Lógica ALFRED para todas las series MAE
+for (i in 1:nrow(catalogo_mae)) {
+  serie_id <- catalogo_mae$serie_id[i]
+  tema <- basename(dirname(catalogo_mae$raw_url[i]))
+  path_archivo <- file.path(tema, paste0(serie_id, ".json"))
+  
+  if (!file.exists(path_archivo)) next
+  
+  # Seleccionamos el dataframe crudo según el ticker
+  if (serie_id == "CAUCION_MAE_TASAPP_NSA_D") {
+    df_base <- df_caucion
+  } else {
+    df_base <- df_repo
+  }
+  
+  if (is.null(df_base)) next
+  
+  # Filtramos y limpiamos el dato específico
+  nuevo_df <- df_base %>%
+    filter(if (serie_id == "CAUCION_MAE_TASAPP_NSA_D") TRUE else rueda == !!substr(serie_id,1,4)) %>%
+    filter(!is.na(fecha) & !is.na(valor)) %>%
+    group_by(fecha) %>%
+    slice_min(order_by = plazo, n = 1, with_ties = FALSE) %>%
+    ungroup() %>%
+    select(fecha, valor) %>%
+    arrange(fecha)
+  
+  if(nrow(nuevo_df) == 0) next
+  
+  # Cruce histórico
   base_actual <- fromJSON(path_archivo)
   obs_viejas <- base_actual$observaciones
   
@@ -81,4 +104,5 @@ if (file.exists(path_archivo)) {
   base_actual$observaciones <- bind_rows(obs_historicas, obs_vigentes_que_cambiaron, obs_vigentes_sin_cambio, nuevas_inserciones) %>% arrange(fecha, realtime_start)
   
   write_json(base_actual, path_archivo, pretty = TRUE, auto_unbox = TRUE)
+  message("✓ Actualizada: ", serie_id)
 }
