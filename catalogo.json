@@ -2134,5 +2134,93 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/CAUCION_MAE_TASAPP_NSA_D.json",
     "metodo_etl": "API_MAE"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_TOTAL_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_TOTAL_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_INGRESOS_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_OOII_INGRESOS_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. OOII. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_OOII_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_OTROS_INGRESOS_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. Otros préstamos. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_OTROS_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_LINEAS_INGRESOS_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. Líneas de crédito. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_LINEAS_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_FinLocal_INGRESOS_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. Financiaciones locales. Ingresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_FinLocal_INGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_EGRESOS_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_OOII_EGRESOS_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. OOII. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_OOII_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_OTROS_EGRESOS_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. Otros préstamos. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_OTROS_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_LINEAS_EGRESOS_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. Líneas de crédito. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_LINEAS_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
+  },
+  {
+    "serie_id": "MULC_MercCamb_PRESTFIN_FinLocal_EGRESOS_NSA_M",
+    "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. Financiaciones locales. Egresos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/MULC_MercCamb_PRESTFIN_FinLocal_EGRESOS_NSA_M.json",
+    "metodo_etl": "EXCEL_MULC"
   }
 ]

@@ -35,6 +35,7 @@ tryCatch({
 
 # IMPORTANTE: Mantener el mismo 'skip' que usaste en la carga inicial
 df_raw <- read_excel(archivo_tmp, sheet="Balance Cambiario", skip=10)
+df_raw2 <- read_excel(archivo_tmp, sheet="Mercado de Cambios", skip=10)
 
 hoy <- as.character(Sys.Date())
 
@@ -51,12 +52,22 @@ for (i in 1:nrow(catalogo_MULC)) {
     col_index <- base_actual$metadatos$id_original
     
     # Extraemos la fecha (col 1) y la columna objetivo
-    nuevo_df <- df_raw %>%
-      select(fecha = "bal000", valor = all_of(col_index)) %>%
-      mutate(fecha = as.Date(as.numeric(fecha), origin="1899-12-30")) %>% 
-      filter(!is.na(fecha)) %>% 
-      filter(year(fecha)>2000) %>%
-      arrange(fecha)
+    if(str_detect(serie_id,"^MULC_MercCamb")) {
+      nuevo_df <- df_raw2 %>%
+        select(fecha = "mlc000", valor = all_of(col_index)) %>%
+        mutate(fecha = as.Date(as.numeric(fecha), origin="1899-12-30")) %>% 
+        filter(!is.na(fecha)) %>% 
+        filter(year(fecha)>2000) %>%
+        arrange(fecha)
+    } else {
+      nuevo_df <- df_raw %>%
+        select(fecha = "bal000", valor = all_of(col_index)) %>%
+        mutate(fecha = as.Date(as.numeric(fecha), origin="1899-12-30")) %>% 
+        filter(!is.na(fecha)) %>% 
+        filter(year(fecha)>2000) %>%
+        arrange(fecha)
+    }
+    
     
     # Separar historia y vigencia
     obs_viejas <- base_actual$observaciones
