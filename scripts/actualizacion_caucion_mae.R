@@ -29,16 +29,22 @@ if (status_code(respuesta) != 200) quit(save = "no")
 df_raw <- fromJSON(content(respuesta, as = "text", encoding = "UTF-8"))
 if (length(df_raw) == 0 || nrow(df_raw) == 0) quit(save = "no")
 
-# 3. Limpieza (Ajustar nombres de columnas si es necesario)
-nuevo_df <- df_raw %>%
+# 3. Parsear JSON y limpiar
+df_raw <- fromJSON(content(respuesta, as = "text", encoding = "UTF-8"))
+
+# Desanidamos la lista de dataframes de la columna 'details' y los unimos
+df_detalles <- bind_rows(df_raw$details)
+
+nuevo_df <- df_detalles %>%
+  filter(moneda == "$") %>% # Filtramos para quedarnos solo con la tasa en Pesos
   mutate(
-    fecha = as.character(as.Date(fecha)),
+    fecha = as.character(as.Date(fecha)), # Limpiamos la hora (de "2026-04-09T00:00:00" a "2026-04-09")
     plazo = as.numeric(plazo),
-    valor = as.numeric(tasa)
+    valor = as.numeric(tasaPP) # Seleccionamos la Tasa Promedio Ponderada
   ) %>%
   filter(!is.na(fecha) & !is.na(valor)) %>%
   group_by(fecha) %>%
-  slice_min(order_by = plazo, n = 1, with_ties = FALSE) %>%
+  slice_min(order_by = plazo, n = 1, with_ties = FALSE) %>% # Elegimos el plazo más corto operado ese día
   ungroup() %>%
   select(fecha, valor) %>%
   arrange(fecha)
