@@ -11,7 +11,7 @@ source("scripts/funciones_base.R")
 message("Iniciando descarga histórica de cauciones desde MAE...")
 
 # 1. Definir rango (ajusta el año si MAE permite más historia)
-fecha_desde <- "2026-04-01" 
+fecha_desde <- "2026-03-01" 
 fecha_hasta <- as.character(Sys.Date())
 
 # 2. Construir la URL codificada

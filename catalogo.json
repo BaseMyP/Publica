@@ -2128,14 +2128,6 @@
     "metodo_etl": "API_BCRA"
   },
   {
-    "serie_id": "CAUCION_MAE_TASAPP_NSA_D",
-    "titulo": "Tasa de Caución Bursátil (Promedio Ponderado MAE)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/CAUCION_MAE_TASAPP_NSA_D.json",
-    "metodo_etl": "API_MAE"
-  },
-  {
     "serie_id": "MULC_MercCamb_PRESTFIN_TOTAL_NSA_M",
     "titulo": "Préstamos financieros, títulos de deuda y líneas de crédito. Total",
     "frecuencia": "M",
@@ -2253,6 +2245,14 @@
     "frecuencia": "D",
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/REPI_MAE_TASAPP_NSA_D.json",
+    "metodo_etl": "API_MAE"
+  },
+  {
+    "serie_id": "CAUCION_MAE_TASAPP_NSA_D",
+    "titulo": "Tasa de Caución Bursátil (Promedio Ponderado MAE)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/TC_y_TASAS/CAUCION_MAE_TASAPP_NSA_D.json",
     "metodo_etl": "API_MAE"
   }
 ]
