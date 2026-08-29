@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "Excel",
     "id_original": "bal026",
-    "ultima_actualizacion": "2026-08-24T12:00:00Z",
+    "ultima_actualizacion": "2026-08-29T12:00:00Z",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/anexo-estadistico-mercado-cambios-balance-cambiario.xlsx",
     "revisable": true,
     "notas": "Hoja: Balance Cambiario"
@@ -1710,6 +1710,12 @@
       "fecha": "2026-06-01",
       "valor": 128.5529,
       "realtime_start": "2026-08-19",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 111.7872,
+      "realtime_start": "2026-08-29",
       "realtime_end": "9999-12-31"
     }
   ]
