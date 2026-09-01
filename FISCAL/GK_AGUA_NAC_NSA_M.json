@@ -14,7 +14,7 @@
     "fuente_original": "INDEC",
     "fuente_formato": "API_INDEC",
     "id_original": "452.3_CAPITAL_AGION_0_M_41_40",
-    "ultima_actualizacion": "2026-08-29T12:00:00Z",
+    "ultima_actualizacion": "2026-09-01T12:00:00Z",
     "fecha_inicio": "2016-01-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=452.3_CAPITAL_AGION_0_M_41_40",
     "revisable": false,
@@ -775,6 +775,12 @@
       "fecha": "2026-06-01",
       "valor": 28388.6,
       "realtime_start": "2026-08-12",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 30030.5,
+      "realtime_start": "2026-09-01",
       "realtime_end": "9999-12-31"
     }
   ]

@@ -14,7 +14,7 @@
     "fuente_original": "Ámbito Financiero",
     "fuente_formato": "Scrapping Ambito Financiero",
     "id_original": "CCL",
-    "ultima_actualizacion": "2026-08-29T12:00:00Z",
+    "ultima_actualizacion": "2026-09-01T12:00:00Z",
     "revisable": true,
     "notas": {}
   },
@@ -35891,6 +35891,12 @@
       "fecha": "2026-08-28",
       "valor": 1506.66,
       "realtime_start": "2026-08-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-31",
+      "valor": 1505.765,
+      "realtime_start": "2026-09-01",
       "realtime_end": "9999-12-31"
     }
   ]
