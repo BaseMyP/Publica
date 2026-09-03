@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 67,
-    "ultima_actualizacion": "2026-09-02T12:00:00Z",
+    "ultima_actualizacion": "2026-09-03T12:00:00Z",
     "fecha_inicio": "2003-01-02",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
@@ -35527,6 +35527,12 @@
       "fecha": "2026-07-31",
       "valor": 26522024,
       "realtime_start": "2026-09-02",
+      "realtime_end": "2026-09-03"
+    },
+    {
+      "fecha": "2026-07-31",
+      "valor": 26525152,
+      "realtime_start": "2026-09-03",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35893,6 +35899,12 @@
       "fecha": "2026-08-20",
       "valor": 26256626,
       "realtime_start": "2026-08-29",
+      "realtime_end": "2026-09-03"
+    },
+    {
+      "fecha": "2026-08-20",
+      "valor": 26259379,
+      "realtime_start": "2026-09-03",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35929,6 +35941,12 @@
       "fecha": "2026-08-25",
       "valor": 26210411,
       "realtime_start": "2026-08-29",
+      "realtime_end": "2026-09-03"
+    },
+    {
+      "fecha": "2026-08-25",
+      "valor": 26206102,
+      "realtime_start": "2026-09-03",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35941,6 +35959,12 @@
       "fecha": "2026-08-27",
       "valor": 26270644,
       "realtime_start": "2026-09-02",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-28",
+      "valor": 26364551,
+      "realtime_start": "2026-09-03",
       "realtime_end": "9999-12-31"
     }
   ]
