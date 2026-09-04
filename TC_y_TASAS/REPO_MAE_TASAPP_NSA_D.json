@@ -13,7 +13,7 @@
     "fuente_original": "MAE",
     "fuente_formato": "API_MAE",
     "id_original": "REPO",
-    "ultima_actualizacion": "2026-09-03T12:00:00Z",
+    "ultima_actualizacion": "2026-09-04T12:00:00Z",
     "revisable": true,
     "notas": {}
   },
@@ -1474,6 +1474,12 @@
       "fecha": "2026-09-02",
       "valor": 20.2175,
       "realtime_start": "2026-09-03",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-09-03",
+      "valor": 20.138,
+      "realtime_start": "2026-09-04",
       "realtime_end": "9999-12-31"
     }
   ]
