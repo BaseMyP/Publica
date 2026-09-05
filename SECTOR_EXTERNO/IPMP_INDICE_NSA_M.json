@@ -16,7 +16,7 @@
     "titulo": "IPMP - Nivel General",
     "descripcion": "Índice de Precios de las Materias Primas. Nivel General.",
     "id_original": "IPMP",
-    "ultima_actualizacion": "2026-08-29T12:00:00Z"
+    "ultima_actualizacion": "2026-09-05T12:00:00Z"
   },
   "observaciones": [
     {
@@ -2159,6 +2159,12 @@
       "fecha": "2026-07-31",
       "valor": 299.6307,
       "realtime_start": "2026-08-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-31",
+      "valor": 308.8551,
+      "realtime_start": "2026-09-05",
       "realtime_end": "9999-12-31"
     }
   ]

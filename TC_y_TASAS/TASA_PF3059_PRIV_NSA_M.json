@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "Excel",
     "id_original": "6",
-    "ultima_actualizacion": "2026-08-29T12:00:00Z",
+    "ultima_actualizacion": "2026-09-05T12:00:00Z",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/pashis.xls",
     "revisable": true,
     "notas": "Hoja: Serie_mensual_bcos.priv"
@@ -2430,6 +2430,12 @@
       "fecha": "2023-08-01",
       "valor": 104.9721,
       "realtime_start": "2026-08-29",
+      "realtime_end": "2026-09-05"
+    },
+    {
+      "fecha": "2023-08-01",
+      "valor": 104.9721,
+      "realtime_start": "2026-09-05",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2658,6 +2664,18 @@
       "fecha": "2026-07-01",
       "valor": 21.4408,
       "realtime_start": "2026-08-08",
+      "realtime_end": "2026-09-05"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 21.4406,
+      "realtime_start": "2026-09-05",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 22.8345,
+      "realtime_start": "2026-09-05",
       "realtime_end": "9999-12-31"
     }
   ]
