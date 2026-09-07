@@ -13,11 +13,11 @@
     "fuente": "BCRA",
     "fuente_original": "BCRA",
     "fuente_formato": "EXCEL",
-    "ultima_actualizacion": ["2019-12-30", "2019-12-30", "2019-12-30", "2019-12-30", "2019-12-30", "2019-12-30", "2019-12-30"],
+    "ultima_actualizacion": "2026-09-07T12:00:00Z",
     "fecha_inicio": "2018-09-28",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/historico-relevamiento-expectativas-mercado.xlsx",
     "revisable": true,
-    "notas": null
+    "notas": {}
   },
   "observaciones": [
     {
@@ -369,6 +369,12 @@
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2019-09-28",
+      "valor": 40,
+      "realtime_start": "2018-09-28",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2019-10-01",
       "valor": 40,
       "realtime_start": "2018-10-31",
@@ -408,6 +414,12 @@
       "fecha": "2019-10-01",
       "valor": 79,
       "realtime_start": "2019-09-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-10-31",
+      "valor": 40,
+      "realtime_start": "2018-10-31",
       "realtime_end": "9999-12-31"
     },
     {
@@ -453,6 +465,12 @@
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2019-11-29",
+      "valor": 36.8,
+      "realtime_start": "2018-11-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2019-12-01",
       "valor": 38,
       "realtime_start": "2018-12-28",
@@ -492,6 +510,12 @@
       "fecha": "2019-12-01",
       "valor": 59,
       "realtime_start": "2019-11-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2019-12-28",
+      "valor": 38,
+      "realtime_start": "2018-12-28",
       "realtime_end": "9999-12-31"
     },
     {
@@ -537,6 +561,12 @@
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2020-01-31",
+      "valor": 36,
+      "realtime_start": "2019-01-31",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2020-02-01",
       "valor": 35,
       "realtime_start": "2019-02-28",
@@ -573,6 +603,12 @@
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2020-02-28",
+      "valor": 35,
+      "realtime_start": "2019-02-28",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2020-03-01",
       "valor": 40,
       "realtime_start": "2019-03-29",
@@ -603,6 +639,12 @@
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2020-03-29",
+      "valor": 40,
+      "realtime_start": "2019-03-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2020-04-01",
       "valor": 45,
       "realtime_start": "2019-04-30",
@@ -627,6 +669,12 @@
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2020-04-30",
+      "valor": 45,
+      "realtime_start": "2019-04-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2020-05-01",
       "valor": 44.3,
       "realtime_start": "2019-05-31",
@@ -645,6 +693,12 @@
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2020-05-31",
+      "valor": 44.3,
+      "realtime_start": "2019-05-31",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2020-06-01",
       "valor": 42.5,
       "realtime_start": "2019-06-28",
@@ -657,7 +711,19 @@
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2020-06-28",
+      "valor": 42.5,
+      "realtime_start": "2019-06-28",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2020-07-01",
+      "valor": 41.1,
+      "realtime_start": "2019-07-31",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-07-31",
       "valor": 41.1,
       "realtime_start": "2019-07-31",
       "realtime_end": "9999-12-31"
@@ -669,7 +735,19 @@
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2020-08-30",
+      "valor": 50,
+      "realtime_start": "2019-08-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2020-09-01",
+      "valor": 48,
+      "realtime_start": "2019-09-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-09-30",
       "valor": 48,
       "realtime_start": "2019-09-30",
       "realtime_end": "9999-12-31"
@@ -681,13 +759,31 @@
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2020-10-31",
+      "valor": 40.3,
+      "realtime_start": "2019-10-31",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2020-11-01",
       "valor": 40,
       "realtime_start": "2019-11-29",
       "realtime_end": "9999-12-31"
     },
     {
+      "fecha": "2020-11-29",
+      "valor": 40,
+      "realtime_start": "2019-11-29",
+      "realtime_end": "9999-12-31"
+    },
+    {
       "fecha": "2020-12-01",
+      "valor": 37,
+      "realtime_start": "2019-12-30",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2020-12-30",
       "valor": 37,
       "realtime_start": "2019-12-30",
       "realtime_end": "9999-12-31"

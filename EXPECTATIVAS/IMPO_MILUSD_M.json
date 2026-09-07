@@ -13,11 +13,11 @@
     "fuente": "BCRA",
     "fuente_original": "BCRA",
     "fuente_formato": "EXCEL",
-    "ultima_actualizacion": ["2026-07-31", "2026-07-31", "2026-07-31", "2026-07-31", "2026-07-31", "2026-07-31", "2026-07-31"],
+    "ultima_actualizacion": "2026-09-07T12:00:00Z",
     "fecha_inicio": "2020-12-30",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/historico-relevamiento-expectativas-mercado.xlsx",
     "revisable": true,
-    "notas": null
+    "notas": {}
   },
   "observaciones": [
     {
@@ -2784,6 +2784,12 @@
       "fecha": "2026-08-01",
       "valor": 7001.302,
       "realtime_start": "2026-07-31",
+      "realtime_end": "2026-08-30"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 6851.6239,
+      "realtime_start": "2026-08-31",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2814,6 +2820,12 @@
       "fecha": "2026-09-01",
       "valor": 7031.2834,
       "realtime_start": "2026-07-31",
+      "realtime_end": "2026-08-30"
+    },
+    {
+      "fecha": "2026-09-01",
+      "valor": 6909.4209,
+      "realtime_start": "2026-08-31",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2838,6 +2850,12 @@
       "fecha": "2026-10-01",
       "valor": 7012.8822,
       "realtime_start": "2026-07-31",
+      "realtime_end": "2026-08-30"
+    },
+    {
+      "fecha": "2026-10-01",
+      "valor": 7003.5,
+      "realtime_start": "2026-08-31",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2856,6 +2874,12 @@
       "fecha": "2026-11-01",
       "valor": 6490,
       "realtime_start": "2026-07-31",
+      "realtime_end": "2026-08-30"
+    },
+    {
+      "fecha": "2026-11-01",
+      "valor": 6383.2648,
+      "realtime_start": "2026-08-31",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2868,12 +2892,30 @@
       "fecha": "2026-12-01",
       "valor": 6200,
       "realtime_start": "2026-07-31",
+      "realtime_end": "2026-08-30"
+    },
+    {
+      "fecha": "2026-12-01",
+      "valor": 6221.331,
+      "realtime_start": "2026-08-31",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2027-01-01",
       "valor": 6088.3096,
       "realtime_start": "2026-07-31",
+      "realtime_end": "2026-08-30"
+    },
+    {
+      "fecha": "2027-01-01",
+      "valor": 6143,
+      "realtime_start": "2026-08-31",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2027-02-01",
+      "valor": 5909.1696,
+      "realtime_start": "2026-08-31",
       "realtime_end": "9999-12-31"
     }
   ]
