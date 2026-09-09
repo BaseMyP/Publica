@@ -1,7 +1,6 @@
-library(dplyr)
-library(lubridate)
 library(httr)
 library(jsonlite)
+library(dplyr)
 
 descargar_serie <- function(serie, 
                             origen = c("publica", "series_propias", "transformaciones", "agregados"), 
@@ -10,23 +9,31 @@ descargar_serie <- function(serie,
   
   origen <- match.arg(origen)
   
-  urls_base <- c(
-    publica          = "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/",
-    series_propias   = "https://raw.githubusercontent.com/BaseMyP/Series_Propias/refs/heads/main/",
-    transformaciones = "https://raw.githubusercontent.com/BaseMyP/Transformaciones/refs/heads/main/",
-    agregados        = "https://raw.githubusercontent.com/BaseMyP/Agregados/refs/heads/main/"
+  # Mapeo a los endpoints de contenidos de la API de GitHub
+  repos_base <- c(
+    publica          = "https://api.github.com/repos/BaseMyP/Publica/contents/",
+    series_propias   = "https://api.github.com/repos/BaseMyP/Series_Propias/contents/",
+    transformaciones = "https://api.github.com/repos/BaseMyP/Transformaciones/contents/",
+    agregados        = "https://api.github.com/repos/BaseMyP/Agregados/contents/"
   )
   
-  url_completa <- paste0(urls_base[origen], serie, ".json")
+  # Asegura el encodeo adecuado por si la ruta de la serie incluye subdirectorios o espacios
+  ruta_archivo <- URLencode(paste0(serie, ".json"))
+  url_completa <- paste0(repos_base[origen], ruta_archivo, "?ref=main")
   
-  # Headers base: 'Connection = close' evita reutilizar sockets colgados
-  headers_lista <- list(Connection = "close")
+  # Headers obligatorios para la API de GitHub
+  headers_lista <- list(
+    Accept       = "application/vnd.github.raw",
+    `User-Agent` = "R-script-BaseMyP",
+    Connection   = "close"
+  )
   
+  # Header de autorización si se provee token
   if (!is.null(token) && nzchar(token)) {
-    headers_lista$Authorization <- paste("token", token)
+    headers_lista$Authorization <- paste("Bearer", token)
   }
   
-  # timeout() evita que R quede esperando indefinidamente
+  # Petición HTTP
   respuesta <- GET(
     url = url_completa, 
     do.call(add_headers, headers_lista),
