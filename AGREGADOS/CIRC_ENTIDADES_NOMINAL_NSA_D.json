@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 68,
-    "ultima_actualizacion": "2026-09-08T12:00:00Z",
+    "ultima_actualizacion": "2026-09-09T12:00:00Z",
     "fecha_inicio": "2003-01-02",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
@@ -35545,6 +35545,12 @@
       "fecha": "2026-07-31",
       "valor": 2266842,
       "realtime_start": "2026-09-08",
+      "realtime_end": "2026-09-09"
+    },
+    {
+      "fecha": "2026-07-31",
+      "valor": 2267933,
+      "realtime_start": "2026-09-09",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35989,6 +35995,12 @@
       "fecha": "2026-08-26",
       "valor": 2207212,
       "realtime_start": "2026-09-04",
+      "realtime_end": "2026-09-09"
+    },
+    {
+      "fecha": "2026-08-26",
+      "valor": 2175732,
+      "realtime_start": "2026-09-09",
       "realtime_end": "9999-12-31"
     },
     {
@@ -36037,6 +36049,12 @@
       "fecha": "2026-08-31",
       "valor": 2027404,
       "realtime_start": "2026-09-05",
+      "realtime_end": "2026-09-09"
+    },
+    {
+      "fecha": "2026-08-31",
+      "valor": 2032116,
+      "realtime_start": "2026-09-09",
       "realtime_end": "9999-12-31"
     },
     {
@@ -36049,12 +36067,30 @@
       "fecha": "2026-09-01",
       "valor": 2121007,
       "realtime_start": "2026-09-08",
+      "realtime_end": "2026-09-09"
+    },
+    {
+      "fecha": "2026-09-01",
+      "valor": 2121000,
+      "realtime_start": "2026-09-09",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-09-02",
       "valor": 2137113,
       "realtime_start": "2026-09-08",
+      "realtime_end": "2026-09-09"
+    },
+    {
+      "fecha": "2026-09-02",
+      "valor": 2140710,
+      "realtime_start": "2026-09-09",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-09-03",
+      "valor": 2198104,
+      "realtime_start": "2026-09-09",
       "realtime_end": "9999-12-31"
     }
   ]
