@@ -35,6 +35,7 @@ jobs:
             any::stringr
             any::lubridate
             any::readxl
+            any::rvest
 
       - name: Ejecutar Extracción BCRA, INDEC, REM y FRED
         run: |
