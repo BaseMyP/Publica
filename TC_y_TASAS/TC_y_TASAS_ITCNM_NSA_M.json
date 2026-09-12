@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "Excel",
     "id_original": "2",
-    "ultima_actualizacion": "2026-09-05T12:00:00Z",
+    "ultima_actualizacion": "2026-09-12T12:00:00Z",
     "fecha_inicio": "1997-01-01",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/ITCNMSerie.xlsx",
     "revisable": true,
@@ -2167,6 +2167,12 @@
       "fecha": "2026-08-01",
       "valor": 9982.9982,
       "realtime_start": "2026-09-05",
+      "realtime_end": "2026-09-12"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 9983.7542,
+      "realtime_start": "2026-09-12",
       "realtime_end": "9999-12-31"
     }
   ]
