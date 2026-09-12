@@ -13,7 +13,7 @@
     "fuente_original": "MAE",
     "fuente_formato": "API_MAE",
     "id_original": "CAUCIONES",
-    "ultima_actualizacion": "2026-09-11T12:00:00Z",
+    "ultima_actualizacion": "2026-09-12T12:00:00Z",
     "revisable": true,
     "notas": {}
   },
@@ -796,6 +796,12 @@
       "fecha": "2026-09-10",
       "valor": 20.1315,
       "realtime_start": "2026-09-11",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-09-11",
+      "valor": 20.175,
+      "realtime_start": "2026-09-12",
       "realtime_end": "9999-12-31"
     }
   ]

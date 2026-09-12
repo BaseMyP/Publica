@@ -15,7 +15,7 @@
     "fuente_original": "Bureau of Labor Statistics",
     "fuente_formato": "API",
     "id_original": "CPIAUCNS",
-    "ultima_actualizacion": "2026-09-11T12:00:00Z",
+    "ultima_actualizacion": "2026-09-12T12:00:00Z",
     "fecha_inicio": "1947-01-01",
     "url_original": "https://fred.stlouisfed.org/series/CPIAUCNS",
     "revisable": true,
@@ -8192,6 +8192,12 @@
       "fecha": "2026-07-01",
       "valor": 333.918,
       "realtime_start": "2026-08-13",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 334.98,
+      "realtime_start": "2026-09-12",
       "realtime_end": "9999-12-31"
     }
   ]

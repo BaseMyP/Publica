@@ -14,7 +14,7 @@
     "fuente_original": "INDEC",
     "fuente_formato": "API_INDEC",
     "id_original": "147.3_IBIENESNAL_DICI_T_19",
-    "ultima_actualizacion": "2026-09-11T12:00:00Z",
+    "ultima_actualizacion": "2026-09-12T12:00:00Z",
     "fecha_inicio": "2016-12-01",
     "url_original": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
     "revisable": false,
@@ -715,6 +715,12 @@
       "fecha": "2026-07-01",
       "valor": 11856.4137,
       "realtime_start": "2026-08-14",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 12025.8226,
+      "realtime_start": "2026-09-12",
       "realtime_end": "9999-12-31"
     }
   ]
