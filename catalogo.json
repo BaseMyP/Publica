@@ -2406,5 +2406,109 @@
     "tipo_informacion": "Publica",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_VNM_INDICE_NSA_M.json",
     "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_BRASIL_M",
+    "titulo": "Ponderador ITCRM - Brasil",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_BRASIL_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_CANADA_M",
+    "titulo": "Ponderador ITCRM - Canadá",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_CANADA_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_CHILE_M",
+    "titulo": "Ponderador ITCRM - Chile",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_CHILE_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_ESTADOS_UNIDOS_M",
+    "titulo": "Ponderador ITCRM - Estados Unidos",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_ESTADOS_UNIDOS_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_MEXICO_M",
+    "titulo": "Ponderador ITCRM - México",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_MEXICO_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_URUGUAY_M",
+    "titulo": "Ponderador ITCRM - Uruguay",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_URUGUAY_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_CHINA_M",
+    "titulo": "Ponderador ITCRM - China",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_CHINA_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_INDIA_M",
+    "titulo": "Ponderador ITCRM - India",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_INDIA_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_JAPON_M",
+    "titulo": "Ponderador ITCRM - Japón",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_JAPON_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_REINO_UNIDO_M",
+    "titulo": "Ponderador ITCRM - Reino Unido",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_REINO_UNIDO_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_SUIZA_M",
+    "titulo": "Ponderador ITCRM - Suiza",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_SUIZA_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_ZONA_EURO_M",
+    "titulo": "Ponderador ITCRM - Zona Euro",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_ZONA_EURO_M.json",
+    "metodo_etl": "EXCEL_BCRA"
+  },
+  {
+    "serie_id": "PONDERADOR_ITCRM_VIETNAM_M",
+    "titulo": "Ponderador ITCRM - Vietnam",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/PONDERADOR_ITCRM_VIETNAM_M.json",
+    "metodo_etl": "EXCEL_BCRA"
   }
 ]
