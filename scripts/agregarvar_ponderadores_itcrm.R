@@ -110,11 +110,11 @@ update_ponderador_json_serie <- function(
     dir.create(path_dir, recursive = TRUE, showWarnings = FALSE)
   }
   
-  # Extraer datos y dividir por 100 para transformar de unidades a porcentajes/proporción
+  # Extraer datos exactos sin operaciones matemáticas
   df_obs <- df_datos %>%
     transmute(
       fecha = fecha,
-      valor = round(as.numeric(.data[[col_nombre]]) / 100, 6)
+      valor = as.numeric(.data[[col_nombre]])
     ) %>%
     filter(!is.na(fecha), !is.na(valor)) %>%
     arrange(fecha)
@@ -126,7 +126,7 @@ update_ponderador_json_serie <- function(
   
   metadatos <- list(
     titulo = paste0("Ponderador ITCRM - ", pais_nombre),
-    descripcion = paste0("Ponderador mensual de comercio exterior en el Índice de Tipo de Cambio Real Multilateral (ITCRM) para ", pais_nombre),
+    descripcion = paste0("Participación del país en el comercio internacional de Argentina con sus principales socios (excluyendo productos primarios, combustibles y energía), en el promedio móvil de los últimos 12 meses del mes anterior"),
     pais = pais_nombre,
     categoria = tema_destino,
     frecuencia_short = "M",
@@ -184,7 +184,7 @@ update_ponderador_json_serie <- function(
       is.na(actualizadas$valor_viejo),
       "NUEVO",
       ifelse(
-        round(actualizadas$valor_nuevo, 6) != round(actualizadas$valor_viejo, 6),
+        actualizadas$valor_nuevo != actualizadas$valor_viejo,
         "REVISADO",
         "SIN_CAMBIOS"
       )
