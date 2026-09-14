@@ -2262,5 +2262,149 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TASATAMAR_TNA_A.json",
     "metodo_etl": "EXCEL_REM"
+  },
+  {
+    "serie_id": "CTOT_ARG_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Argentina",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/CTOT_ARG_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_BRA_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Brasil",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_BRA_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_CHE_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Suiza",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_CHE_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_CHL_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Chile",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_CHL_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_CAN_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Canada",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_CAN_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_CHN_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - China",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_CHN_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_DEU_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Alemania",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_DEU_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_ESP_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Espana",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_ESP_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_FRA_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Francia",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_FRA_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_GBR_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Reino Unido",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_GBR_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_IND_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - India",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_IND_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_JPN_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Japon",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_JPN_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_ITA_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Italia",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_ITA_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_MEX_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Mexico",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_MEX_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_NLD_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Paises Bajos",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_NLD_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_USA_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Estados Unidos",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_USA_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_URY_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Uruguay",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_URY_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "CTOT_VNM_INDICE_NSA_M",
+    "titulo": "Commodity Terms of Trade - Vietnam",
+    "frecuencia": "M",
+    "tipo_informacion": "Publica",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_VNM_INDICE_NSA_M.json",
+    "metodo_etl": "API_IMF"
   }
 ]
