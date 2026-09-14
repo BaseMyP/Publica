@@ -50,6 +50,8 @@ jobs:
           Rscript scripts/actualizacion_balbcrhis.R
           Rscript scripts/actualizacion_bolmensualdeuda.R
           Rscript scripts/actualizacion_MULC.R
+          Rscript scripts/actualizacion_ponderadores_itcrm.R
+          Rscript scripts/actualizacion_ctot.R
 
       - name: Configurar Git y Subir Cambios
         run: |
