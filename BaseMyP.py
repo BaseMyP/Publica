@@ -1,54 +1,57 @@
 # PAQUETE DE CONSULTA A LA BASE DE DATOS DE MODELOS Y PRONÃ“STICOS EN GITHUB #
 
-import os
 import requests
 import pandas as pd
 
-def _construir_headers_y_url(repositorio: str, endpoint: str, token: str = None):
-    """FunciÃ³n auxiliar para construir URLs de la API de GitHub y headers."""
-    # Mapeo de repositorios a la organizaciÃ³n / usuario BaseMyP
-    base_url = f"https://raw.githubusercontent.com/BaseMyP/{repositorio}/main/data/{endpoint}"
+def _descargar_json_github(repositorio: str, endpoint: str, token: str = None):
+    """
+    Busca el recurso probando distintas ramas (main/master) y rutas (data/ o raíz).
+    """
+    ramas = ["main", "master"]
+    rutas = [f"data/{endpoint}", endpoint]
     
     headers = {}
     if token:
         headers["Authorization"] = f"Bearer {token}"
-    
-    return base_url, headers
+        
+    errores = []
+
+    for rama in ramas:
+        for ruta in rutas:
+            url = f"https://raw.githubusercontent.com/BaseMyP/{repositorio}/{rama}/{ruta}"
+            response = requests.get(url, headers=headers)
+            
+            if response.status_code == 200:
+                return response.json()
+            else:
+                errores.append(f"URL probada: {url} (Status: {response.status_code})")
+
+    # Si ninguna combinación funcionó, lanza una excepción detallada
+    detalle_errores = "\n".join(errores)
+    raise FileNotFoundError(
+        f"No se pudo encontrar '{endpoint}' en el repositorio '{repositorio}'.\n"
+        f"Intentos fallidos:\n{detalle_errores}"
+    )
 
 
 def BaseMyP_obtener_catalogo(repositorio: str = "publica", token: str = None) -> pd.DataFrame:
-    """Obtiene el catÃ¡logo de series disponibles en un repositorio determinado."""
-    url, headers = _construir_headers_y_url(repositorio, "catalogo.json", token)
-    response = requests.get(url, headers=headers)
-    
-    if response.status_code != 200:
-        raise ConnectionError(f"Error al obtener el catÃ¡logo ({response.status_code}): {response.text}")
-    
-    return pd.DataFrame(response.json())
+    """Obtiene el catálogo de series disponibles en un repositorio determinado."""
+    data = _descargar_json_github(repositorio, "catalogo.json", token)
+    return pd.DataFrame(data)
 
 
 def BaseMyP_descargar_serie(serie: str, origen: str = "publica", token: str = None) -> pd.DataFrame:
-    """Descarga los datos temporales de una serie especÃ­fica."""
+    """Descarga los datos temporales de una serie específica."""
     endpoint = f"{serie}.json"
-    url, headers = _construir_headers_y_url(origen, endpoint, token)
-    response = requests.get(url, headers=headers)
+    data = _descargar_json_github(origen, endpoint, token)
     
-    if response.status_code != 200:
-        raise ConnectionError(f"Error al descargar la serie '{serie}' ({response.status_code})")
-    
-    df = pd.DataFrame(response.json())
+    df = pd.DataFrame(data)
     if "fecha" in df.columns:
         df["fecha"] = pd.to_datetime(df["fecha"])
     return df
 
 
 def BaseMyP_metadatos(serie: str, origen: str = "publica", token: str = None) -> dict:
-    """Recupera la informaciÃ³n tÃ©cnica y metadatos de una serie."""
+    """Recupera la información técnica y metadatos de una serie."""
     endpoint = f"{serie}_metadatos.json"
-    url, headers = _construir_headers_y_url(origen, endpoint, token)
-    response = requests.get(url, headers=headers)
-    
-    if response.status_code != 200:
-        raise ConnectionError(f"Error al obtener metadatos de '{serie}' ({response.status_code})")
-    
-    return response.json()
+    return _descargar_json_github(origen, endpoint, token)
