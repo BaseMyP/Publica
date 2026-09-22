@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "Excel",
     "id_original": "33",
-    "ultima_actualizacion": "2026-09-19T12:00:00Z",
+    "ultima_actualizacion": "2026-09-22T12:00:00Z",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/diar_bas.xls",
     "revisable": true,
     "notas": "Hoja: Serie_diaria"
@@ -3954,6 +3954,12 @@
       "fecha": "2026-09-16",
       "valor": 3558293.9811,
       "realtime_start": "2026-09-19",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-09-17",
+      "valor": 3536240.0292,
+      "realtime_start": "2026-09-22",
       "realtime_end": "9999-12-31"
     }
   ]
