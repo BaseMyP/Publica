@@ -14,7 +14,7 @@ message("Iniciando actualización de PIB Desestacionalizado: ", Sys.time())
 
 # 1. Verificar si hay archivo nuevo en la carpeta inputs/
 # Se espera que cuando haya datos nuevos subas el archivo con este nombre genérico
-ruta_input <- "inputs/sh_oferta_demanda_desest.xls"
+ruta_input <- "inputs/historicos/sh_oferta_demanda_desest.xls"
 
 if (!file.exists(ruta_input)) {
   message("No se detectó un archivo nuevo (", ruta_input, "). Finalizando rutina.")
@@ -26,7 +26,8 @@ cat_path <- "catalogo.json"
 catalogo_completo <- fromJSON(cat_path)
 
 # Filtramos por el método ETL asignado
-catalogo_pib <- catalogo_completo %>% filter(metodo_etl == "EXCEL_CARPETA_INPUTS")
+catalogo_pib <- catalogo_completo %>% filter(metodo_etl == "EXCEL_CARPETA_INPUTS") %>% 
+  filter(!str_detect(serie_id,"^SALARIOS"))
 
 if (nrow(catalogo_pib) == 0) {
   message("No hay series configuradas para EXCEL_CARPETA_INPUTS. Finalizando.")
@@ -56,12 +57,12 @@ datos_procesados <- datos %>%
 
 # Mapeo para relacionar los IDs de la base con las columnas del DataFrame
 mapeo_columnas <- c(
-  "CN_PBI_SA_T" = "PIB",
-  "CN_CONSUMO_PRIVADO_SA_T" = "CONSUMO_PRIVADO",
-  "CN_CONSUMO_PUBLICO_SA_T" = "CONSUMO_PUBLICO",
-  "CN_FBCF_SA_T" = "FBCF",
-  "CN_EXPORTACIONES_SA_T" = "EXPORTACIONES",
-  "CN_IMPORTACIONES_SA_T" = "IMPORTACIONES"
+  "CN_PBI_SA_Q" = "PIB",
+  "CN_CONSUMO_PRIVADO_SA_Q" = "CONSUMO_PRIVADO",
+  "CN_CONSUMO_PUBLICO_SA_Q" = "CONSUMO_PUBLICO",
+  "CN_FBCF_SA_Q" = "FBCF",
+  "CN_EXPORTACIONES_SA_Q" = "EXPORTACIONES",
+  "CN_IMPORTACIONES_SA_Q" = "IMPORTACIONES"
 )
 
 hoy <- as.character(Sys.Date())
@@ -123,8 +124,8 @@ for (i in 1:nrow(catalogo_pib)) {
 }
 
 # 5. Mover el archivo para no volver a procesarlo mañana
-if (!dir.exists("inputs/historicos")) dir.create("inputs/historicos", recursive = TRUE)
-nuevo_nombre <- paste0("inputs/historicos/pib_actualizado_", format(Sys.Date(), "%Y%m%d"), ".xls")
-file.rename(ruta_input, nuevo_nombre)
+# if (!dir.exists("inputs/historicos")) dir.create("inputs/historicos", recursive = TRUE)
+# nuevo_nombre <- paste0("inputs/historicos/pib_actualizado_", format(Sys.Date(), "%Y%m%d"), ".xls")
+# file.rename(ruta_input, nuevo_nombre)
 
-message("✓ Proceso finalizado exitosamente. Archivo resguardado en: ", nuevo_nombre)
+#message("✓ Proceso finalizado exitosamente. Archivo resguardado en: ", nuevo_nombre)

@@ -440,51 +440,51 @@
     "metodo_etl": "API_FRED"
   },
   {
-    "serie_id": "CN_PBI_SA_T",
+    "serie_id": "CN_PBI_SA_Q",
     "titulo": "PIB desestacionalizado en millones de pesos, a precios de 2004",
     "frecuencia": "Q",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_PBI_SA_T.json",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_PBI_SA_Q.json",
     "metodo_etl": "EXCEL_CARPETA_INPUTS"
   },
   {
-    "serie_id": "CN_CONSUMO_PRIVADO_SA_T",
+    "serie_id": "CN_CONSUMO_PRIVADO_SA_Q",
     "titulo": "Consumo privado desestacionalizado en millones de pesos, a precios de 2004",
     "frecuencia": "Q",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_CONSUMO_PRIVADO_SA_T.json",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_CONSUMO_PRIVADO_SA_Q.json",
     "metodo_etl": "EXCEL_CARPETA_INPUTS"
   },
   {
-    "serie_id": "CN_CONSUMO_PUBLICO_SA_T",
+    "serie_id": "CN_CONSUMO_PUBLICO_SA_Q",
     "titulo": "Consumo público desestacionalizado en millones de pesos, a precios de 2004",
     "frecuencia": "Q",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_CONSUMO_PUBLICO_SA_T.json",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_CONSUMO_PUBLICO_SA_Q.json",
     "metodo_etl": "EXCEL_CARPETA_INPUTS"
   },
   {
-    "serie_id": "CN_FBCF_SA_T",
+    "serie_id": "CN_FBCF_SA_Q",
     "titulo": "Formación Bruta de Capital Fijo desestacionalizada en millones de pesos, a precios de 2004",
     "frecuencia": "Q",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_FBCF_SA_T.json",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_FBCF_SA_Q.json",
     "metodo_etl": "EXCEL_CARPETA_INPUTS"
   },
   {
-    "serie_id": "CN_EXPORTACIONES_SA_T",
+    "serie_id": "CN_EXPORTACIONES_SA_Q",
     "titulo": "Exportaciones desestacionalizadas en millones de pesos, a precios de 2004",
     "frecuencia": "Q",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_EXPORTACIONES_SA_T.json",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_EXPORTACIONES_SA_Q.json",
     "metodo_etl": "EXCEL_CARPETA_INPUTS"
   },
   {
-    "serie_id": "CN_IMPORTACIONES_SA_T",
+    "serie_id": "CN_IMPORTACIONES_SA_Q",
     "titulo": "Importaciones desestacionalizadas en millones de pesos, a precios de 2004",
     "frecuencia": "Q",
     "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_IMPORTACIONES_SA_T.json",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/CN_IMPORTACIONES_SA_Q.json",
     "metodo_etl": "EXCEL_CARPETA_INPUTS"
   },
   {
