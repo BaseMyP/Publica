@@ -9,7 +9,7 @@ library(zoo)
 # 1. CARGA DE LOGICA CORE Y CONFIGURACIÓN
 # ------------------------------------------------------------
 # Cargamos tus funciones compartidas del proyecto
-source("funciones_base.R")
+source("scripts/funciones_base.R")
 
 # Ruta al nuevo archivo Excel publicado (el nuevo vintage a comparar)
 archivo_excel <- "inputs/historicos/sh_oferta_demanda.xls" 
@@ -122,7 +122,7 @@ for (config in cuadros_config) {
       mutate(
         status = case_when(
           is.na(valor_viejo) ~ "NUEVO",
-          round(valor, 4) != round(valor_viejo, 4) ~ "REVISADO",
+          round(valor_nuevo, 4) != round(valor_viejo, 4) ~ "REVISADO",
           TRUE ~ "SIN_CAMBIOS"
         )
       )
@@ -147,7 +147,7 @@ for (config in cuadros_config) {
     # Insertar los nuevos puntos o los revisados con la marca temporal de hoy
     nuevas_inserciones <- actualizadas %>%
       filter(status %in% c("NUEVO", "REVISADO")) %>%
-      select(fecha, valor) %>%
+      select(fecha, valor = valor_nuevo) %>%
       mutate(realtime_start = hoy, realtime_end = "9999-12-31")
     
     # Unificar todo el set cronológico ordenado por fecha y luego por start_date

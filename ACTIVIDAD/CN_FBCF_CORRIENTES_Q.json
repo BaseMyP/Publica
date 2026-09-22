@@ -13,7 +13,7 @@
     "fuente": "INDEC",
     "fuente_original": "INDEC",
     "fuente_formato": "Excel",
-    "ultima_actualizacion": "2026-07-03T12:00:00Z",
+    "ultima_actualizacion": "2026-09-22T12:00:00Z",
     "fecha_inicio": "2004-01-01",
     "url_original": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_oferta_demanda_06_26.xls",
     "revisable": true,
@@ -552,6 +552,18 @@
       "fecha": "2026-01-01",
       "valor": 139437052.2033,
       "realtime_start": "2026-07-03",
+      "realtime_end": "2026-09-22"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 139597733.7976,
+      "realtime_start": "2026-09-22",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 170146372.7718,
+      "realtime_start": "2026-09-22",
       "realtime_end": "9999-12-31"
     }
   ]
