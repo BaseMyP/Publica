@@ -2510,5 +2510,61 @@
     "tipo_informacion": "Publica",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_VNM_INDICE_NSA_M.json",
     "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "enUSD_SECTORPRIV_ADELANTOS_NSA_D",
+    "titulo": "Préstamos en USD al sector privado. Adelantos",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/enUSD_SECTORPRIV_ADELANTOS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "enUSD_SECTORPRIV_DOCUMENTOS_NSA_D",
+    "titulo": "Préstamos en USD al sector privado. Documentos",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/enUSD_SECTORPRIV_DOCUMENTOS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "enUSD_SECTORPRIV_HIPOTECARIOS_NSA_D",
+    "titulo": "Préstamos en USD al sector privado. Hipotecarios",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/enUSD_SECTORPRIV_HIPOTECARIOS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "enUSD_SECTORPRIV_PRENDARIOS_NSA_D",
+    "titulo": "Préstamos en USD al sector privado. Prendarios",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/enUSD_SECTORPRIV_PRENDARIOS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "enUSD_SECTORPRIV_PERSONALES_NSA_D",
+    "titulo": "Préstamos en USD al sector privado. Personales",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/enUSD_SECTORPRIV_PERSONALES_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "enUSD_SECTORPRIV_TARJETAS_NSA_D",
+    "titulo": "Préstamos en USD al sector privado. Tarjetas",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/enUSD_SECTORPRIV_TARJETAS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "enUSD_SECTORPRIV_OTROS_NSA_D",
+    "titulo": "Préstamos en USD al sector privado. Otros",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/enUSD_SECTORPRIV_OTROS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
   }
 ]
