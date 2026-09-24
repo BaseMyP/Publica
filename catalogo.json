@@ -2566,5 +2566,61 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/enUSD_SECTORPRIV_OTROS_NSA_D.json",
     "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "TASAS_enUSD_SECTORPRIV_ADELANTOS_NSA_M",
+    "titulo": "Tasas de Adelantos en cuenta corriente en moneda extranjera. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/TASAS_enUSD_SECTORPRIV_ADELANTOS_NSA_M.json",
+    "metodo_etl": "EXCEL_PRESER_TAS"
+  },
+  {
+    "serie_id": "TASAS_enUSD_SECTORPRIV_ADELANTOS_OTROS_NSA_M",
+    "titulo": "Tasas de Otros adelantos en moneda extranjera. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/TASAS_enUSD_SECTORPRIV_ADELANTOS_OTROS_NSA_M.json",
+    "metodo_etl": "EXCEL_PRESER_TAS"
+  },
+  {
+    "serie_id": "TASAS_enUSD_SECTORPRIV_DOCUMENTOS_NSA_M",
+    "titulo": "Tasas de Documentos a sola firma en moneda extranjera. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/TASAS_enUSD_SECTORPRIV_DOCUMENTOS_NSA_M.json",
+    "metodo_etl": "EXCEL_PRESER_TAS"
+  },
+  {
+    "serie_id": "TASAS_enUSD_SECTORPRIV_HIPOTECARIOS_NSA_M",
+    "titulo": "Tasas de Préstamos Hipotecarios en moneda extranjera. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/TASAS_enUSD_SECTORPRIV_HIPOTECARIOS_NSA_M.json",
+    "metodo_etl": "EXCEL_PRESER_TAS"
+  },
+  {
+    "serie_id": "TASAS_enUSD_SECTORPRIV_PRENDARIOS_NSA_M",
+    "titulo": "Tasas de Préstamos Prendarios en moneda extranjera. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/TASAS_enUSD_SECTORPRIV_PRENDARIOS_NSA_M.json",
+    "metodo_etl": "EXCEL_PRESER_TAS"
+  },
+  {
+    "serie_id": "TASAS_enUSD_SECTORPRIV_PERSONALESyTARJETA_NSA_M",
+    "titulo": "Tasas de Préstamos Personales y sistema de tarjetas de crédito en moneda extranjera. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/TASAS_enUSD_SECTORPRIV_PERSONALESyTARJETA_NSA_M.json",
+    "metodo_etl": "EXCEL_PRESER_TAS"
+  },
+  {
+    "serie_id": "TASAS_enUSD_SECTORPRIV_OTROS_NSA_M",
+    "titulo": "Tasas de Otros préstamos en moneda extranjera. Total",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/PRESTAMOS/TASAS_enUSD_SECTORPRIV_OTROS_NSA_M.json",
+    "metodo_etl": "EXCEL_PRESER_TAS"
   }
 ]
