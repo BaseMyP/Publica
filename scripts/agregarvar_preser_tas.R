@@ -13,18 +13,18 @@ source("scripts/funciones_base.R")
 message("Iniciando descarga histórica de preser_tas.xls (BCRA)...")
 
 # 1. Descargar archivo
-url_balbcrhis <- "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/preser_tas.xls"
+url_preser_tas <- "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/preser_tas.xls"
 archivo_tmp <- tempfile(fileext = ".xls")
 
 tryCatch({
-  GET(url_balbcrhis, write_disk(archivo_tmp, overwrite = TRUE), config(ssl_verifypeer = 0))
+  GET(url_preser_tas, write_disk(archivo_tmp, overwrite = TRUE), config(ssl_verifypeer = 0))
 }, error = function(e) {
   stop("Error al descargar el archivo: ", e$message)
 })
 
 # 2. Configurar las series a extraer
 # Aquí puedes agregar más variables en el futuro simplemente copiando el bloque
-series_balbcrhis <- list(
+series_preser_tas <- list(
   TASAS_enUSD_SECTORPRIV_ADELANTOS_NSA_M = list( 
     col_index = 67,  
     titulo = "Tasas de Adelantos en cuenta corriente en moneda extranjera. Total",
@@ -79,9 +79,9 @@ tema_fijo <- "PRESTAMOS"
 if (!dir.exists(tema_fijo)) dir.create(tema_fijo, recursive = TRUE)
 
 # 4. Bucle de procesamiento y guardado
-for (serie_id in names(series_balbcrhis)) {
+for (serie_id in names(series_preser_tas)) {
   
-  config <- series_balbcrhis[[serie_id]]
+  config <- series_preser_tas[[serie_id]]
   
   # Extraemos solo la fecha (columna 1) y la columna deseada
   df_serie <- df_raw %>%
@@ -120,7 +120,7 @@ for (serie_id in names(series_balbcrhis)) {
     fuente_formato = "Excel",
     id_original = as.character(config$col_index), # Guardamos el índice de la columna para la actualización
     ultima_actualizacion = paste0(hoy, "T12:00:00Z"),
-    url_original = url_balbcrhis,
+    url_original = url_preser_tas,
     revisable = TRUE,
     notas = "Hoja: Tasas_sector_privado"
   )
