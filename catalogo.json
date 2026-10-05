@@ -2622,5 +2622,117 @@
     "tipo_informacion": "Publica",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_VNM_INDICE_NSA_M.json",
     "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "ICA_EXPO_TOTAL_NSA_M",
+    "titulo": "ICA. Exportaciones Totales (FOB). Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_EXPO_TOTAL_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_EXPO_PP_NSA_M",
+    "titulo": "ICA. Exportaciones Totales (FOB). Productos Primarios. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_EXPO_PP_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_EXPO_MOA_NSA_M",
+    "titulo": "ICA. Exportaciones Totales (FOB). MOA. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_EXPO_MOA_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_EXPO_MOI_NSA_M",
+    "titulo": "ICA. Exportaciones Totales (FOB). MOI. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_EXPO_MOI_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_EXPO_CYE_NSA_M",
+    "titulo": "ICA. Exportaciones Totales (FOB). CyE. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_EXPO_CYE_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_IMPO_TOTAL_NSA_M",
+    "titulo": "ICA. Importaciones Totales (CIF). Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_IMPO_TOTAL_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_IMPO_BIENES_CAPITAL_NSA_M",
+    "titulo": "ICA. Importaciones Totales (CIF). Bienes de Capital. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_IMPO_BIENES_CAPITAL_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_IMPO_BIENES_INTERMEDIOS_NSA_M",
+    "titulo": "ICA. Importaciones Totales (CIF). Bienes intermedios. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_IMPO_BIENES_INTERMEDIOS_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_IMPO_CYL_NSA_M",
+    "titulo": "ICA. Importaciones Totales (CIF). Combustibles y Lubricantes. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_IMPO_CYL_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_IMPO_BIENES_PIEZASYACCESORIOS_NSA_M",
+    "titulo": "ICA. Importaciones Totales (CIF). Piezas y accesorios. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_IMPO_BIENES_PIEZASYACCESORIOS_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_IMPO_BIENES_CONSUMO_NSA_M",
+    "titulo": "ICA. Importaciones Totales (CIF). Bienes de Consumo. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_IMPO_BIENES_CONSUMO_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_IMPO_VEHICULOS_NSA_M",
+    "titulo": "ICA. Importaciones Totales (CIF). Vehículos. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_IMPO_VEHICULOS_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_IMPO_RESTO_NSA_M",
+    "titulo": "ICA. Importaciones Totales (CIF). Resto. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_IMPO_RESTO_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
+  },
+  {
+    "serie_id": "ICA_SALDO_COMERCIAL_NSA_M",
+    "titulo": "ICA. Saldo Comercial. Millones de USD",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/ICA_SALDO_COMERCIAL_NSA_M.json",
+    "metodo_etl": "CSV_ICA"
   }
 ]
