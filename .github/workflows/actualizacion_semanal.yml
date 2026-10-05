@@ -53,6 +53,7 @@ jobs:
           Rscript scripts/actualizacion_ponderadores_itcrm.R
           Rscript scripts/actualizacion_ctot.R
           Rscript scripts/actualizacion_preser_tas.R
+          Rscript scripts/actualizacion_ica.R
 
       - name: Configurar Git y Subir Cambios
         run: |
