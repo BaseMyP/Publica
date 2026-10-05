@@ -31,7 +31,7 @@ tryCatch({
 })
 
 # 3. Leer y limpiar
-df_limpio <- read_excel(temp_file, sheet = "IPMP mensual desde ene-1997", skip = 2) %>%
+df_limpio <- read_excel(temp_file, sheet = "IPMP mensual", skip = 2) %>%
   select(1:5) %>% # Tomamos las primeras 5 columnas
   setNames(c("fecha", "IPMP", "IPMPAGRO", "IPMPMETALES", "IPMPPETROLEO")) %>%
   mutate(fecha = as.Date(as.numeric(fecha), origin="1899-12-30")) %>%
