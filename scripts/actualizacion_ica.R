@@ -64,7 +64,7 @@ for (i in 1:nrow(catalogo_ica)) {
     next
   }
   
-  datos_actuales <- base_actual$datos %>%
+  datos_actuales <- base_actual$observaciones %>%
     mutate(
       fecha = as.character(fecha),
       realtime_start = as.character(realtime_start),
@@ -132,7 +132,7 @@ for (i in 1:nrow(catalogo_ica)) {
       arrange(fecha, realtime_start)
     
     base_actual$metadatos$ultima_actualizacion <- Sys.Date()
-    base_actual$datos <- datos_finales
+    base_actual$observaciones <- datos_finales
     
     write_json(base_actual, path_archivo, pretty = TRUE, auto_unbox = TRUE)
     hubo_actualizaciones <- TRUE

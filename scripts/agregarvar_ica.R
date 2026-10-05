@@ -117,7 +117,7 @@ for (col in columnas_series) {
   
   objeto_json <- list(
     metadatos = metadatos,
-    datos     = datos_vintage
+    observaciones     = datos_vintage
   )
   
   path_archivo <- file.path(tema_fijo, paste0(serie_id, ".json"))
