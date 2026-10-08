@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 67,
-    "ultima_actualizacion": "2026-10-07T12:00:00Z",
+    "ultima_actualizacion": "2026-10-08T12:00:00Z",
     "fecha_inicio": "2003-01-02",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
@@ -36601,6 +36601,12 @@
       "fecha": "2026-09-24",
       "valor": 26507693,
       "realtime_start": "2026-10-03",
+      "realtime_end": "2026-10-08"
+    },
+    {
+      "fecha": "2026-09-24",
+      "valor": 26508547,
+      "realtime_start": "2026-10-08",
       "realtime_end": "9999-12-31"
     },
     {
@@ -36619,6 +36625,12 @@
       "fecha": "2026-09-25",
       "valor": 26558219,
       "realtime_start": "2026-10-06",
+      "realtime_end": "2026-10-08"
+    },
+    {
+      "fecha": "2026-09-25",
+      "valor": 26559072,
+      "realtime_start": "2026-10-08",
       "realtime_end": "9999-12-31"
     },
     {
@@ -36649,6 +36661,12 @@
       "fecha": "2026-09-29",
       "valor": 26600811,
       "realtime_start": "2026-10-06",
+      "realtime_end": "2026-10-08"
+    },
+    {
+      "fecha": "2026-09-29",
+      "valor": 26600113,
+      "realtime_start": "2026-10-08",
       "realtime_end": "9999-12-31"
     },
     {
@@ -36661,12 +36679,30 @@
       "fecha": "2026-09-30",
       "valor": 26625546,
       "realtime_start": "2026-10-07",
+      "realtime_end": "2026-10-08"
+    },
+    {
+      "fecha": "2026-09-30",
+      "valor": 26625559,
+      "realtime_start": "2026-10-08",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-10-01",
       "valor": 26658811,
       "realtime_start": "2026-10-07",
+      "realtime_end": "2026-10-08"
+    },
+    {
+      "fecha": "2026-10-01",
+      "valor": 26659841,
+      "realtime_start": "2026-10-08",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-10-02",
+      "valor": 26726360,
+      "realtime_start": "2026-10-08",
       "realtime_end": "9999-12-31"
     }
   ]
