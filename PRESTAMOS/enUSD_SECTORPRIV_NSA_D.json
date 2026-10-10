@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 125,
-    "ultima_actualizacion": "2026-10-09T12:00:00Z",
+    "ultima_actualizacion": "2026-10-10T12:00:00Z",
     "fecha_inicio": "2018-05-14",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
@@ -34795,6 +34795,12 @@
       "fecha": "2026-08-04",
       "valor": 24695,
       "realtime_start": "2026-08-24",
+      "realtime_end": "2026-10-10"
+    },
+    {
+      "fecha": "2026-08-04",
+      "valor": 24694,
+      "realtime_start": "2026-10-10",
       "realtime_end": "9999-12-31"
     },
     {
@@ -34807,6 +34813,12 @@
       "fecha": "2026-08-05",
       "valor": 24663,
       "realtime_start": "2026-09-04",
+      "realtime_end": "2026-10-10"
+    },
+    {
+      "fecha": "2026-08-05",
+      "valor": 24662,
+      "realtime_start": "2026-10-10",
       "realtime_end": "9999-12-31"
     },
     {
@@ -34819,12 +34831,24 @@
       "fecha": "2026-08-06",
       "valor": 24567,
       "realtime_start": "2026-09-04",
+      "realtime_end": "2026-10-10"
+    },
+    {
+      "fecha": "2026-08-06",
+      "valor": 24566,
+      "realtime_start": "2026-10-10",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-08-07",
       "valor": 24673,
       "realtime_start": "2026-08-24",
+      "realtime_end": "2026-10-10"
+    },
+    {
+      "fecha": "2026-08-07",
+      "valor": 24672,
+      "realtime_start": "2026-10-10",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35419,6 +35443,12 @@
       "fecha": "2026-09-28",
       "valor": 26239,
       "realtime_start": "2026-10-07",
+      "realtime_end": "2026-10-10"
+    },
+    {
+      "fecha": "2026-09-28",
+      "valor": 26240,
+      "realtime_start": "2026-10-10",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35455,6 +35485,12 @@
       "fecha": "2026-10-01",
       "valor": 26284,
       "realtime_start": "2026-10-08",
+      "realtime_end": "2026-10-10"
+    },
+    {
+      "fecha": "2026-10-01",
+      "valor": 26288,
+      "realtime_start": "2026-10-10",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35473,6 +35509,18 @@
       "fecha": "2026-10-05",
       "valor": 26081,
       "realtime_start": "2026-10-09",
+      "realtime_end": "2026-10-10"
+    },
+    {
+      "fecha": "2026-10-05",
+      "valor": 26020,
+      "realtime_start": "2026-10-10",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-10-06",
+      "valor": 26002,
+      "realtime_start": "2026-10-10",
       "realtime_end": "9999-12-31"
     }
   ]
