@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "Excel",
     "id_original": "2",
-    "ultima_actualizacion": "2026-10-05T12:00:00Z",
+    "ultima_actualizacion": "2026-10-11T12:00:00Z",
     "fecha_inicio": "1997-01-01",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/ITCRMSerie.xlsx",
     "revisable": true,
@@ -3721,6 +3721,12 @@
       "fecha": "2026-07-01",
       "valor": 85.4886,
       "realtime_start": "2026-09-12",
+      "realtime_end": "2026-10-11"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 85.4887,
+      "realtime_start": "2026-10-11",
       "realtime_end": "9999-12-31"
     },
     {
@@ -3733,12 +3739,24 @@
       "fecha": "2026-08-01",
       "valor": 85.5346,
       "realtime_start": "2026-09-12",
+      "realtime_end": "2026-10-11"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 85.5495,
+      "realtime_start": "2026-10-11",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-09-01",
       "valor": 85.8423,
       "realtime_start": "2026-10-05",
+      "realtime_end": "2026-10-11"
+    },
+    {
+      "fecha": "2026-09-01",
+      "valor": 85.8427,
+      "realtime_start": "2026-10-11",
       "realtime_end": "9999-12-31"
     }
   ]
