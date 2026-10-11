@@ -40,6 +40,7 @@ jobs:
             any::stringr
             any::zoo
             any::rvest
+            any::readr
 
       - name: Ejecutar Extracción IPMP
         run: |
