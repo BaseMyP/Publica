@@ -13,7 +13,7 @@
     "fuente_original": "MAE",
     "fuente_formato": "API_MAE",
     "id_original": "SIMU",
-    "ultima_actualizacion": "2026-10-15T12:00:00Z",
+    "ultima_actualizacion": "2026-10-16T12:00:00Z",
     "revisable": true,
     "notas": {}
   },
@@ -1570,6 +1570,12 @@
       "fecha": "2026-10-14",
       "valor": 18.5016,
       "realtime_start": "2026-10-15",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-10-15",
+      "valor": 21.684,
+      "realtime_start": "2026-10-16",
       "realtime_end": "9999-12-31"
     }
   ]
