@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 125,
-    "ultima_actualizacion": "2026-10-17T12:00:00Z",
+    "ultima_actualizacion": "2026-10-20T12:00:00Z",
     "fecha_inicio": "2018-05-14",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
@@ -35569,6 +35569,12 @@
       "fecha": "2026-10-05",
       "valor": 26039,
       "realtime_start": "2026-10-15",
+      "realtime_end": "2026-10-20"
+    },
+    {
+      "fecha": "2026-10-05",
+      "valor": 26040,
+      "realtime_start": "2026-10-20",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35605,6 +35611,12 @@
       "fecha": "2026-10-08",
       "valor": 25929,
       "realtime_start": "2026-10-15",
+      "realtime_end": "2026-10-20"
+    },
+    {
+      "fecha": "2026-10-08",
+      "valor": 25936,
+      "realtime_start": "2026-10-20",
       "realtime_end": "9999-12-31"
     },
     {
@@ -35623,6 +35635,12 @@
       "fecha": "2026-10-13",
       "valor": 25790,
       "realtime_start": "2026-10-17",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-10-14",
+      "valor": 25984,
+      "realtime_start": "2026-10-20",
       "realtime_end": "9999-12-31"
     }
   ]
