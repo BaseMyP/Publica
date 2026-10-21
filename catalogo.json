@@ -2734,5 +2734,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/EXPECTATIVAS/TASATAMAR_TNA_A.json",
     "metodo_etl": "EXCEL_REM"
+  },
+  {
+    "serie_id": "DEPUSD_PerFisicas_enARS_NSA_M",
+    "titulo": "Total de depósitos en moneda extranjera de Personas Físicas, valuado en pesos",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/DEPOSITOS/DEPUSD_PerFisicas_enARS_NSA_M.json",
+    "metodo_etl": "EXCEL_perserpriv"
   }
 ]
