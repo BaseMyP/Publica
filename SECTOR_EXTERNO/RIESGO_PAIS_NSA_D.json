@@ -14,7 +14,7 @@
     "fuente_original": "JP Morgan",
     "fuente_formato": "Scraping HTML",
     "id_original": "RIESGO PAIS",
-    "ultima_actualizacion": "2026-10-22T12:00:00Z",
+    "ultima_actualizacion": "2026-10-23T12:00:00Z",
     "revisable": true,
     "notas": {}
   },
@@ -48341,6 +48341,12 @@
       "fecha": "2026-10-22",
       "valor": 674,
       "realtime_start": "2026-10-22",
+      "realtime_end": "2026-10-23"
+    },
+    {
+      "fecha": "2026-10-22",
+      "valor": 704,
+      "realtime_start": "2026-10-23",
       "realtime_end": "9999-12-31"
     }
   ]
