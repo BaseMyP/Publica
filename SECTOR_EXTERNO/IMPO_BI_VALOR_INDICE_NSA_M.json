@@ -13,7 +13,7 @@
     "fuente": "INDEC",
     "fuente_original": "INDEC",
     "fuente_formato": "Excel",
-    "ultima_actualizacion": "2026-10-19T12:00:00Z",
+    "ultima_actualizacion": "2026-10-24T12:00:00Z",
     "fecha_inicio": "2004-01-01",
     "url_original": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_mensual_indices_impo_ue.xls",
     "revisable": true,
@@ -1650,6 +1650,18 @@
       "fecha": "2026-08-01",
       "valor": 310.7145,
       "realtime_start": "2026-09-19",
+      "realtime_end": "2026-10-24"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 310.7139,
+      "realtime_start": "2026-10-24",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-09-01",
+      "valor": 350.4514,
+      "realtime_start": "2026-10-24",
       "realtime_end": "9999-12-31"
     }
   ]

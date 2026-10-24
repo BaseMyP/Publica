@@ -13,7 +13,7 @@
     "fuente_original": "INDEC",
     "fuente_formato": "CSV_ICA",
     "id_original": "ica_importaciones_vehiculos_automotores_pasajeros",
-    "ultima_actualizacion": "2026-10-05",
+    "ultima_actualizacion": "2026-10-24",
     "fecha_inicio": "1992-01-01",
     "url_original": "https://infra.datos.gob.ar/catalog/sspm/dataset/74/distribution/74.3/download/intercambio-comercial-argentino-mensual.csv",
     "revisable": true,
@@ -2515,6 +2515,12 @@
       "realtime_start": "2026-10-05",
       "realtime_end": "9999-12-31",
       "valor": 423.3661
+    },
+    {
+      "fecha": "2026-09-01",
+      "realtime_start": "2026-10-24",
+      "realtime_end": "9999-12-31",
+      "valor": 450.0918
     }
   ]
 }

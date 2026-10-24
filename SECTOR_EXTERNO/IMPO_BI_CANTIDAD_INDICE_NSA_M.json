@@ -13,7 +13,7 @@
     "fuente": "INDEC",
     "fuente_original": "INDEC",
     "fuente_formato": "Excel",
-    "ultima_actualizacion": "2026-10-19T12:00:00Z",
+    "ultima_actualizacion": "2026-10-24T12:00:00Z",
     "fecha_inicio": "2004-01-01",
     "url_original": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_mensual_indices_impo_ue.xls",
     "revisable": true,
@@ -1614,6 +1614,12 @@
       "fecha": "2026-01-01",
       "valor": 143.8812,
       "realtime_start": "2026-07-25",
+      "realtime_end": "2026-10-24"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 143.7564,
+      "realtime_start": "2026-10-24",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1626,6 +1632,12 @@
       "fecha": "2026-02-01",
       "valor": 155.0086,
       "realtime_start": "2026-07-25",
+      "realtime_end": "2026-10-24"
+    },
+    {
+      "fecha": "2026-02-01",
+      "valor": 155.3694,
+      "realtime_start": "2026-10-24",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1638,6 +1650,12 @@
       "fecha": "2026-03-01",
       "valor": 184.3203,
       "realtime_start": "2026-07-25",
+      "realtime_end": "2026-10-24"
+    },
+    {
+      "fecha": "2026-03-01",
+      "valor": 184.093,
+      "realtime_start": "2026-10-24",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1650,6 +1668,12 @@
       "fecha": "2026-04-01",
       "valor": 184.3776,
       "realtime_start": "2026-07-25",
+      "realtime_end": "2026-10-24"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 183.8792,
+      "realtime_start": "2026-10-24",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1662,24 +1686,54 @@
       "fecha": "2026-05-01",
       "valor": 178.7586,
       "realtime_start": "2026-07-25",
+      "realtime_end": "2026-10-24"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 178.2336,
+      "realtime_start": "2026-10-24",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-06-01",
       "valor": 194.7577,
       "realtime_start": "2026-07-25",
+      "realtime_end": "2026-10-24"
+    },
+    {
+      "fecha": "2026-06-01",
+      "valor": 194.2033,
+      "realtime_start": "2026-10-24",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-07-01",
       "valor": 189.9313,
       "realtime_start": "2026-08-24",
+      "realtime_end": "2026-10-24"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 191.5523,
+      "realtime_start": "2026-10-24",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-08-01",
       "valor": 181.622,
       "realtime_start": "2026-09-19",
+      "realtime_end": "2026-10-24"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 183.3694,
+      "realtime_start": "2026-10-24",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-09-01",
+      "valor": 193.8751,
+      "realtime_start": "2026-10-24",
       "realtime_end": "9999-12-31"
     }
   ]
