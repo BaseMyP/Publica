@@ -2742,5 +2742,13 @@
     "tipo_informacion": "Publica",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_VNM_INDICE_NSA_M.json",
     "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "DEPUSDTOTALES_NOMINALUSD_NSA_D",
+    "titulo": "Depósitos en dólares de los sectores público y privado no financieros",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/DEPOSITOS/DEPUSDTOTALES_NOMINALUSD_NSA_D.json",
+    "metodo_etl": "API_BCRA"
   }
 ]
