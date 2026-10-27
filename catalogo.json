@@ -832,14 +832,6 @@
     "metodo_etl": "EXCEL_BOLMENFINANZAS"
   },
   {
-    "serie_id": "SALARIOS_PRIV_NOMINAL_NSA_M",
-    "titulo": "Remuneración promedio por todo concepto de los trabajadores registrados del sector privado en pesos - Serie Original",
-    "frecuencia": "M",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/LABORAL/SALARIOS_PRIV_NOMINAL_NSA_M.json",
-    "metodo_etl": "EXCEL_CARPETA_INPUTS"
-  },
-  {
     "serie_id": "SALARIOS_PRIV_NOMINAL_SA_M",
     "titulo": "Remuneración promedio normal y permanente de los trabajadores registrados del sector privado en pesos - Serie Desestacionalizada",
     "frecuencia": "M",
@@ -2750,5 +2742,29 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/DEPOSITOS/DEPUSDTOTALES_NOMINALUSD_NSA_D.json",
     "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "SALARIOS_REG_PRIV_INDICE_NSA_M",
+    "titulo": "Índice de Salarios. Empleo registrado. Sector privado.",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/LABORAL/SALARIOS_REG_PRIV_INDICE_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "ASALARIADOS_PRIVADOS_NSA_M",
+    "titulo": "Asalariados. Sector privado. Con estacionalidad",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/LABORAL/ASALARIADOS_PRIVADOS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "SALARIOS_PRIV_NOMINAL_NSA_M",
+    "titulo": "Remuneración promedio por todo concepto de los trabajadores registrados del sector privado en pesos - Serie Original",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/LABORAL/SALARIOS_PRIV_NOMINAL_NSA_M.json",
+    "metodo_etl": "API_INDEC"
   }
 ]
