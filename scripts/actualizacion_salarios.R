@@ -8,7 +8,7 @@ library(stringr)
 # 1. CARGA DE LÓGICA CORE Y CONFIGURACIÓN
 # ------------------------------------------------------------
 # Cargamos tus funciones compartidas del proyecto
-source("funciones_base.R")
+source("scripts/funciones_base.R")
 
 # Archivo Excel actualizado (el nuevo vintage a comparar)
 archivo_excel <- "inputs/historicos/nacional_serie_remuneraciones_mensual.xlsx" 
@@ -92,7 +92,7 @@ for (config in columnas_config) {
     mutate(
       status = case_when(
         is.na(valor_viejo) ~ "NUEVO",
-        round(valor, 4) != round(valor_viejo, 4) ~ "REVISADO",
+        round(valor_nuevo, 4) != round(valor_viejo, 4) ~ "REVISADO",
         TRUE ~ "SIN_CAMBIOS"
       )
     )
@@ -117,7 +117,8 @@ for (config in columnas_config) {
   # Insertar los nuevos registros o los revisados con la marca de tiempo de hoy
   nuevas_inserciones <- actualizadas %>%
     filter(status %in% c("NUEVO", "REVISADO")) %>%
-    select(fecha, valor) %>%
+    select(fecha, valor_nuevo) %>%
+    rename("valor"="valor_nuevo") %>% 
     mutate(realtime_start = hoy, realtime_end = "9999-12-31")
   
   # Unificar toda la base cronológica final
