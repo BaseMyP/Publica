@@ -5,27 +5,27 @@ source("scripts/funciones_base.R")
 
 # 1. Definimos los metadatos 
 meta_ipc_general_corregido <- list(
-  titulo = "IMIG. Resultado primario",
-  descripcion = "IMIG. Resultado primario",
+  titulo = "Balanza de Pagos. Cuenta corriente. Bienes y servicios. Ingresos por servicios. Trimestral",
+  descripcion = "Balanza de Pagos. Cuenta corriente. Bienes y servicios. Ingresos por servicios. Trimestral",
   pais = "Argentina",
-  categoria = "FISCAL",
-  frecuencia_short = "M",
-  frecuencia_original = "mensual",
-  unidades = "Millones de pesos", 
+  categoria = "SECTOR_EXTERNO",
+  frecuencia_short = "Q",
+  frecuencia_original = "trimestral",
+  unidades = "Millones de dólares", 
   ajuste = "NSA",
   tipo_informacion = "Pública",
   fuente = "API_Argentina",
   fuente_original = "INDEC",
   fuente_formato = "API_INDEC",
-  id_original = "452.3_RESULTADO_RIO_0_M_18_54",
+  id_original = "160.2_CTA_CORIOS_0_T_52",
   ultima_actualizacion = Sys.Date(),
-  fecha_inicio = as.Date("2016-01-01"),
-  url_original = "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=452.3_RESULTADO_RIO_0_M_18_54",
+  fecha_inicio = as.Date("2006-01-01"),
+  url_original = "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=160.2_CTA_CORIOS_0_T_52",
   revisable = FALSE,
   notas = NA
 )
 
-serie_id_general <- "SUPERAVIT_PRIMARIO_NSA_M"
+serie_id_general <- "BP_EXPORTACIONES_SERVICIOS_NSA_M"
 
 # 3. Consolidamos en una lista para procesar en bucle
 # (Se corrigió la llamada a 'meta_ipc_general_corregido')
