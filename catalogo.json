@@ -2766,5 +2766,29 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/LABORAL/SALARIOS_PRIV_NOMINAL_NSA_M.json",
     "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "BP_EXPORTACIONES_BIENES_FOB_NSA_M",
+    "titulo": "Balanza de Pagos. Cuenta corriente. Bienes y servicios. Bienes. Exportaciones FOB. Trimestral",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/BP_EXPORTACIONES_BIENES_FOB_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "BP_IMPORTACIONES_BIENES_FOB_NSA_M",
+    "titulo": "Balanza de Pagos. Cuenta corriente. Bienes y servicios. Bienes. Importaciones FOB. Trimestral",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/BP_IMPORTACIONES_BIENES_FOB_NSA_M.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "BP_EXPORTACIONES_SERVICIOS_NSA_M",
+    "titulo": "Balanza de Pagos. Cuenta corriente. Bienes y servicios. Ingresos por servicios. Trimestral",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/BP_EXPORTACIONES_SERVICIOS_NSA_M.json",
+    "metodo_etl": "API_INDEC"
   }
 ]
