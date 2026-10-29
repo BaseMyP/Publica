@@ -2790,5 +2790,53 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/BP_EXPORTACIONES_SERVICIOS_NSA_Q.json",
     "metodo_etl": "API_INDEC"
+  },
+  {
+    "serie_id": "RESERVASBRUTAS_VARIACION_opSECPUB_NSA_D",
+    "titulo": "Variación diaria de reservas internacionales por otras operaciones del sector público (en millones de USD)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RESERVASBRUTAS_VARIACION_opSECPUB_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "RESERVASBRUTAS_VARIACION_EfMIN_NSA_D",
+    "titulo": "Variación diaria de reservas internacionales por efectivo mínimo (en millones de USD)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RESERVASBRUTAS_VARIACION_EfMIN_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "RESERVASBRUTAS_VARIACION_TOTAL_NSA_D",
+    "titulo": "Total de variación diaria de las reservas internacionales (en millones de USD)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RESERVASBRUTAS_VARIACION_TOTAL_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "RESERVASBRUTAS_VARIACION_COMPRASBCRA_NSA_D",
+    "titulo": "Variación diaria de reservas internacionales por compra de divisas (en millones de USD)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RESERVASBRUTAS_VARIACION_COMPRASBCRA_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "RESERVASBRUTAS_VARIACION_OOII_NSA_D",
+    "titulo": "Variación diaria de reservas internacionales por operaciones con organismos internacionales (en millones de USD)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RESERVASBRUTAS_VARIACION_OOII_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "RESERVASBRUTAS_VARIACION_OTROS_NSA_D",
+    "titulo": "Variación diaria de reservas internacionales por otras operaciones no incluidas en otros rubros (en millones de USD)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/RESERVASBRUTAS_VARIACION_OTROS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
   }
 ]
