@@ -15,7 +15,7 @@
     "fuente_original": "U.S. Bureau of Economic Analysis",
     "fuente_formato": "API",
     "id_original": "GDPC1",
-    "ultima_actualizacion": "2026-10-29T12:00:00Z",
+    "ultima_actualizacion": "2026-10-30T12:00:00Z",
     "fecha_inicio": "1947-01-01",
     "url_original": "https://fred.stlouisfed.org/series/GDPC1",
     "revisable": true,
@@ -2066,6 +2066,12 @@
       "fecha": "2026-04-01",
       "valor": 24408.011,
       "realtime_start": "2026-10-01",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 24611.077,
+      "realtime_start": "2026-10-30",
       "realtime_end": "9999-12-31"
     }
   ]
