@@ -14,7 +14,7 @@
     "fuente_original": "BCRA",
     "fuente_formato": "API_BCRA",
     "id_original": 67,
-    "ultima_actualizacion": "2026-10-30T12:00:00Z",
+    "ultima_actualizacion": "2026-10-31T12:00:00Z",
     "fecha_inicio": "2003-01-02",
     "url_original": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
     "revisable": false,
@@ -36757,6 +36757,12 @@
       "fecha": "2026-09-30",
       "valor": 26622663,
       "realtime_start": "2026-10-30",
+      "realtime_end": "2026-10-31"
+    },
+    {
+      "fecha": "2026-09-30",
+      "valor": 26622879,
+      "realtime_start": "2026-10-31",
       "realtime_end": "9999-12-31"
     },
     {
@@ -37051,6 +37057,12 @@
       "fecha": "2026-10-19",
       "valor": 26567163,
       "realtime_start": "2026-10-30",
+      "realtime_end": "2026-10-31"
+    },
+    {
+      "fecha": "2026-10-19",
+      "valor": 26567460,
+      "realtime_start": "2026-10-31",
       "realtime_end": "9999-12-31"
     },
     {
@@ -37075,6 +37087,12 @@
       "fecha": "2026-10-20",
       "valor": 26494893,
       "realtime_start": "2026-10-30",
+      "realtime_end": "2026-10-31"
+    },
+    {
+      "fecha": "2026-10-20",
+      "valor": 26495507,
+      "realtime_start": "2026-10-31",
       "realtime_end": "9999-12-31"
     },
     {
@@ -37093,6 +37111,12 @@
       "fecha": "2026-10-22",
       "valor": 26499933,
       "realtime_start": "2026-10-28",
+      "realtime_end": "2026-10-31"
+    },
+    {
+      "fecha": "2026-10-22",
+      "valor": 26498391,
+      "realtime_start": "2026-10-31",
       "realtime_end": "9999-12-31"
     },
     {
@@ -37105,6 +37129,18 @@
       "fecha": "2026-10-26",
       "valor": 26606243,
       "realtime_start": "2026-10-30",
+      "realtime_end": "2026-10-31"
+    },
+    {
+      "fecha": "2026-10-26",
+      "valor": 26606242,
+      "realtime_start": "2026-10-31",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-10-27",
+      "valor": 26603847,
+      "realtime_start": "2026-10-31",
       "realtime_end": "9999-12-31"
     }
   ]
