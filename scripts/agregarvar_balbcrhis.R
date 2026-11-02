@@ -25,10 +25,16 @@ tryCatch({
 # 2. Configurar las series a extraer
 # Aquí puedes agregar más variables en el futuro simplemente copiando el bloque
 series_balbcrhis <- list(
-  PASIVOS_OOIIyOTROS_NSA_M = list( # <-- Cambia este ID por el nombre definitivo que quieras darle
-    col_index = 12,               # Columna F es la 6ta columna
-    titulo = "Obligaciones con OOII y Otros (Swaps)",
-    descripcion = "Obligaciones con OOII y Otros (Swaps). En octubre de 2018 se revisaron los datos desde 2008, incluyendo “Otras obligaciones en moneda extranjera con residentes en el exterior” y “Obligaciones por Pase de moneda con No residentes”. Incluye la obligación por el pase concertado con bancos internacionales en 2025.",
+  # PASIVOS_OOIIyOTROS_NSA_M = list( # <-- Cambia este ID por el nombre definitivo que quieras darle
+  #   col_index = 12,               # Columna F es la 6ta columna
+  #   titulo = "Obligaciones con OOII y Otros (Swaps)",
+  #   descripcion = "Obligaciones con OOII y Otros (Swaps). En octubre de 2018 se revisaron los datos desde 2008, incluyendo “Otras obligaciones en moneda extranjera con residentes en el exterior” y “Obligaciones por Pase de moneda con No residentes”. Incluye la obligación por el pase concertado con bancos internacionales en 2025.",
+  #   unidades = "Millones de Pesos"           # Ajustar unidad si corresponde
+  # )
+  PASIVOS_DEP_BANCOS_USD_NSA_M = list( # <-- Cambia este ID por el nombre definitivo que quieras darle
+    col_index = 34,               # Columna F es la 6ta columna
+    titulo = "Depósitos de Entidades Financieras en Moneda extranjera",
+    descripcion = "Depósitos de Entidades Financieras en Moneda extranjera. Suma de las filas MEDIOS DE PAGO EN OTRAS MONEDAS y CUENTAS CORRIENTES EN OTRAS MONEDAS del balance semanal",
     unidades = "Millones de Pesos"           # Ajustar unidad si corresponde
   )
 )
@@ -59,7 +65,7 @@ for (serie_id in names(series_balbcrhis)) {
     filter(!(mes==13 | is.na(mes))) %>% 
     mutate(
       fecha = as.Date(paste0(anio,"-",mes, "-01")),
-      valor = as.numeric(valor)
+      valor = as.numeric(valor)/1000
     ) %>%
     # Eliminamos la columna auxiliar
     select(-c(anio,mes)) %>% 

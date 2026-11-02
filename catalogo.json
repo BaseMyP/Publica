@@ -2846,5 +2846,13 @@
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SISTEMA_FINANCIERO/EFECTIVO_enBANCOS_USD_enARS_NSA_M.json",
     "metodo_etl": "EXCEL_balbanhis"
+  },
+  {
+    "serie_id": "PASIVOS_DEP_BANCOS_USD_NSA_M",
+    "titulo": "Depósitos de Entidades Financieras en Moneda extranjera",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/PASIVOS_DEP_BANCOS_USD_NSA_M.json",
+    "metodo_etl": "EXCEL_BALBCRHIS"
   }
 ]
