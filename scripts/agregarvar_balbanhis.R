@@ -59,7 +59,7 @@ for (serie_id in names(series_balbanhis)) {
     filter(!(mes==13 | is.na(mes))) %>% 
     mutate(
       fecha = as.Date(paste0(anio,"-",mes, "-01")),
-      valor = as.numeric(valor)
+      valor = as.numeric(valor)/1000
     ) %>%
     # Eliminamos la columna auxiliar
     select(-c(anio,mes)) %>% 
