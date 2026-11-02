@@ -7,20 +7,20 @@ source("scripts/funciones_base.R")
       
 # 1. Definimos los metadatos fijos para la nueva variable
 meta_reservas <- list(
-  titulo = "Préstamos en USD al sector privado. Otros",
-  descripcion = "Saldo de otros préstamos en dólares otorgados al sector privado (en millones de USD)",
+  titulo = "Otras operaciones que explican la variación de la base monetaria (en millones de $)",
+  descripcion = "Otras operaciones que explican la variación de la base monetaria (en millones de $)",
   pais = "Argentina",
-  categoria = "PRESTAMOS",
+  categoria = "AGREGADOS",
   frecuencia_short = "D",
   frecuencia_original = "diaria",
-  unidades = "Millones de USD", 
+  unidades = "Millones de Pesos", 
   ajuste = "NSA",
   tipo_informacion = "Pública",
   fuente = "BCRA",
   fuente_original = "BCRA",
   fuente_formato = "API_BCRA",
   #fuente_formato = "API_BCRA_Cambiarias",
-  id_original = 124,
+  id_original = 59,
   ultima_actualizacion = Sys.Date(),
   fecha_inicio = as.Date("2002-12-31"),
   url_original = "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/series.xlsm",
@@ -30,7 +30,7 @@ meta_reservas <- list(
 
 
 # 2. Definimos el nombre oficial de la serie
-serie_id_reservas <- "enUSD_SECTORPRIV_OTROS_NSA_D"
+serie_id_reservas <- "BASEMONETARIA_VARIACION_OTROS_NSA_D"
  
 BASE_URL_MONETARIAS <- "https://api.bcra.gob.ar/estadisticas/v4.0/Monetarias/"
 BASE_URL_CAMBIARIAS <- "https://api.bcra.gob.ar/estadisticascambiarias/v1.0/Cotizaciones/"
