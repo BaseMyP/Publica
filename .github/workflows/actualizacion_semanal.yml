@@ -56,6 +56,7 @@ jobs:
           Rscript scripts/actualizacion_preser_tas.R
           Rscript scripts/actualizacion_ica.R
           Rscript scripts/actualizacion_perserpriv.R
+          Rscript scripts/actualizacion_balbanhis.R
 
       - name: Configurar Git y Subir Cambios
         run: |
