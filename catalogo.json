@@ -2696,6 +2696,134 @@
     "metodo_etl": "API_BCRA"
   },
   {
+    "serie_id": "EFECTIVO_enBANCOS_USD_enARS_NSA_M",
+    "titulo": "Efectivo en Moneda Extranjera en el Activo del Sistema Financiero Consolidado",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SISTEMA_FINANCIERO/EFECTIVO_enBANCOS_USD_enARS_NSA_M.json",
+    "metodo_etl": "EXCEL_balbanhis"
+  },
+  {
+    "serie_id": "PASIVOS_DEP_BANCOS_USD_NSA_M",
+    "titulo": "Depósitos de Entidades Financieras en Moneda extranjera",
+    "frecuencia": "M",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/PASIVOS_DEP_BANCOS_USD_NSA_M.json",
+    "metodo_etl": "EXCEL_BALBCRHIS"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_TOTAL_NSA_D",
+    "titulo": "Total de factores de explicación de la variación de la Base Monetaria (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_TOTAL_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_COMPRASaPRIVADOS_NSA_D",
+    "titulo": "Efecto monetario de las compras netas de divisas al sector privado y otros (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_COMPRASaPRIVADOS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_COMPRASaGOB_NSA_D",
+    "titulo": "Efecto monetario de las compras netas de divisas al Tesoro Nacional (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_COMPRASaGOB_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_AT_NSA_D",
+    "titulo": "Efecto monetario de los adelantos transitorios al Tesoro Nacional (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_AT_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_UTILIDADES_NSA_D",
+    "titulo": "Efecto monetario de las transferencia de utilidades al Tesoro Nacional (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_UTILIDADES_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_otrasGOB_NSA_D",
+    "titulo": "Efecto monetario del resto de operaciones con el Tesoro Nacional  (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_otrasGOB_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_PASES_NSA_D",
+    "titulo": "Efecto monetario de las operaciones de pases (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_PASES_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_LELIQ_NSA_D",
+    "titulo": "Efecto monetario de las LELIQ y NOTALIQ (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_LELIQ_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_REDESCUENTOS_NSA_D",
+    "titulo": "Efecto monetario de los redescuentos y adelantos (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_REDESCUENTOS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_INTERESES_NSA_D",
+    "titulo": "Efecto monetario de los intereses, primas y remuneración de cuentas corrientes asociados a op. de pases, LELIQ, NOTALIQ, redescuentos y adel. (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_INTERESES_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_LEBAC_NSA_D",
+    "titulo": "Efecto monetario de las LEBAC y NOBAC (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_LEBAC_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_CUASIMONEDAS_NSA_D",
+    "titulo": "Efecto monetario del rescate de cuasimonedas (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_CUASIMONEDAS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_LEFI_NSA_D",
+    "titulo": "Efecto monetario de las operaciones con Letras Fiscales de Liquidez (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_LEFI_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
+    "serie_id": "BASEMONETARIA_VARIACION_OTROS_NSA_D",
+    "titulo": "Otras operaciones que explican la variación de la base monetaria (en millones de $)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_OTROS_NSA_D.json",
+    "metodo_etl": "API_BCRA"
+  },
+  {
     "serie_id": "CTOT_ARG_INDICE_NSA_M",
     "titulo": "Commodity Terms of Trade - Argentina",
     "frecuencia": "M",
@@ -2838,133 +2966,5 @@
     "tipo_informacion": "Publica",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_VNM_INDICE_NSA_M.json",
     "metodo_etl": "API_IMF"
-  },
-  {
-    "serie_id": "EFECTIVO_enBANCOS_USD_enARS_NSA_M",
-    "titulo": "Efectivo en Moneda Extranjera en el Activo del Sistema Financiero Consolidado",
-    "frecuencia": "M",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SISTEMA_FINANCIERO/EFECTIVO_enBANCOS_USD_enARS_NSA_M.json",
-    "metodo_etl": "EXCEL_balbanhis"
-  },
-  {
-    "serie_id": "PASIVOS_DEP_BANCOS_USD_NSA_M",
-    "titulo": "Depósitos de Entidades Financieras en Moneda extranjera",
-    "frecuencia": "M",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/BALANCE_BCRA/PASIVOS_DEP_BANCOS_USD_NSA_M.json",
-    "metodo_etl": "EXCEL_BALBCRHIS"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_TOTAL_NSA_D",
-    "titulo": "Total de factores de explicación de la variación de la Base Monetaria (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_TOTAL_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_COMPRASaPRIVADOS_NSA_D",
-    "titulo": "Efecto monetario de las compras netas de divisas al sector privado y otros (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_COMPRASaPRIVADOS_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_COMPRASaGOB_NSA_D",
-    "titulo": "Efecto monetario de las compras netas de divisas al Tesoro Nacional (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_COMPRASaGOB_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_AT_NSA_D",
-    "titulo": "Efecto monetario de los adelantos transitorios al Tesoro Nacional (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_AT_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_UTILIDADES_NSA_D",
-    "titulo": "Efecto monetario de las transferencia de utilidades al Tesoro Nacional (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_UTILIDADES_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_otrasGOB_NSA_D",
-    "titulo": "Efecto monetario del resto de operaciones con el Tesoro Nacional  (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_otrasGOB_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_PASES_NSA_D",
-    "titulo": "Efecto monetario de las operaciones de pases (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_PASES_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_LELIQ_NSA_D",
-    "titulo": "Efecto monetario de las LELIQ y NOTALIQ (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_LELIQ_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_REDESCUENTOS_NSA_D",
-    "titulo": "Efecto monetario de los redescuentos y adelantos (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_REDESCUENTOS_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_INTERESES_NSA_D",
-    "titulo": "Efecto monetario de los intereses, primas y remuneración de cuentas corrientes asociados a op. de pases, LELIQ, NOTALIQ, redescuentos y adel. (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_INTERESES_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_LEBAC_NSA_D",
-    "titulo": "Efecto monetario de las LEBAC y NOBAC (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_LEBAC_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_CUASIMONEDAS_NSA_D",
-    "titulo": "Efecto monetario del rescate de cuasimonedas (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_CUASIMONEDAS_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_LEFI_NSA_D",
-    "titulo": "Efecto monetario de las operaciones con Letras Fiscales de Liquidez (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_LEFI_NSA_D.json",
-    "metodo_etl": "API_BCRA"
-  },
-  {
-    "serie_id": "BASEMONETARIA_VARIACION_OTROS_NSA_D",
-    "titulo": "Otras operaciones que explican la variación de la base monetaria (en millones de $)",
-    "frecuencia": "D",
-    "tipo_informacion": "Pública",
-    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/AGREGADOS/BASEMONETARIA_VARIACION_OTROS_NSA_D.json",
-    "metodo_etl": "API_BCRA"
   }
 ]
