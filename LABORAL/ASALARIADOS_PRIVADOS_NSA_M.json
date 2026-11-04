@@ -18,7 +18,9 @@
     "fecha_inicio": "2012-01-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=151.1_AARIADODAD_2012_M_31",
     "revisable": false,
-    "notas": {}
+    "notas": {},
+    "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/151/distribution/151.1/download/trabajadores-registrados-modalidad-ocupacional-principal-mensual-total-pais-miles-base-2012.csv",
+    "col_csv": "asalariados_priv_estacionalidad"
   },
   "observaciones": [
     {
@@ -1015,54 +1017,114 @@
       "fecha": "2025-10-01",
       "valor": 6197.781,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2025-10-01",
+      "valor": 6197.821,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2025-11-01",
       "valor": 6193.022,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2025-11-01",
+      "valor": 6193.172,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2025-12-01",
       "valor": 6196.922,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2025-12-01",
+      "valor": 6197.074,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-01-01",
       "valor": 6197.108,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 6190.027,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-02-01",
       "valor": 6196.504,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-02-01",
+      "valor": 6189.633,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-03-01",
       "valor": 6187.535,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-03-01",
+      "valor": 6181.463,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-04-01",
       "valor": 6134.249,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 6128.377,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-05-01",
       "valor": 6106.657,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 6100.292,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-06-01",
       "valor": 6095.843,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-06-01",
+      "valor": 6089.888,
+      "realtime_start": "2026-11-04",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 6082.314,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     }
   ]

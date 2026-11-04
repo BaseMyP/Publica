@@ -18,7 +18,9 @@
     "fecha_inicio": "2015-10-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=149.1_SOR_PRIADO_OCTU_0_25",
     "revisable": false,
-    "notas": {}
+    "notas": {},
+    "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/149/distribution/149.1/download/indice-salarios-periodicidad-mensual-base-octubre-2016.csv",
+    "col_csv": "indice_salarios_registrado_sector_privado"
   },
   "observaciones": [
     {
@@ -787,18 +789,36 @@
       "fecha": "2026-05-01",
       "valor": 9478.8,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 9478.84,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-06-01",
       "valor": 9662.3,
       "realtime_start": "2026-10-27",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-06-01",
+      "valor": 9662.32,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-07-01",
       "valor": 9879.87,
       "realtime_start": "2026-10-27",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 10159.65,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     }
   ]
