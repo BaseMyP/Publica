@@ -18,7 +18,9 @@
     "fecha_inicio": "2006-01-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=160.2_CTA_CORRFOB_0_T_59",
     "revisable": false,
-    "notas": {}
+    "notas": {},
+    "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/160/distribution/160.2/download/estimacion-palance-pagos-mbp6-trimestral.csv",
+    "col_csv": "cuenta_corrientes_bienes_servicios_bienes_importaciones_fob"
   },
   "observaciones": [
     {

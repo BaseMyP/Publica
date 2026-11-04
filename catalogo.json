@@ -2648,6 +2648,14 @@
     "metodo_etl": "API_INDEC"
   },
   {
+    "serie_id": "BP_IMPORTACIONES_SERVICIOS_NSA_Q",
+    "titulo": "Balanza de Pagos. Cuenta corriente. Bienes y servicios. Egresos por servicios. Trimestral",
+    "frecuencia": "Q",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/SECTOR_EXTERNO/BP_IMPORTACIONES_SERVICIOS_NSA_Q.json",
+    "metodo_etl": "API_INDEC"
+  },
+  {
     "serie_id": "RESERVASBRUTAS_VARIACION_opSECPUB_NSA_D",
     "titulo": "Variación diaria de reservas internacionales por otras operaciones del sector público (en millones de USD)",
     "frecuencia": "D",
