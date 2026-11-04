@@ -18,7 +18,9 @@
     "fecha_inicio": "2016-01-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=142.3_GANANDI_2001_M_13",
     "revisable": false,
-    "notas": {}
+    "notas": {},
+    "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/142/distribution/142.3/download/recursos-tributarios-totales-por-tributo-mensual-base-2001.csv",
+    "col_csv": "ganancias_dgi"
   },
   "observaciones": [
     {
@@ -2161,6 +2163,12 @@
       "fecha": "2026-09-01",
       "valor": 4506955.576,
       "realtime_start": "2026-10-03",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-10-01",
+      "valor": 4824338.2105,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     }
   ]
