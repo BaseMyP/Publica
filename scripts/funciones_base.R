@@ -331,19 +331,106 @@ fetch_indec_series <- function(id_indec) {
   return(df_indec)
 }
 
+#' Extrae y formatea una serie desde un data.frame ya cargado o directamente desde la URL del CSV
+fetch_csv_series <- function(col_nombre, df_csv = NULL, url_csv = NULL) {
+  if (is.null(df_csv)) {
+    if (is.null(url_csv) || url_csv == "") {
+      warning("No se proporcionó ni data.frame ni URL para el CSV.")
+      return(NULL)
+    }
+    df_csv <- tryCatch({
+      read_csv(url_csv, show_col_types = FALSE)
+    }, error = function(e) {
+      warning("Fallo al descargar el archivo CSV desde ", url_csv, ": ", e$message)
+      return(NULL)
+    })
+    if (is.null(df_csv)) return(NULL)
+  }
+  
+  # Validaciones de columnas mínimas
+  if (!("indice_tiempo" %in% names(df_csv))) {
+    warning("El CSV no contiene la columna obligatoria 'indice_tiempo'.")
+    return(NULL)
+  }
+  
+  if (!(col_nombre %in% names(df_csv))) {
+    warning(sprintf("No se encontró la columna '%s' en el CSV.", col_nombre))
+    return(NULL)
+  }
+  
+  df_limpio <- df_csv %>%
+    select(fecha = indice_tiempo, valor = all_of(col_nombre)) %>%
+    mutate(
+      fecha = as.character(fecha),
+      valor = as.numeric(valor)
+    ) %>%
+    filter(!is.na(valor)) %>%
+    arrange(fecha)
+  
+  if (nrow(df_limpio) == 0) {
+    warning(sprintf("La columna '%s' no tiene observaciones válidas.", col_nombre))
+    return(NULL)
+  }
+  
+  return(df_limpio)
+}
+
+# fetch_indec_series <- function(id_indec) {
+#   url_base <- "https://apis.datos.gob.ar/series/api/series"
+#   
+#   respuesta <- GET(url_base, query = list(
+#     ids = id_indec,
+#     format = "json",
+#     limit = 5000 
+#   ))
+#   
+#   if (status_code(respuesta) != 200) {
+#     warning("Fallo al conectar con la API del INDEC para ID: ", id_indec)
+#     return(NULL)
+#   }
+#   
+#   texto_json <- content(respuesta, as = "text", encoding = "UTF-8")
+#   datos_crudos <- fromJSON(texto_json)
+#   
+#   df_indec <- as.data.frame(datos_crudos$data, stringsAsFactors = FALSE)
+#   if(nrow(df_indec) == 0) return(NULL)
+#   
+#   names(df_indec) <- c("fecha", "valor")
+#   
+#   df_indec <- df_indec %>%
+#     mutate(
+#       fecha = as.character(fecha),
+#       valor = as.numeric(valor)
+#     ) %>%
+#     filter(!is.na(valor)) %>%
+#     arrange(fecha)
+#   
+#   return(df_indec)
+# }
+
 #' Actualiza o inicializa una serie del INDEC aplicando la lógica ALFRED
-update_indec_json_serie <- function(id_indec, serie_id, tema, metadatos_fijos) {
+update_indec_json_serie <- function(id_indec = NULL, serie_id, tema, metadatos_fijos, df_csv = NULL) {
   path_dir <- file.path(tema)
   path_archivo <- file.path(tema, paste0(serie_id, ".json"))
   hoy <- as.character(Sys.Date())
   
   if (!dir.exists(path_dir)) dir.create(path_dir, recursive = TRUE, showWarnings = FALSE)
   
-  message("Descargando datos del INDEC para ", serie_id, "...")
-  nuevo_df <- fetch_indec_series(id_indec)
+  # 1. Determinar fuente de datos: ¿CSV o API?
+  url_csv <- metadatos_fijos$url_csv
+  col_csv <- metadatos_fijos$col_csv
+  
+  if (!is.null(url_csv) && !is.null(col_csv) && url_csv != "" && col_csv != "") {
+    message("Extrayendo datos desde CSV (Columna: ", col_csv, ") para ", serie_id, "...")
+    nuevo_df <- fetch_csv_series(col_nombre = col_csv, df_csv = df_csv, url_csv = url_csv)
+  } else {
+    message("Descargando datos del INDEC vía API para ", serie_id, "...")
+    nuevo_df <- fetch_indec_series(id_indec)
+  }
   
   if (is.null(nuevo_df)) return(FALSE)
   
+  # 2. Inicialización o actualización ALFRED
   if (!file.exists(path_archivo)) {
     observaciones <- nuevo_df %>%
       mutate(realtime_start = hoy, realtime_end = "9999-12-31")
@@ -366,6 +453,12 @@ update_indec_json_serie <- function(id_indec, serie_id, tema, metadatos_fijos) {
         )
       )
     
+    # Si no hay modificaciones ni datos nuevos, no tocamos el archivo
+    if (!any(actualizadas$status %in% c("NUEVO", "REVISADO"))) {
+      message("  -> Sin cambios detectados para ", serie_id)
+      return(FALSE)
+    }
+    
     obs_vigentes_que_cambiaron <- obs_vigentes %>%
       filter(fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"]) %>%
       mutate(realtime_end = hoy)
@@ -378,8 +471,12 @@ update_indec_json_serie <- function(id_indec, serie_id, tema, metadatos_fijos) {
       select(fecha, valor = valor_nuevo) %>%
       mutate(realtime_start = hoy, realtime_end = "9999-12-31")
     
-    obs_consolidadas <- bind_rows(obs_historicas, obs_vigentes_que_cambiaron, obs_vigentes_sin_cambio, nuevas_inserciones) %>% 
-      arrange(fecha, realtime_start)
+    obs_consolidadas <- bind_rows(
+      obs_historicas, 
+      obs_vigentes_que_cambiaron, 
+      obs_vigentes_sin_cambio, 
+      nuevas_inserciones
+    ) %>% arrange(fecha, realtime_start)
     
     base_actual$metadatos$ultima_actualizacion <- paste0(hoy, "T12:00:00Z")
     base_actual$observaciones <- obs_consolidadas
@@ -390,6 +487,65 @@ update_indec_json_serie <- function(id_indec, serie_id, tema, metadatos_fijos) {
   message("✓ Serie guardada: ", path_archivo)
   return(TRUE)
 }
+
+# update_indec_json_serie <- function(id_indec, serie_id, tema, metadatos_fijos) {
+#   path_dir <- file.path(tema)
+#   path_archivo <- file.path(tema, paste0(serie_id, ".json"))
+#   hoy <- as.character(Sys.Date())
+#   
+#   if (!dir.exists(path_dir)) dir.create(path_dir, recursive = TRUE, showWarnings = FALSE)
+#   
+#   message("Descargando datos del INDEC para ", serie_id, "...")
+#   nuevo_df <- fetch_indec_series(id_indec)
+#   
+#   if (is.null(nuevo_df)) return(FALSE)
+#   
+#   if (!file.exists(path_archivo)) {
+#     observaciones <- nuevo_df %>%
+#       mutate(realtime_start = hoy, realtime_end = "9999-12-31")
+#     
+#     lista_final <- list(serie_id = serie_id, metadatos = metadatos_fijos, observaciones = observaciones)
+#   } else {
+#     base_actual <- fromJSON(path_archivo, simplifyVector = TRUE)
+#     obs_viejas <- base_actual$observaciones
+#     
+#     obs_vigentes <- obs_viejas %>% filter(realtime_end == "9999-12-31")
+#     obs_historicas <- obs_viejas %>% filter(realtime_end != "9999-12-31")
+#     
+#     actualizadas <- nuevo_df %>%
+#       left_join(obs_vigentes, by = "fecha", suffix = c("_nuevo", "_viejo")) %>%
+#       mutate(
+#         status = case_when(
+#           is.na(valor_viejo) ~ "NUEVO",
+#           round(valor_nuevo, 4) != round(valor_viejo, 4) ~ "REVISADO",
+#           TRUE ~ "SIN_CAMBIOS"
+#         )
+#       )
+#     
+#     obs_vigentes_que_cambiaron <- obs_vigentes %>%
+#       filter(fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"]) %>%
+#       mutate(realtime_end = hoy)
+#     
+#     obs_vigentes_sin_cambio <- obs_vigentes %>%
+#       filter(!fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"])
+#     
+#     nuevas_inserciones <- actualizadas %>%
+#       filter(status %in% c("NUEVO", "REVISADO")) %>%
+#       select(fecha, valor = valor_nuevo) %>%
+#       mutate(realtime_start = hoy, realtime_end = "9999-12-31")
+#     
+#     obs_consolidadas <- bind_rows(obs_historicas, obs_vigentes_que_cambiaron, obs_vigentes_sin_cambio, nuevas_inserciones) %>% 
+#       arrange(fecha, realtime_start)
+#     
+#     base_actual$metadatos$ultima_actualizacion <- paste0(hoy, "T12:00:00Z")
+#     base_actual$observaciones <- obs_consolidadas
+#     lista_final <- base_actual
+#   }
+#   
+#   write_json(lista_final, path_archivo, pretty = TRUE, auto_unbox = TRUE)
+#   message("✓ Serie guardada: ", path_archivo)
+#   return(TRUE)
+# }
 
 #' Descarga una serie desde la API de FRED
 #' Descarga una serie desde la API de FRED
