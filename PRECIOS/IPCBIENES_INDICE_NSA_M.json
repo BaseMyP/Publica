@@ -18,7 +18,9 @@
     "fecha_inicio": "2016-12-01",
     "url_original": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
     "revisable": false,
-    "notas": {}
+    "notas": {},
+    "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.7/download/indice-precios-al-consumidor-bienes-servicios-base-diciembre-2016-mensual.csv",
+    "col_csv": "ipc_bienes_nacional"
   },
   "observaciones": [
     {
@@ -721,6 +723,12 @@
       "fecha": "2026-08-01",
       "valor": 12025.8226,
       "realtime_start": "2026-09-12",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-09-01",
+      "valor": 12233.3055,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     }
   ]

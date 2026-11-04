@@ -18,7 +18,9 @@
     "fecha_inicio": "2016-12-01",
     "url_original": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
     "revisable": false,
-    "notas": {}
+    "notas": {},
+    "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.9/download/indice-precios-al-consumidor-apertura-por-categorias-base-diciembre-2016-mensual.csv",
+    "col_csv": "ipc_nivel_general_nacional"
   },
   "observaciones": [
     {
@@ -193,6 +195,12 @@
       "fecha": "2019-04-01",
       "valor": 212.9596,
       "realtime_start": "2026-06-18",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2019-04-01",
+      "valor": 213.0517,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
@@ -559,6 +567,12 @@
       "fecha": "2024-05-01",
       "valor": 6073.7,
       "realtime_start": "2026-06-18",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2024-05-01",
+      "valor": 6073.7165,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
@@ -721,6 +735,12 @@
       "fecha": "2026-08-01",
       "valor": 12276.766,
       "realtime_start": "2026-09-12",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-09-01",
+      "valor": 12514.1508,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     }
   ]
