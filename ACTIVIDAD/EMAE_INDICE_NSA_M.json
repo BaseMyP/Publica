@@ -18,7 +18,9 @@
     "fecha_inicio": "2004-01-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=143.3_NO_PR_2004_A_21",
     "revisable": true,
-    "notas": {}
+    "notas": {},
+    "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/143/distribution/143.3/download/emae-valores-anuales-indice-base-2004-mensual.csv",
+    "col_csv": "emae_original"
   },
   "observaciones": [
     {
@@ -1939,6 +1941,12 @@
       "fecha": "2026-01-01",
       "valor": 149.486,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 149.4258,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1969,6 +1977,12 @@
       "fecha": "2026-02-01",
       "valor": 139.343,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-02-01",
+      "valor": 139.3087,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1999,6 +2013,12 @@
       "fecha": "2026-03-01",
       "valor": 160.2374,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-03-01",
+      "valor": 160.3321,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2023,6 +2043,12 @@
       "fecha": "2026-04-01",
       "valor": 162.303,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 162.3664,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2041,6 +2067,12 @@
       "fecha": "2026-05-01",
       "valor": 166.2683,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 166.2509,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2053,12 +2085,30 @@
       "fecha": "2026-06-01",
       "valor": 161.7042,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-06-01",
+      "valor": 161.6581,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-07-01",
       "valor": 151.5542,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-04"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 151.5121,
+      "realtime_start": "2026-11-04",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 147.7532,
+      "realtime_start": "2026-11-04",
       "realtime_end": "9999-12-31"
     }
   ]
