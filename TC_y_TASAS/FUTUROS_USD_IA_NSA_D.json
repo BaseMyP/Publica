@@ -13,7 +13,7 @@
     "fuente_original": "MAE",
     "fuente_formato": "API_MAE_FUTUROS",
     "id_original": "FUTUROS_USD",
-    "ultima_actualizacion": "2026-11-07T12:00:00Z",
+    "ultima_actualizacion": "2026-11-10T12:00:00Z",
     "revisable": true,
     "notas": {}
   },
@@ -1732,6 +1732,12 @@
       "fecha": "2026-11-05",
       "valor": 3704744,
       "realtime_start": "2026-11-06",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-11-06",
+      "valor": 3649417,
+      "realtime_start": "2026-11-10",
       "realtime_end": "9999-12-31"
     }
   ]
