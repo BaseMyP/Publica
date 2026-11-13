@@ -14,13 +14,21 @@
     "fuente_original": "INDEC",
     "fuente_formato": "API_INDEC",
     "id_original": "147.3_ISERVICNAL_DICI_T_22",
-    "ultima_actualizacion": "2026-11-04T12:00:00Z",
+    "ultima_actualizacion": "2026-11-13T12:00:00Z",
     "fecha_inicio": "2016-12-01",
     "url_original": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
     "revisable": false,
     "notas": {},
     "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.7/download/indice-precios-al-consumidor-bienes-servicios-base-diciembre-2016-mensual.csv",
-    "col_csv": "ipc_servicios_nacional"
+    "col_csv": "ipc_servicios_nacional",
+    "parametros_api": {
+      "region": "Nacional",
+      "nivel": "Categoría",
+      "tipo_indicador": "Indice",
+      "filtros_extra": {
+        "codigo": "eq.S"
+      }
+    }
   },
   "observaciones": [
     {
@@ -147,6 +155,12 @@
       "fecha": "2018-08-01",
       "valor": 191.667,
       "realtime_start": "2026-06-23",
+      "realtime_end": "2026-11-13"
+    },
+    {
+      "fecha": "2018-08-01",
+      "valor": 167.999,
+      "realtime_start": "2026-11-13",
       "realtime_end": "9999-12-31"
     },
     {
@@ -453,6 +467,12 @@
       "fecha": "2022-11-01",
       "valor": 874.7,
       "realtime_start": "2026-06-23",
+      "realtime_end": "2026-11-13"
+    },
+    {
+      "fecha": "2022-11-01",
+      "valor": 874.7005,
+      "realtime_start": "2026-11-13",
       "realtime_end": "9999-12-31"
     },
     {
@@ -561,6 +581,12 @@
       "fecha": "2024-05-01",
       "valor": 4817,
       "realtime_start": "2026-06-23",
+      "realtime_end": "2026-11-13"
+    },
+    {
+      "fecha": "2024-05-01",
+      "valor": 4817.0114,
+      "realtime_start": "2026-11-13",
       "realtime_end": "9999-12-31"
     },
     {
@@ -729,6 +755,12 @@
       "fecha": "2026-09-01",
       "valor": 13139.2715,
       "realtime_start": "2026-11-04",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-10-01",
+      "valor": 13499.0101,
+      "realtime_start": "2026-11-13",
       "realtime_end": "9999-12-31"
     }
   ]

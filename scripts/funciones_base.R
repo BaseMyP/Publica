@@ -1,3 +1,239 @@
+
+#' Motor base de descarga paginada para la API v1 del INDEC (PostgREST)
+get_indec_api <- function(endpoint,
+                          filtros = list(),
+                          select = NULL,
+                          order = NULL,
+                          page_size = 1000,
+                          token = Sys.getenv("INDEC_API_TOKEN")) {
+  
+  # Limpiamos posibles espacios o comillas que hayan quedado en .Renviron
+  token <- str_trim(token)
+  token <- str_remove_all(token, '^["\']|["\']$')
+  
+  if (is.null(token) || token == "") {
+    stop("No se encontró el token de la API del INDEC. Definí INDEC_API_TOKEN en .Renviron.")
+  }
+  
+  # Si el usuario guardó "Bearer eyJ...", extraemos solo el token para req_auth_bearer_token
+  token_limpio <- str_remove(token, regex("^Bearer\\s+", ignore_case = TRUE))
+  
+  base_url <- paste0("https://api.indec.gob.ar/v1/", endpoint)
+  
+  req_base <- request(base_url) |>
+    req_auth_bearer_token(token_limpio) |>
+    req_headers(
+      "Accept" = "application/json",
+      "Prefer" = "count=exact"
+    ) |>
+    req_retry(max_tries = 3, backoff = ~ 2)
+  
+  query_params <- filtros
+  if (!is.null(select)) query_params$select <- select
+  if (!is.null(order))  query_params$order  <- order
+  
+  if (length(query_params) > 0) {
+    req_base <- req_url_query(req_base, !!!query_params)
+  }
+  
+  offset <- 0
+  resultados <- list()
+  iter <- 1
+  
+  repeat {
+    rango <- sprintf("%d-%d", offset, offset + page_size - 1)
+    
+    resp <- req_base |>
+      req_headers("Range-Unit" = "items", "Range" = rango) |>
+      req_perform()
+    
+    chunk <- resp_body_json(resp, simplifyVector = TRUE)
+    if (length(chunk) == 0 || nrow(as.data.frame(chunk)) == 0) break
+    
+    resultados[[iter]] <- as_tibble(chunk)
+    
+    content_range <- resp_header(resp, "content-range")
+    if (is.null(content_range)) break
+    
+    partes <- str_match(content_range, "(\\d+)-(\\d+)/(\\d+|\\*)")
+    fin_actual <- as.numeric(partes[1, 3])
+    total_rows <- suppressWarnings(as.numeric(partes[1, 4]))
+    
+    if (!is.na(total_rows) && (fin_actual + 1) >= total_rows) break
+    if (nrow(resultados[[iter]]) < page_size) break
+    
+    offset <- offset + page_size
+    iter <- iter + 1
+  }
+  
+  bind_rows(resultados)
+}
+
+#' Descarga series limpias de ipc_nacional desde la API del INDEC
+get_ipc_indec <- function(region = "Nacional",
+                          nivel = NULL,
+                          tipo_indicador = "Indice",
+                          desde_periodo = NULL,
+                          filtros_extra = list(),
+                          token = Sys.getenv("INDEC_API_TOKEN")) {
+  
+  filtros <- filtros_extra
+  
+  if (!is.null(region)) {
+    filtros$region <- if (length(region) > 1) {
+      paste0("in.(", paste(region, collapse = ","), ")")
+    } else {
+      paste0("eq.", region)
+    }
+  }
+  
+  if (!is.null(nivel)) {
+    filtros$nivel <- if (length(nivel) > 1) {
+      paste0("in.(", paste(nivel, collapse = ","), ")")
+    } else {
+      paste0("eq.", nivel)
+    }
+  }
+  
+  if (!is.null(tipo_indicador)) {
+    filtros$tipo_de_indicador <- if (length(tipo_indicador) > 1) {
+      paste0("in.(", paste(tipo_indicador, collapse = ","), ")")
+    } else {
+      paste0("eq.", tipo_indicador)
+    }
+  }
+  
+  if (!is.null(desde_periodo)) {
+    filtros$periodo <- paste0("gte.", desde_periodo)
+  }
+  
+  clave_primaria <- "periodo,region,clasificador,nivel,codigo,indicador,tipo_de_indicador"
+  
+  df <- get_indec_api(
+    endpoint = "ipc_nacional",
+    filtros  = filtros,
+    order    = clave_primaria,
+    token    = token
+  )
+  
+  if (nrow(df) == 0) return(df)
+  
+  df |>
+    mutate(
+      fecha = ym(periodo),
+      .before = 1
+    )
+}
+
+#' Actualiza o inicializa una serie desde la Nueva API del INDEC con lógica ALFRED
+update_nuevaindec_json_serie <- function(serie_id, tema, metadatos_fijos, params_api = NULL) {
+  path_dir <- file.path(tema)
+  path_archivo <- file.path(tema, paste0(serie_id, ".json"))
+  hoy <- as.character(Sys.Date())
+  
+  if (!dir.exists(path_dir)) dir.create(path_dir, recursive = TRUE, showWarnings = FALSE)
+  
+  # Si no se pasan explícitamente, los toma de metadatos_fijos$parametros_api
+  if (is.null(params_api)) {
+    params_api <- metadatos_fijos$parametros_api
+  }
+  
+  if (is.null(params_api)) {
+    warning("No se definieron 'parametros_api' para la serie: ", serie_id)
+    return(FALSE)
+  }
+  
+  message("Descargando datos desde Nueva API INDEC para ", serie_id, "...")
+  
+  df_crudo <- tryCatch({
+    get_ipc_indec(
+      region         = params_api$region,
+      nivel          = params_api$nivel,
+      tipo_indicador = params_api$tipo_indicador,
+      filtros_extra  = if (!is.null(params_api$filtros_extra)) as.list(params_api$filtros_extra) else list()
+    )
+  }, error = function(e) {
+    warning("Error al consultar la Nueva API del INDEC para ", serie_id, ": ", e$message)
+    return(NULL)
+  })
+  
+  if (is.null(df_crudo) || nrow(df_crudo) == 0) {
+    warning("No se obtuvieron registros para ", serie_id)
+    return(FALSE)
+  }
+  
+  # Nos quedamos únicamente con $fecha y $valor
+  nuevo_df <- df_crudo |>
+    select(fecha, valor) |>
+    mutate(
+      fecha = as.character(fecha),
+      valor = as.numeric(valor)
+    ) |>
+    filter(!is.na(valor)) |>
+    arrange(fecha)
+  
+  if (!file.exists(path_archivo)) {
+    observaciones <- nuevo_df |>
+      mutate(realtime_start = hoy, realtime_end = "9999-12-31")
+    
+    lista_final <- list(
+      serie_id      = serie_id,
+      metadatos     = metadatos_fijos,
+      observaciones = observaciones
+    )
+  } else {
+    base_actual <- fromJSON(path_archivo, simplifyVector = TRUE)
+    obs_viejas  <- base_actual$observaciones
+    
+    obs_vigentes   <- obs_viejas |> filter(realtime_end == "9999-12-31")
+    obs_historicas <- obs_viejas |> filter(realtime_end != "9999-12-31")
+    
+    actualizadas <- nuevo_df |>
+      left_join(obs_vigentes, by = "fecha", suffix = c("_nuevo", "_viejo")) |>
+      mutate(
+        status = case_when(
+          is.na(valor_viejo) ~ "NUEVO",
+          round(valor_nuevo, 4) != round(valor_viejo, 4) ~ "REVISADO",
+          TRUE ~ "SIN_CAMBIOS"
+        )
+      )
+    
+    if (!any(actualizadas$status %in% c("NUEVO", "REVISADO"))) {
+      message("  -> Sin cambios detectados para ", serie_id)
+      return(FALSE)
+    }
+    
+    obs_vigentes_que_cambiaron <- obs_vigentes |>
+      filter(fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"]) |>
+      mutate(realtime_end = hoy)
+    
+    obs_vigentes_sin_cambio <- obs_vigentes |>
+      filter(!fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"])
+    
+    nuevas_inserciones <- actualizadas |>
+      filter(status %in% c("NUEVO", "REVISADO")) |>
+      select(fecha, valor = valor_nuevo) |>
+      mutate(realtime_start = hoy, realtime_end = "9999-12-31")
+    
+    obs_consolidadas <- bind_rows(
+      obs_historicas,
+      obs_vigentes_que_cambiaron,
+      obs_vigentes_sin_cambio,
+      nuevas_inserciones
+    ) |> arrange(fecha, realtime_start)
+    
+    base_actual$metadatos <- metadatos_fijos
+    base_actual$metadatos$ultima_actualizacion <- paste0(hoy, "T12:00:00Z")
+    base_actual$observaciones <- obs_consolidadas
+    lista_final <- base_actual
+  }
+  
+  write_json(lista_final, path_archivo, pretty = TRUE, auto_unbox = TRUE)
+  message("✓ Serie guardada: ", path_archivo)
+  return(TRUE)
+}
+
+
 update_bcra_json_serie <- function(id_variable, serie_id, tema, metadatos_fijos) {
   path_dir <- file.path(tema)
   path_archivo <- file.path(tema, paste0(serie_id, ".json"))
