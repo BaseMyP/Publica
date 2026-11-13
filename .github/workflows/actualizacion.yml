@@ -42,6 +42,7 @@ jobs:
         run: |
           Rscript scripts/actualizacion_diaria.R
           Rscript scripts/actualizacion_indec.R
+          Rscript scripts/actualizacion_nuevaindec.R
           Rscript scripts/actualizacion_rem.R
           Rscript scripts/actualizacion_fred.R 
           Rscript scripts/actualizacion_ccl.R
