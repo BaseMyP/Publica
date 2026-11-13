@@ -15,6 +15,7 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       FRED_API_KEY: ${{ secrets.FRED_API_KEY }} # <-- Inyección de la llave FRED
+      INDEC_API_TOKEN: ${{ secrets.INDEC_API_TOKEN }}
 
     steps:
       - name: Clonar el repositorio
