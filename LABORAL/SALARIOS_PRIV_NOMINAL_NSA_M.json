@@ -14,7 +14,7 @@
     "fuente_original": "INDEC",
     "fuente_formato": "API_INDEC",
     "id_original": "153.1_RNERACIDIO_2009_M_21",
-    "ultima_actualizacion": "2026-11-04T12:00:00Z",
+    "ultima_actualizacion": "2026-11-17T12:00:00Z",
     "fecha_inicio": "1995-01-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=153.1_RNERACIDIO_2009_M_21",
     "revisable": false,
@@ -2265,6 +2265,12 @@
       "fecha": "2026-01-01",
       "valor": 2095254.9,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 2095228.44,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2277,6 +2283,12 @@
       "fecha": "2026-02-01",
       "valor": 2100890.25,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-02-01",
+      "valor": 2101349.99,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2289,6 +2301,12 @@
       "fecha": "2026-03-01",
       "valor": 2170977.98,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-03-01",
+      "valor": 2170657.95,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2301,6 +2319,12 @@
       "fecha": "2026-04-01",
       "valor": 2230140.41,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 2229694.25,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2313,6 +2337,12 @@
       "fecha": "2026-05-01",
       "valor": 2150429.17,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 2150178.76,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2325,12 +2355,30 @@
       "fecha": "2026-06-01",
       "valor": 3183685.81,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-06-01",
+      "valor": 3183291.01,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-07-01",
       "valor": 2256861.1202,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 2256751.01,
+      "realtime_start": "2026-11-17",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 2304102.11,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     }
   ]

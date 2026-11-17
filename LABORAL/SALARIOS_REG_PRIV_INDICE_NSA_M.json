@@ -14,7 +14,7 @@
     "fuente_original": "INDEC",
     "fuente_formato": "API_INDEC",
     "id_original": "149.1_SOR_PRIADO_OCTU_0_25",
-    "ultima_actualizacion": "2026-11-04T12:00:00Z",
+    "ultima_actualizacion": "2026-11-17T12:00:00Z",
     "fecha_inicio": "2015-10-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=149.1_SOR_PRIADO_OCTU_0_25",
     "revisable": false,
@@ -819,6 +819,12 @@
       "fecha": "2026-08-01",
       "valor": 10159.65,
       "realtime_start": "2026-11-04",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-09-01",
+      "valor": 10357.14,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     }
   ]

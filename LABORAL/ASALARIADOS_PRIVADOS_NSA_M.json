@@ -14,7 +14,7 @@
     "fuente_original": "INDEC",
     "fuente_formato": "API_INDEC",
     "id_original": "151.1_AARIADODAD_2012_M_31",
-    "ultima_actualizacion": "2026-11-04T12:00:00Z",
+    "ultima_actualizacion": "2026-11-17T12:00:00Z",
     "fecha_inicio": "2012-01-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=151.1_AARIADODAD_2012_M_31",
     "revisable": false,
@@ -1035,6 +1035,12 @@
       "fecha": "2025-11-01",
       "valor": 6193.172,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2025-11-01",
+      "valor": 6193.329,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1047,6 +1053,12 @@
       "fecha": "2025-12-01",
       "valor": 6197.074,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2025-12-01",
+      "valor": 6197.397,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1059,6 +1071,12 @@
       "fecha": "2026-01-01",
       "valor": 6190.027,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 6190.49,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1071,6 +1089,12 @@
       "fecha": "2026-02-01",
       "valor": 6189.633,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-02-01",
+      "valor": 6190.239,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1083,6 +1107,12 @@
       "fecha": "2026-03-01",
       "valor": 6181.463,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-03-01",
+      "valor": 6182.378,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1095,6 +1125,12 @@
       "fecha": "2026-04-01",
       "valor": 6128.377,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 6129.915,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1107,6 +1143,12 @@
       "fecha": "2026-05-01",
       "valor": 6100.292,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 6102.062,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1119,12 +1161,30 @@
       "fecha": "2026-06-01",
       "valor": 6089.888,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-06-01",
+      "valor": 6088.445,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-07-01",
       "valor": 6082.314,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-17"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 6080.855,
+      "realtime_start": "2026-11-17",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 6072.925,
+      "realtime_start": "2026-11-17",
       "realtime_end": "9999-12-31"
     }
   ]
