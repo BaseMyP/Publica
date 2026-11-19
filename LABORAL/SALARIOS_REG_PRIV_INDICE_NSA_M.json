@@ -20,7 +20,12 @@
     "revisable": false,
     "notas": {},
     "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/149/distribution/149.1/download/indice-salarios-periodicidad-mensual-base-octubre-2016.csv",
-    "col_csv": "indice_salarios_registrado_sector_privado"
+    "col_csv": "indice_salarios_registrado_sector_privado",
+    "parametros_api": {
+       "endpoint": "indice_salarios",
+       "filtros_extra": {
+         "descripcion": "eq.Sector privado registrado",
+         "tipo_de_indicador": "eq.Indice"
   },
   "observaciones": [
     {
