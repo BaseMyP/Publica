@@ -26,23 +26,23 @@ if (nrow(catalogo_nuevaindec) == 0) {
 }
 
 # Mapa de parámetros para las 5 series de IPC (se guarda en metadatos$parametros_api si no existe)
-mapa_parametros_ipc <- list(
-  "IPCGENERAL_INDICE_NSA_M" = list(
-    region = "Nacional", nivel = "Nivel General", tipo_indicador = "Indice", filtros_extra = list()
-  ),
-  "IPCBIENES_INDICE_NSA_M" = list(
-    region = "Nacional", nivel = "Categoría", tipo_indicador = "Indice", filtros_extra = list(codigo = "eq.B")
-  ),
-  "IPCNUCLEO_INDICE_NSA_M" = list(
-    region = "Nacional", nivel = "Categoría", tipo_indicador = "Indice", filtros_extra = list(codigo = "eq.N")
-  ),
-  "IPCREGULADOS_INDICE_NSA_M" = list(
-    region = "Nacional", nivel = "Categoría", tipo_indicador = "Indice", filtros_extra = list(codigo = "eq.R")
-  ),
-  "IPCSERVICIOS_INDICE_NSA_M" = list(
-    region = "Nacional", nivel = "Categoría", tipo_indicador = "Indice", filtros_extra = list(codigo = "eq.S")
-  )
-)
+# mapa_parametros_ipc <- list(
+#   "IPCGENERAL_INDICE_NSA_M" = list(
+#     region = "Nacional", nivel = "Nivel General", tipo_indicador = "Indice", filtros_extra = list()
+#   ),
+#   "IPCBIENES_INDICE_NSA_M" = list(
+#     region = "Nacional", nivel = "Categoría", tipo_indicador = "Indice", filtros_extra = list(codigo = "eq.B")
+#   ),
+#   "IPCNUCLEO_INDICE_NSA_M" = list(
+#     region = "Nacional", nivel = "Categoría", tipo_indicador = "Indice", filtros_extra = list(codigo = "eq.N")
+#   ),
+#   "IPCREGULADOS_INDICE_NSA_M" = list(
+#     region = "Nacional", nivel = "Categoría", tipo_indicador = "Indice", filtros_extra = list(codigo = "eq.R")
+#   ),
+#   "IPCSERVICIOS_INDICE_NSA_M" = list(
+#     region = "Nacional", nivel = "Categoría", tipo_indicador = "Indice", filtros_extra = list(codigo = "eq.S")
+#   )
+# )
 
 hubo_actualizaciones <- FALSE
 

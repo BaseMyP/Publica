@@ -45,7 +45,7 @@
     "frecuencia": "M",
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/EMAE_INDICE_NSA_M.json",
-    "metodo_etl": "API_INDEC"
+    "metodo_etl": "Nueva_API_INDEC"
   },
   {
     "serie_id": "EMAE_INDICE_SA_M",
@@ -53,7 +53,7 @@
     "frecuencia": "M",
     "tipo_informacion": "Pública",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/ACTIVIDAD/EMAE_INDICE_SA_M.json",
-    "metodo_etl": "API_INDEC"
+    "metodo_etl": "Nueva_API_INDEC"
   },
   {
     "serie_id": "IPCREGULADOS_INDICE_NSA_M",

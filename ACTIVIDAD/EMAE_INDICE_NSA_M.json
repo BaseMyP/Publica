@@ -20,7 +20,13 @@
     "revisable": true,
     "notas": {},
     "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/143/distribution/143.3/download/emae-valores-anuales-indice-base-2004-mensual.csv",
-    "col_csv": "emae_original"
+    "col_csv": "emae_original",
+    "parametros_api": {
+       "endpoint": "estimador-mensual-de-actividad-economica-nivel-general",
+       "filtros_extra": {
+         "tipo_de_indicador_descripcion": "eq.Índice serie original"
+  }
+}
   },
   "observaciones": [
     {

@@ -70,62 +70,243 @@ get_indec_api <- function(endpoint,
 }
 
 #' Descarga series limpias de ipc_nacional desde la API del INDEC
-get_ipc_indec <- function(region = "Nacional",
-                          nivel = NULL,
-                          tipo_indicador = "Indice",
-                          desde_periodo = NULL,
-                          filtros_extra = list(),
-                          token = Sys.getenv("INDEC_API_TOKEN")) {
+# get_ipc_indec <- function(region = "Nacional",
+#                           nivel = NULL,
+#                           tipo_indicador = "Indice",
+#                           desde_periodo = NULL,
+#                           filtros_extra = list(),
+#                           token = Sys.getenv("INDEC_API_TOKEN")) {
+#   
+#   filtros <- filtros_extra
+#   
+#   if (!is.null(region)) {
+#     filtros$region <- if (length(region) > 1) {
+#       paste0("in.(", paste(region, collapse = ","), ")")
+#     } else {
+#       paste0("eq.", region)
+#     }
+#   }
+#   
+#   if (!is.null(nivel)) {
+#     filtros$nivel <- if (length(nivel) > 1) {
+#       paste0("in.(", paste(nivel, collapse = ","), ")")
+#     } else {
+#       paste0("eq.", nivel)
+#     }
+#   }
+#   
+#   if (!is.null(tipo_indicador)) {
+#     filtros$tipo_de_indicador <- if (length(tipo_indicador) > 1) {
+#       paste0("in.(", paste(tipo_indicador, collapse = ","), ")")
+#     } else {
+#       paste0("eq.", tipo_indicador)
+#     }
+#   }
+#   
+#   if (!is.null(desde_periodo)) {
+#     filtros$periodo <- paste0("gte.", desde_periodo)
+#   }
+#   
+#   clave_primaria <- "periodo,region,clasificador,nivel,codigo,indicador,tipo_de_indicador"
+#   
+#   df <- get_indec_api(
+#     endpoint = "ipc_nacional",
+#     filtros  = filtros,
+#     order    = clave_primaria,
+#     token    = token
+#   )
+#   
+#   if (nrow(df) == 0) return(df)
+#   
+#   df |>
+#     mutate(
+#       fecha = ym(periodo),
+#       .before = 1
+#     )
+# }
+
+#' Descarga y estandariza una serie de la API v1 del INDEC a partir de parametros_api
+#'
+#' @param parametros_api Lista leída desde los metadatos de la serie (puede contener
+#'   endpoint, region, nivel, tipo_indicador y/o filtros_extra).
+#' @param desde_periodo Caracter opcional en formato "AAAAMM" (ej. "202401").
+#' @param token Caracter. JWT Token (por defecto lee INDEC_API_TOKEN).
+#'
+#' @return Tibble con columnas `fecha` (Date) y `valor` (numeric).
+get_serie_indec <- function(parametros_api,
+                            desde_periodo = NULL,
+                            token = Sys.getenv("INDEC_API_TOKEN")) {
   
-  filtros <- filtros_extra
+  # 1. Endpoint (por retrocompatibilidad con las series de IPC ya cargadas, default "ipc_nacional")
+  endpoint <- parametros_api$endpoint %||% "ipc_nacional"
   
-  if (!is.null(region)) {
-    filtros$region <- if (length(region) > 1) {
-      paste0("in.(", paste(region, collapse = ","), ")")
-    } else {
-      paste0("eq.", region)
-    }
+  # 2. Inicializar filtros desde filtros_extra (si existen)
+  filtros <- if (!is.null(parametros_api$filtros_extra)) {
+    as.list(parametros_api$filtros_extra)
+  } else {
+    list()
   }
   
-  if (!is.null(nivel)) {
-    filtros$nivel <- if (length(nivel) > 1) {
-      paste0("in.(", paste(nivel, collapse = ","), ")")
-    } else {
-      paste0("eq.", nivel)
-    }
+  # 3. Soporte retrocompatible para parámetros específicos del IPC
+  if (!is.null(parametros_api$region)) {
+    r <- parametros_api$region
+    filtros$region <- if (length(r) > 1) paste0("in.(", paste(r, collapse = ","), ")") else paste0("eq.", r)
   }
   
-  if (!is.null(tipo_indicador)) {
-    filtros$tipo_de_indicador <- if (length(tipo_indicador) > 1) {
-      paste0("in.(", paste(tipo_indicador, collapse = ","), ")")
-    } else {
-      paste0("eq.", tipo_indicador)
-    }
+  if (!is.null(parametros_api$nivel)) {
+    n <- parametros_api$nivel
+    filtros$nivel <- if (length(n) > 1) paste0("in.(", paste(n, collapse = ","), ")") else paste0("eq.", n)
+  }
+  
+  if (!is.null(parametros_api$tipo_indicador)) {
+    ti <- parametros_api$tipo_indicador
+    filtros$tipo_de_indicador <- if (length(ti) > 1) paste0("in.(", paste(ti, collapse = ","), ")") else paste0("eq.", ti)
   }
   
   if (!is.null(desde_periodo)) {
     filtros$periodo <- paste0("gte.", desde_periodo)
   }
   
-  clave_primaria <- "periodo,region,clasificador,nivel,codigo,indicador,tipo_de_indicador"
-  
+  # 4. Consulta a la API
   df <- get_indec_api(
-    endpoint = "ipc_nacional",
+    endpoint = endpoint,
     filtros  = filtros,
-    order    = clave_primaria,
+    order    = "periodo.asc",
     token    = token
   )
   
-  if (nrow(df) == 0) return(df)
+  if (nrow(df) == 0) {
+    return(tibble(fecha = as.Date(character()), valor = numeric()))
+  }
   
-  df |>
+  # 5. Estandarización de salida ($fecha y $valor)
+  res <- df |>
     mutate(
-      fecha = ym(periodo),
-      .before = 1
-    )
+      fecha = ym(as.character(periodo)),
+      valor = suppressWarnings(as.numeric(valor))
+    ) |>
+    select(fecha, valor) |>
+    arrange(fecha)
+  
+  if (anyDuplicated(res$fecha) > 0) {
+    stop(sprintf(
+      "La consulta al endpoint '%s' devolvió múltiples registros para una misma fecha. Revisá 'parametros_api'.",
+      endpoint
+    ))
+  }
+  
+  return(res)
 }
 
+
 #' Actualiza o inicializa una serie desde la Nueva API del INDEC con lógica ALFRED
+# update_nuevaindec_json_serie <- function(serie_id, tema, metadatos_fijos, params_api = NULL) {
+#   path_dir <- file.path(tema)
+#   path_archivo <- file.path(tema, paste0(serie_id, ".json"))
+#   hoy <- as.character(Sys.Date())
+# 
+#   if (!dir.exists(path_dir)) dir.create(path_dir, recursive = TRUE, showWarnings = FALSE)
+# 
+#   # Si no se pasan explícitamente, los toma de metadatos_fijos$parametros_api
+#   if (is.null(params_api)) {
+#     params_api <- metadatos_fijos$parametros_api
+#   }
+# 
+#   if (is.null(params_api)) {
+#     warning("No se definieron 'parametros_api' para la serie: ", serie_id)
+#     return(FALSE)
+#   }
+# 
+#   message("Descargando datos desde Nueva API INDEC para ", serie_id, "...")
+# 
+#   df_crudo <- tryCatch({
+#     get_ipc_indec(
+#       region         = params_api$region,
+#       nivel          = params_api$nivel,
+#       tipo_indicador = params_api$tipo_indicador,
+#       filtros_extra  = if (!is.null(params_api$filtros_extra)) as.list(params_api$filtros_extra) else list()
+#     )
+#   }, error = function(e) {
+#     warning("Error al consultar la Nueva API del INDEC para ", serie_id, ": ", e$message)
+#     return(NULL)
+#   })
+# 
+#   if (is.null(df_crudo) || nrow(df_crudo) == 0) {
+#     warning("No se obtuvieron registros para ", serie_id)
+#     return(FALSE)
+#   }
+# 
+#   # Nos quedamos únicamente con $fecha y $valor
+#   nuevo_df <- df_crudo |>
+#     select(fecha, valor) |>
+#     mutate(
+#       fecha = as.character(fecha),
+#       valor = as.numeric(valor)
+#     ) |>
+#     filter(!is.na(valor)) |>
+#     arrange(fecha)
+# 
+#   if (!file.exists(path_archivo)) {
+#     observaciones <- nuevo_df |>
+#       mutate(realtime_start = hoy, realtime_end = "9999-12-31")
+# 
+#     lista_final <- list(
+#       serie_id      = serie_id,
+#       metadatos     = metadatos_fijos,
+#       observaciones = observaciones
+#     )
+#   } else {
+#     base_actual <- fromJSON(path_archivo, simplifyVector = TRUE)
+#     obs_viejas  <- base_actual$observaciones
+# 
+#     obs_vigentes   <- obs_viejas |> filter(realtime_end == "9999-12-31")
+#     obs_historicas <- obs_viejas |> filter(realtime_end != "9999-12-31")
+# 
+#     actualizadas <- nuevo_df |>
+#       left_join(obs_vigentes, by = "fecha", suffix = c("_nuevo", "_viejo")) |>
+#       mutate(
+#         status = case_when(
+#           is.na(valor_viejo) ~ "NUEVO",
+#           round(valor_nuevo, 4) != round(valor_viejo, 4) ~ "REVISADO",
+#           TRUE ~ "SIN_CAMBIOS"
+#         )
+#       )
+# 
+#     if (!any(actualizadas$status %in% c("NUEVO", "REVISADO"))) {
+#       message("  -> Sin cambios detectados para ", serie_id)
+#       return(FALSE)
+#     }
+# 
+#     obs_vigentes_que_cambiaron <- obs_vigentes |>
+#       filter(fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"]) |>
+#       mutate(realtime_end = hoy)
+# 
+#     obs_vigentes_sin_cambio <- obs_vigentes |>
+#       filter(!fecha %in% actualizadas$fecha[actualizadas$status == "REVISADO"])
+# 
+#     nuevas_inserciones <- actualizadas |>
+#       filter(status %in% c("NUEVO", "REVISADO")) |>
+#       select(fecha, valor = valor_nuevo) |>
+#       mutate(realtime_start = hoy, realtime_end = "9999-12-31")
+# 
+#     obs_consolidadas <- bind_rows(
+#       obs_historicas,
+#       obs_vigentes_que_cambiaron,
+#       obs_vigentes_sin_cambio,
+#       nuevas_inserciones
+#     ) |> arrange(fecha, realtime_start)
+# 
+#     base_actual$metadatos <- metadatos_fijos
+#     base_actual$metadatos$ultima_actualizacion <- paste0(hoy, "T12:00:00Z")
+#     base_actual$observaciones <- obs_consolidadas
+#     lista_final <- base_actual
+#   }
+# 
+#   write_json(lista_final, path_archivo, pretty = TRUE, auto_unbox = TRUE)
+#   message("✓ Serie guardada: ", path_archivo)
+#   return(TRUE)
+# }
+
 update_nuevaindec_json_serie <- function(serie_id, tema, metadatos_fijos, params_api = NULL) {
   path_dir <- file.path(tema)
   path_archivo <- file.path(tema, paste0(serie_id, ".json"))
@@ -145,13 +326,9 @@ update_nuevaindec_json_serie <- function(serie_id, tema, metadatos_fijos, params
   
   message("Descargando datos desde Nueva API INDEC para ", serie_id, "...")
   
+  # Único cambio: reemplazamos get_ipc_indec() por get_serie_indec()
   df_crudo <- tryCatch({
-    get_ipc_indec(
-      region         = params_api$region,
-      nivel          = params_api$nivel,
-      tipo_indicador = params_api$tipo_indicador,
-      filtros_extra  = if (!is.null(params_api$filtros_extra)) as.list(params_api$filtros_extra) else list()
-    )
+    get_serie_indec(parametros_api = params_api)
   }, error = function(e) {
     warning("Error al consultar la Nueva API del INDEC para ", serie_id, ": ", e$message)
     return(NULL)
@@ -232,7 +409,6 @@ update_nuevaindec_json_serie <- function(serie_id, tema, metadatos_fijos, params
   message("✓ Serie guardada: ", path_archivo)
   return(TRUE)
 }
-
 
 update_bcra_json_serie <- function(id_variable, serie_id, tema, metadatos_fijos) {
   path_dir <- file.path(tema)
