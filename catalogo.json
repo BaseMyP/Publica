@@ -2974,5 +2974,13 @@
     "tipo_informacion": "Publica",
     "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/INTERNACIONAL/CTOT_VNM_INDICE_NSA_M.json",
     "metodo_etl": "API_IMF"
+  },
+  {
+    "serie_id": "BONOSPESOS_IAMC_INDICE_D",
+    "titulo": "Índice de Bonos IAMC (IBIAMC)",
+    "frecuencia": "D",
+    "tipo_informacion": "Pública",
+    "raw_url": "https://raw.githubusercontent.com/BaseMyP/Publica/refs/heads/main/FINANZAS/BONOSPESOS_IAMC_INDICE_D.json",
+    "metodo_etl": "IAMC_scrap"
   }
 ]
