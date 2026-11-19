@@ -50,6 +50,7 @@ jobs:
           Rscript scripts/actualizacion_riesgopais.R
           Rscript scripts/actualizacion_caucion_mae.R
           Rscript scripts/actualizacion_futuros_ia.R
+          Rscript scripts/actualizacion_IAMC.R
 
       - name: Configurar Git y Subir Cambios
         run: |
