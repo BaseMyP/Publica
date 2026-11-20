@@ -25,7 +25,8 @@
        "endpoint": "indice_salarios",
        "filtros_extra": {
          "descripcion": "eq.Sector privado registrado",
-         "tipo_de_indicador": "eq.Indice"
+         "tipo_de_indicador": "eq.Indice"}
+    }
   },
   "observaciones": [
     {
