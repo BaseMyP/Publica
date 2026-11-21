@@ -14,7 +14,7 @@
     "fuente_original": "Secretaría de Finanzas",
     "fuente_formato": "Excel",
     "id_original": ["ORGANISMOS INTERNACIONALES", "ORGANISMOS OFICIALES"],
-    "ultima_actualizacion": "2026-11-14T12:00:00Z",
+    "ultima_actualizacion": "2026-11-21T12:00:00Z",
     "url_original": "https://www.argentina.gob.ar/sites/default/files/boletin_mensual_31_05_2026_1.xlsx",
     "revisable": true,
     "notas": "Hoja: A.1"
@@ -594,6 +594,12 @@
       "fecha": "2026-09-01",
       "valor": 98007.8,
       "realtime_start": "2026-10-19",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-10-01",
+      "valor": 97766.7,
+      "realtime_start": "2026-11-21",
       "realtime_end": "9999-12-31"
     }
   ]
