@@ -14,7 +14,7 @@
     "fuente_original": "INDEC",
     "fuente_formato": "API_Argentina",
     "id_original": "143.3_NO_PR_2004_A_21",
-    "ultima_actualizacion": "2026-11-04T12:00:00Z",
+    "ultima_actualizacion": "2026-11-25T12:00:00Z",
     "fecha_inicio": "2004-01-01",
     "url_original": "https://datosgobar.github.io/series-tiempo-ar-explorer/#/series/?ids=143.3_NO_PR_2004_A_21",
     "revisable": true,
@@ -22,11 +22,11 @@
     "url_csv": "https://infra.datos.gob.ar/catalog/sspm/dataset/143/distribution/143.3/download/emae-valores-anuales-indice-base-2004-mensual.csv",
     "col_csv": "emae_original",
     "parametros_api": {
-       "endpoint": "estimador-mensual-de-actividad-economica-nivel-general",
-       "filtros_extra": {
-         "tipo_de_indicador_descripcion": "eq.Índice serie original"
-  }
-}
+      "endpoint": "estimador-mensual-de-actividad-economica-nivel-general",
+      "filtros_extra": {
+        "tipo_de_indicador_descripcion": "eq.Índice serie original"
+      }
+    }
   },
   "observaciones": [
     {
@@ -1767,6 +1767,12 @@
       "fecha": "2025-05-01",
       "valor": 165.0746,
       "realtime_start": "2026-06-30",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2025-05-01",
+      "valor": 165.0745,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1803,6 +1809,12 @@
       "fecha": "2025-07-01",
       "valor": 153.7712,
       "realtime_start": "2026-08-21",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2025-07-01",
+      "valor": 153.7713,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1845,6 +1857,12 @@
       "fecha": "2025-09-01",
       "valor": 151.7042,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2025-09-01",
+      "valor": 151.704,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1869,6 +1887,12 @@
       "fecha": "2025-10-01",
       "valor": 152.8341,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2025-10-01",
+      "valor": 152.8335,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1893,6 +1917,12 @@
       "fecha": "2025-11-01",
       "valor": 147.9699,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2025-11-01",
+      "valor": 147.9696,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1917,6 +1947,12 @@
       "fecha": "2025-12-01",
       "valor": 153.8523,
       "realtime_start": "2026-09-26",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2025-12-01",
+      "valor": 153.853,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1953,6 +1989,12 @@
       "fecha": "2026-01-01",
       "valor": 149.4258,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2026-01-01",
+      "valor": 149.4416,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -1989,6 +2031,12 @@
       "fecha": "2026-02-01",
       "valor": 139.3087,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2026-02-01",
+      "valor": 139.3518,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2025,6 +2073,12 @@
       "fecha": "2026-03-01",
       "valor": 160.3321,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2026-03-01",
+      "valor": 160.2732,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2055,6 +2109,12 @@
       "fecha": "2026-04-01",
       "valor": 162.3664,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2026-04-01",
+      "valor": 162.3224,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2079,6 +2139,12 @@
       "fecha": "2026-05-01",
       "valor": 166.2509,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2026-05-01",
+      "valor": 166.2441,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2097,6 +2163,12 @@
       "fecha": "2026-06-01",
       "valor": 161.6581,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2026-06-01",
+      "valor": 161.709,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
@@ -2109,12 +2181,30 @@
       "fecha": "2026-07-01",
       "valor": 151.5121,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2026-07-01",
+      "valor": 151.4293,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     },
     {
       "fecha": "2026-08-01",
       "valor": 147.7532,
       "realtime_start": "2026-11-04",
+      "realtime_end": "2026-11-25"
+    },
+    {
+      "fecha": "2026-08-01",
+      "valor": 147.9213,
+      "realtime_start": "2026-11-25",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-09-01",
+      "valor": 149.8836,
+      "realtime_start": "2026-11-25",
       "realtime_end": "9999-12-31"
     }
   ]
