@@ -14,7 +14,7 @@
     "fuente_original": "Bolsas y Mercados Argentinos (BYMA)",
     "fuente_formato": "json",
     "id_original": "IAMCGRAP",
-    "ultima_actualizacion": "2026-11-26 01:59:27",
+    "ultima_actualizacion": "2026-11-27 01:58:21",
     "fecha_inicio": "1995-01-01",
     "url_original": "https://www.iamc.com.ar/",
     "revisable": false,
@@ -10537,6 +10537,12 @@
       "fecha": "2026-11-25",
       "valor": 1047280,
       "realtime_start": "2026-11-26",
+      "realtime_end": "9999-12-31"
+    },
+    {
+      "fecha": "2026-11-26",
+      "valor": 1055472,
+      "realtime_start": "2026-11-27",
       "realtime_end": "9999-12-31"
     }
   ]
